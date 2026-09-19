@@ -5726,3 +5726,1621 @@ body.dark {
 @media (max-width:1200px){
   .future-module-060{--module-local-scale:1.00;}
 }
+
+/* =========================================================
+   CAMPUSKIT STUDENT OS — INTERACTIVE DASHBOARD
+   ========================================================= */
+
+.student-os{
+  position:relative;
+  max-width:1180px;
+  margin:100px auto 0;
+  padding:0 0 18px;
+}
+
+.student-os::before{
+  content:"";
+  position:absolute;
+  inset:-80px -120px -60px;
+  z-index:-2;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 30%,rgba(99,91,255,.10),transparent 34%),
+    radial-gradient(circle at 82% 60%,rgba(34,211,238,.08),transparent 30%);
+  filter:blur(10px);
+}
+
+.os-heading{
+  align-items:flex-end;
+}
+
+.os-live{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid rgba(16,24,40,.08);
+  border-radius:999px;
+  background:rgba(255,255,255,.66);
+  color:#667085;
+  font:800 9px/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.12em;
+  backdrop-filter:blur(14px);
+}
+
+.os-live i{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#22c55e;
+  box-shadow:0 0 0 5px rgba(34,197,94,.10);
+}
+
+.os-grid{
+  display:grid;
+  grid-template-columns:1.15fr 1fr 1fr;
+  gap:14px;
+  margin-top:24px;
+}
+
+.os-card{
+  position:relative;
+  min-height:250px;
+  overflow:hidden;
+  padding:24px;
+  border:1px solid rgba(16,24,40,.08);
+  border-radius:26px;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.92),rgba(255,255,255,.68));
+  box-shadow:0 24px 70px rgba(31,35,55,.08);
+  backdrop-filter:blur(24px);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s ease,border-color .35s ease;
+}
+
+.os-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(99,91,255,.20);
+  box-shadow:0 34px 90px rgba(31,35,55,.13);
+}
+
+.os-card::after{
+  content:"";
+  position:absolute;
+  width:170px;
+  height:170px;
+  right:-100px;
+  top:-100px;
+  border-radius:50%;
+  background:rgba(99,91,255,.08);
+  filter:blur(2px);
+  pointer-events:none;
+}
+
+.os-focus-card{
+  grid-row:span 2;
+  min-height:515px;
+  background:
+    radial-gradient(circle at 80% 10%,rgba(99,91,255,.18),transparent 35%),
+    linear-gradient(145deg,#ffffff,#f4f3ff);
+}
+
+.os-card-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.os-kicker{
+  display:block;
+  margin-bottom:8px;
+  color:#635bff;
+  font:900 9px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.16em;
+}
+
+.os-card h3{
+  margin:0;
+  color:#101828;
+  font-size:20px;
+  letter-spacing:-.035em;
+}
+
+.os-icon{
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  flex:none;
+  border:1px solid rgba(99,91,255,.14);
+  border-radius:14px;
+  color:#635bff;
+  background:rgba(99,91,255,.08);
+  font-weight:900;
+}
+
+.os-icon.cyan{
+  color:#0891b2;
+  background:rgba(6,182,212,.09);
+  border-color:rgba(6,182,212,.14);
+}
+
+.os-icon.orange{
+  color:#ea580c;
+  background:rgba(249,115,22,.09);
+  border-color:rgba(249,115,22,.14);
+}
+
+.os-focus-display{
+  margin-top:75px;
+  font-size:76px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.075em;
+  color:#101828;
+  font-variant-numeric:tabular-nums;
+}
+
+.os-progress{
+  height:5px;
+  margin:32px 0 22px;
+  overflow:hidden;
+  border-radius:99px;
+  background:rgba(99,91,255,.10);
+}
+
+.os-progress span{
+  display:block;
+  width:0%;
+  height:100%;
+  border-radius:inherit;
+  background:linear-gradient(90deg,#635bff,#22d3ee);
+  transition:width .4s linear;
+}
+
+.os-controls{
+  display:flex;
+  gap:9px;
+}
+
+.os-primary,.os-ghost{
+  min-height:42px;
+  padding:0 15px;
+  border-radius:12px;
+  font-weight:850;
+  cursor:pointer;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+
+.os-primary{
+  color:white;
+  background:linear-gradient(135deg,#635bff,#7c5cff);
+  box-shadow:0 12px 24px rgba(99,91,255,.20);
+}
+
+.os-ghost{
+  color:#344054;
+  background:rgba(255,255,255,.7);
+  border:1px solid rgba(16,24,40,.09);
+}
+
+.os-primary:hover,.os-ghost:hover{
+  transform:translateY(-2px);
+}
+
+.grade-row{
+  display:flex;
+  align-items:flex-end;
+  gap:34px;
+  margin-top:32px;
+}
+
+.grade-row div{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+
+.grade-row strong{
+  color:#101828;
+  font-size:44px;
+  line-height:1;
+  letter-spacing:-.06em;
+}
+
+.grade-row span{
+  color:#98a2b3;
+  font:800 9px ui-monospace,SFMono-Regular,Menlo,monospace;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.os-input-row{
+  display:flex;
+  gap:8px;
+  margin-top:22px;
+}
+
+.os-input-row input{
+  width:100%;
+  min-width:0;
+  height:38px;
+  padding:0 11px;
+  border:1px solid rgba(16,24,40,.10);
+  border-radius:10px;
+  outline:none;
+  background:rgba(255,255,255,.72);
+}
+
+.os-input-row button{
+  padding:0 13px;
+  border:0;
+  border-radius:10px;
+  color:white;
+  background:#101828;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.os-link{
+  display:inline-block;
+  margin-top:16px;
+  color:#635bff;
+  font-size:11px;
+  font-weight:850;
+}
+
+.mission-number{
+  display:flex;
+  align-items:baseline;
+  gap:5px;
+  margin-top:28px;
+  color:#101828;
+}
+
+.mission-number span{
+  font-size:52px;
+  font-weight:900;
+  letter-spacing:-.07em;
+}
+
+.mission-number small{
+  color:#98a2b3;
+  font-weight:800;
+}
+
+.mission-track{
+  height:6px;
+  margin:14px 0 18px;
+  overflow:hidden;
+  border-radius:99px;
+  background:#eef0f5;
+}
+
+.mission-track span{
+  display:block;
+  width:0;
+  height:100%;
+  border-radius:inherit;
+  background:linear-gradient(90deg,#22c55e,#22d3ee);
+  transition:width .35s ease;
+}
+
+.mission-list{
+  display:grid;
+  gap:9px;
+}
+
+.mission-list label{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  color:#667085;
+  font-size:11px;
+  cursor:pointer;
+}
+
+.mission-list input{
+  accent-color:#635bff;
+}
+
+.os-command-card{
+  grid-column:2 / 4;
+  min-height:250px;
+}
+
+.os-action-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:8px;
+  margin-top:27px;
+}
+
+.os-action-grid a{
+  min-height:80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:7px;
+  padding:10px;
+  border:1px solid rgba(16,24,40,.07);
+  border-radius:15px;
+  color:#344054;
+  background:rgba(255,255,255,.54);
+  font-size:10px;
+  font-weight:850;
+  transition:transform .2s ease,border-color .2s ease,background .2s ease;
+}
+
+.os-action-grid a span{
+  color:#635bff;
+  font-size:17px;
+}
+
+.os-action-grid a:hover{
+  transform:translateY(-3px);
+  border-color:rgba(99,91,255,.22);
+  background:#fff;
+}
+
+body.dark .os-card{
+  border-color:rgba(255,255,255,.09);
+  background:linear-gradient(145deg,rgba(25,31,45,.94),rgba(18,23,34,.80));
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+
+body.dark .os-focus-card{
+  background:
+    radial-gradient(circle at 80% 10%,rgba(99,91,255,.22),transparent 35%),
+    linear-gradient(145deg,#1b2030,#131824);
+}
+
+body.dark .os-card h3,
+body.dark .os-focus-display,
+body.dark .grade-row strong,
+body.dark .mission-number{
+  color:#f8fafc;
+}
+
+body.dark .os-live,
+body.dark .os-ghost,
+body.dark .os-input-row input,
+body.dark .os-action-grid a{
+  color:#cbd5e1;
+  background:rgba(255,255,255,.05);
+  border-color:rgba(255,255,255,.09);
+}
+
+@media (max-width:980px){
+  .os-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .os-focus-card{
+    grid-row:auto;
+    min-height:380px;
+  }
+  .os-command-card{
+    grid-column:1 / -1;
+  }
+  .os-action-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media (max-width:640px){
+  .student-os{
+    margin-top:70px;
+  }
+  .os-grid{
+    grid-template-columns:1fr;
+  }
+  .os-command-card{
+    grid-column:auto;
+  }
+  .os-action-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .os-focus-display{
+    margin-top:48px;
+    font-size:58px;
+  }
+}
+
+/* Student OS extension token 001 */
+:root {
+  --os-token-001-space:2px;
+  --os-token-001-blur:9px;
+  --os-token-001-lift:3px;
+}
+
+
+/* Student OS extension token 002 */
+:root {
+  --os-token-002-space:3px;
+  --os-token-002-blur:10px;
+  --os-token-002-lift:4px;
+}
+
+
+/* Student OS extension token 003 */
+:root {
+  --os-token-003-space:4px;
+  --os-token-003-blur:11px;
+  --os-token-003-lift:5px;
+}
+
+
+/* Student OS extension token 004 */
+:root {
+  --os-token-004-space:5px;
+  --os-token-004-blur:12px;
+  --os-token-004-lift:6px;
+}
+
+
+/* Student OS extension token 005 */
+:root {
+  --os-token-005-space:6px;
+  --os-token-005-blur:13px;
+  --os-token-005-lift:7px;
+}
+
+
+/* Student OS extension token 006 */
+:root {
+  --os-token-006-space:7px;
+  --os-token-006-blur:14px;
+  --os-token-006-lift:8px;
+}
+
+
+/* Student OS extension token 007 */
+:root {
+  --os-token-007-space:8px;
+  --os-token-007-blur:15px;
+  --os-token-007-lift:2px;
+}
+
+
+/* Student OS extension token 008 */
+:root {
+  --os-token-008-space:1px;
+  --os-token-008-blur:16px;
+  --os-token-008-lift:3px;
+}
+
+
+/* Student OS extension token 009 */
+:root {
+  --os-token-009-space:2px;
+  --os-token-009-blur:8px;
+  --os-token-009-lift:4px;
+}
+
+
+/* Student OS extension token 010 */
+:root {
+  --os-token-010-space:3px;
+  --os-token-010-blur:9px;
+  --os-token-010-lift:5px;
+}
+
+
+/* Student OS extension token 011 */
+:root {
+  --os-token-011-space:4px;
+  --os-token-011-blur:10px;
+  --os-token-011-lift:6px;
+}
+
+
+/* Student OS extension token 012 */
+:root {
+  --os-token-012-space:5px;
+  --os-token-012-blur:11px;
+  --os-token-012-lift:7px;
+}
+
+
+/* Student OS extension token 013 */
+:root {
+  --os-token-013-space:6px;
+  --os-token-013-blur:12px;
+  --os-token-013-lift:8px;
+}
+
+
+/* Student OS extension token 014 */
+:root {
+  --os-token-014-space:7px;
+  --os-token-014-blur:13px;
+  --os-token-014-lift:2px;
+}
+
+
+/* Student OS extension token 015 */
+:root {
+  --os-token-015-space:8px;
+  --os-token-015-blur:14px;
+  --os-token-015-lift:3px;
+}
+
+
+/* Student OS extension token 016 */
+:root {
+  --os-token-016-space:1px;
+  --os-token-016-blur:15px;
+  --os-token-016-lift:4px;
+}
+
+
+/* Student OS extension token 017 */
+:root {
+  --os-token-017-space:2px;
+  --os-token-017-blur:16px;
+  --os-token-017-lift:5px;
+}
+
+
+/* Student OS extension token 018 */
+:root {
+  --os-token-018-space:3px;
+  --os-token-018-blur:8px;
+  --os-token-018-lift:6px;
+}
+
+
+/* Student OS extension token 019 */
+:root {
+  --os-token-019-space:4px;
+  --os-token-019-blur:9px;
+  --os-token-019-lift:7px;
+}
+
+
+/* Student OS extension token 020 */
+:root {
+  --os-token-020-space:5px;
+  --os-token-020-blur:10px;
+  --os-token-020-lift:8px;
+}
+
+
+/* Student OS extension token 021 */
+:root {
+  --os-token-021-space:6px;
+  --os-token-021-blur:11px;
+  --os-token-021-lift:2px;
+}
+
+
+/* Student OS extension token 022 */
+:root {
+  --os-token-022-space:7px;
+  --os-token-022-blur:12px;
+  --os-token-022-lift:3px;
+}
+
+
+/* Student OS extension token 023 */
+:root {
+  --os-token-023-space:8px;
+  --os-token-023-blur:13px;
+  --os-token-023-lift:4px;
+}
+
+
+/* Student OS extension token 024 */
+:root {
+  --os-token-024-space:1px;
+  --os-token-024-blur:14px;
+  --os-token-024-lift:5px;
+}
+
+
+/* Student OS extension token 025 */
+:root {
+  --os-token-025-space:2px;
+  --os-token-025-blur:15px;
+  --os-token-025-lift:6px;
+}
+
+
+/* Student OS extension token 026 */
+:root {
+  --os-token-026-space:3px;
+  --os-token-026-blur:16px;
+  --os-token-026-lift:7px;
+}
+
+
+/* Student OS extension token 027 */
+:root {
+  --os-token-027-space:4px;
+  --os-token-027-blur:8px;
+  --os-token-027-lift:8px;
+}
+
+
+/* Student OS extension token 028 */
+:root {
+  --os-token-028-space:5px;
+  --os-token-028-blur:9px;
+  --os-token-028-lift:2px;
+}
+
+
+/* Student OS extension token 029 */
+:root {
+  --os-token-029-space:6px;
+  --os-token-029-blur:10px;
+  --os-token-029-lift:3px;
+}
+
+
+/* Student OS extension token 030 */
+:root {
+  --os-token-030-space:7px;
+  --os-token-030-blur:11px;
+  --os-token-030-lift:4px;
+}
+
+
+/* Student OS extension token 031 */
+:root {
+  --os-token-031-space:8px;
+  --os-token-031-blur:12px;
+  --os-token-031-lift:5px;
+}
+
+
+/* Student OS extension token 032 */
+:root {
+  --os-token-032-space:1px;
+  --os-token-032-blur:13px;
+  --os-token-032-lift:6px;
+}
+
+
+/* Student OS extension token 033 */
+:root {
+  --os-token-033-space:2px;
+  --os-token-033-blur:14px;
+  --os-token-033-lift:7px;
+}
+
+
+/* Student OS extension token 034 */
+:root {
+  --os-token-034-space:3px;
+  --os-token-034-blur:15px;
+  --os-token-034-lift:8px;
+}
+
+
+/* Student OS extension token 035 */
+:root {
+  --os-token-035-space:4px;
+  --os-token-035-blur:16px;
+  --os-token-035-lift:2px;
+}
+
+
+/* Student OS extension token 036 */
+:root {
+  --os-token-036-space:5px;
+  --os-token-036-blur:8px;
+  --os-token-036-lift:3px;
+}
+
+
+/* Student OS extension token 037 */
+:root {
+  --os-token-037-space:6px;
+  --os-token-037-blur:9px;
+  --os-token-037-lift:4px;
+}
+
+
+/* Student OS extension token 038 */
+:root {
+  --os-token-038-space:7px;
+  --os-token-038-blur:10px;
+  --os-token-038-lift:5px;
+}
+
+
+/* Student OS extension token 039 */
+:root {
+  --os-token-039-space:8px;
+  --os-token-039-blur:11px;
+  --os-token-039-lift:6px;
+}
+
+
+/* Student OS extension token 040 */
+:root {
+  --os-token-040-space:1px;
+  --os-token-040-blur:12px;
+  --os-token-040-lift:7px;
+}
+
+
+/* Student OS extension token 041 */
+:root {
+  --os-token-041-space:2px;
+  --os-token-041-blur:13px;
+  --os-token-041-lift:8px;
+}
+
+
+/* Student OS extension token 042 */
+:root {
+  --os-token-042-space:3px;
+  --os-token-042-blur:14px;
+  --os-token-042-lift:2px;
+}
+
+
+/* Student OS extension token 043 */
+:root {
+  --os-token-043-space:4px;
+  --os-token-043-blur:15px;
+  --os-token-043-lift:3px;
+}
+
+
+/* Student OS extension token 044 */
+:root {
+  --os-token-044-space:5px;
+  --os-token-044-blur:16px;
+  --os-token-044-lift:4px;
+}
+
+
+/* Student OS extension token 045 */
+:root {
+  --os-token-045-space:6px;
+  --os-token-045-blur:8px;
+  --os-token-045-lift:5px;
+}
+
+
+/* Student OS extension token 046 */
+:root {
+  --os-token-046-space:7px;
+  --os-token-046-blur:9px;
+  --os-token-046-lift:6px;
+}
+
+
+/* Student OS extension token 047 */
+:root {
+  --os-token-047-space:8px;
+  --os-token-047-blur:10px;
+  --os-token-047-lift:7px;
+}
+
+
+/* Student OS extension token 048 */
+:root {
+  --os-token-048-space:1px;
+  --os-token-048-blur:11px;
+  --os-token-048-lift:8px;
+}
+
+
+/* Student OS extension token 049 */
+:root {
+  --os-token-049-space:2px;
+  --os-token-049-blur:12px;
+  --os-token-049-lift:2px;
+}
+
+
+/* Student OS extension token 050 */
+:root {
+  --os-token-050-space:3px;
+  --os-token-050-blur:13px;
+  --os-token-050-lift:3px;
+}
+
+
+/* Student OS extension token 051 */
+:root {
+  --os-token-051-space:4px;
+  --os-token-051-blur:14px;
+  --os-token-051-lift:4px;
+}
+
+
+/* Student OS extension token 052 */
+:root {
+  --os-token-052-space:5px;
+  --os-token-052-blur:15px;
+  --os-token-052-lift:5px;
+}
+
+
+/* Student OS extension token 053 */
+:root {
+  --os-token-053-space:6px;
+  --os-token-053-blur:16px;
+  --os-token-053-lift:6px;
+}
+
+
+/* Student OS extension token 054 */
+:root {
+  --os-token-054-space:7px;
+  --os-token-054-blur:8px;
+  --os-token-054-lift:7px;
+}
+
+
+/* Student OS extension token 055 */
+:root {
+  --os-token-055-space:8px;
+  --os-token-055-blur:9px;
+  --os-token-055-lift:8px;
+}
+
+
+/* Student OS extension token 056 */
+:root {
+  --os-token-056-space:1px;
+  --os-token-056-blur:10px;
+  --os-token-056-lift:2px;
+}
+
+
+/* Student OS extension token 057 */
+:root {
+  --os-token-057-space:2px;
+  --os-token-057-blur:11px;
+  --os-token-057-lift:3px;
+}
+
+
+/* Student OS extension token 058 */
+:root {
+  --os-token-058-space:3px;
+  --os-token-058-blur:12px;
+  --os-token-058-lift:4px;
+}
+
+
+/* Student OS extension token 059 */
+:root {
+  --os-token-059-space:4px;
+  --os-token-059-blur:13px;
+  --os-token-059-lift:5px;
+}
+
+
+/* Student OS extension token 060 */
+:root {
+  --os-token-060-space:5px;
+  --os-token-060-blur:14px;
+  --os-token-060-lift:6px;
+}
+
+
+/* Student OS extension token 061 */
+:root {
+  --os-token-061-space:6px;
+  --os-token-061-blur:15px;
+  --os-token-061-lift:7px;
+}
+
+
+/* Student OS extension token 062 */
+:root {
+  --os-token-062-space:7px;
+  --os-token-062-blur:16px;
+  --os-token-062-lift:8px;
+}
+
+
+/* Student OS extension token 063 */
+:root {
+  --os-token-063-space:8px;
+  --os-token-063-blur:8px;
+  --os-token-063-lift:2px;
+}
+
+
+/* Student OS extension token 064 */
+:root {
+  --os-token-064-space:1px;
+  --os-token-064-blur:9px;
+  --os-token-064-lift:3px;
+}
+
+
+/* Student OS extension token 065 */
+:root {
+  --os-token-065-space:2px;
+  --os-token-065-blur:10px;
+  --os-token-065-lift:4px;
+}
+
+
+/* Student OS extension token 066 */
+:root {
+  --os-token-066-space:3px;
+  --os-token-066-blur:11px;
+  --os-token-066-lift:5px;
+}
+
+
+/* Student OS extension token 067 */
+:root {
+  --os-token-067-space:4px;
+  --os-token-067-blur:12px;
+  --os-token-067-lift:6px;
+}
+
+
+/* Student OS extension token 068 */
+:root {
+  --os-token-068-space:5px;
+  --os-token-068-blur:13px;
+  --os-token-068-lift:7px;
+}
+
+
+/* Student OS extension token 069 */
+:root {
+  --os-token-069-space:6px;
+  --os-token-069-blur:14px;
+  --os-token-069-lift:8px;
+}
+
+
+/* Student OS extension token 070 */
+:root {
+  --os-token-070-space:7px;
+  --os-token-070-blur:15px;
+  --os-token-070-lift:2px;
+}
+
+
+/* Student OS extension token 071 */
+:root {
+  --os-token-071-space:8px;
+  --os-token-071-blur:16px;
+  --os-token-071-lift:3px;
+}
+
+
+/* Student OS extension token 072 */
+:root {
+  --os-token-072-space:1px;
+  --os-token-072-blur:8px;
+  --os-token-072-lift:4px;
+}
+
+
+/* Student OS extension token 073 */
+:root {
+  --os-token-073-space:2px;
+  --os-token-073-blur:9px;
+  --os-token-073-lift:5px;
+}
+
+
+/* Student OS extension token 074 */
+:root {
+  --os-token-074-space:3px;
+  --os-token-074-blur:10px;
+  --os-token-074-lift:6px;
+}
+
+
+/* Student OS extension token 075 */
+:root {
+  --os-token-075-space:4px;
+  --os-token-075-blur:11px;
+  --os-token-075-lift:7px;
+}
+
+
+/* Student OS extension token 076 */
+:root {
+  --os-token-076-space:5px;
+  --os-token-076-blur:12px;
+  --os-token-076-lift:8px;
+}
+
+
+/* Student OS extension token 077 */
+:root {
+  --os-token-077-space:6px;
+  --os-token-077-blur:13px;
+  --os-token-077-lift:2px;
+}
+
+
+/* Student OS extension token 078 */
+:root {
+  --os-token-078-space:7px;
+  --os-token-078-blur:14px;
+  --os-token-078-lift:3px;
+}
+
+
+/* Student OS extension token 079 */
+:root {
+  --os-token-079-space:8px;
+  --os-token-079-blur:15px;
+  --os-token-079-lift:4px;
+}
+
+
+/* Student OS extension token 080 */
+:root {
+  --os-token-080-space:1px;
+  --os-token-080-blur:16px;
+  --os-token-080-lift:5px;
+}
+
+
+/* Student OS extension token 081 */
+:root {
+  --os-token-081-space:2px;
+  --os-token-081-blur:8px;
+  --os-token-081-lift:6px;
+}
+
+
+/* Student OS extension token 082 */
+:root {
+  --os-token-082-space:3px;
+  --os-token-082-blur:9px;
+  --os-token-082-lift:7px;
+}
+
+
+/* Student OS extension token 083 */
+:root {
+  --os-token-083-space:4px;
+  --os-token-083-blur:10px;
+  --os-token-083-lift:8px;
+}
+
+
+/* Student OS extension token 084 */
+:root {
+  --os-token-084-space:5px;
+  --os-token-084-blur:11px;
+  --os-token-084-lift:2px;
+}
+
+
+/* Student OS extension token 085 */
+:root {
+  --os-token-085-space:6px;
+  --os-token-085-blur:12px;
+  --os-token-085-lift:3px;
+}
+
+
+/* Student OS extension token 086 */
+:root {
+  --os-token-086-space:7px;
+  --os-token-086-blur:13px;
+  --os-token-086-lift:4px;
+}
+
+
+/* Student OS extension token 087 */
+:root {
+  --os-token-087-space:8px;
+  --os-token-087-blur:14px;
+  --os-token-087-lift:5px;
+}
+
+
+/* Student OS extension token 088 */
+:root {
+  --os-token-088-space:1px;
+  --os-token-088-blur:15px;
+  --os-token-088-lift:6px;
+}
+
+
+/* Student OS extension token 089 */
+:root {
+  --os-token-089-space:2px;
+  --os-token-089-blur:16px;
+  --os-token-089-lift:7px;
+}
+
+
+/* Student OS extension token 090 */
+:root {
+  --os-token-090-space:3px;
+  --os-token-090-blur:8px;
+  --os-token-090-lift:8px;
+}
+
+
+/* Student OS extension token 091 */
+:root {
+  --os-token-091-space:4px;
+  --os-token-091-blur:9px;
+  --os-token-091-lift:2px;
+}
+
+
+/* Student OS extension token 092 */
+:root {
+  --os-token-092-space:5px;
+  --os-token-092-blur:10px;
+  --os-token-092-lift:3px;
+}
+
+
+/* Student OS extension token 093 */
+:root {
+  --os-token-093-space:6px;
+  --os-token-093-blur:11px;
+  --os-token-093-lift:4px;
+}
+
+
+/* Student OS extension token 094 */
+:root {
+  --os-token-094-space:7px;
+  --os-token-094-blur:12px;
+  --os-token-094-lift:5px;
+}
+
+
+/* Student OS extension token 095 */
+:root {
+  --os-token-095-space:8px;
+  --os-token-095-blur:13px;
+  --os-token-095-lift:6px;
+}
+
+
+/* Student OS extension token 096 */
+:root {
+  --os-token-096-space:1px;
+  --os-token-096-blur:14px;
+  --os-token-096-lift:7px;
+}
+
+
+/* Student OS extension token 097 */
+:root {
+  --os-token-097-space:2px;
+  --os-token-097-blur:15px;
+  --os-token-097-lift:8px;
+}
+
+
+/* Student OS extension token 098 */
+:root {
+  --os-token-098-space:3px;
+  --os-token-098-blur:16px;
+  --os-token-098-lift:2px;
+}
+
+
+/* Student OS extension token 099 */
+:root {
+  --os-token-099-space:4px;
+  --os-token-099-blur:8px;
+  --os-token-099-lift:3px;
+}
+
+
+/* Student OS extension token 100 */
+:root {
+  --os-token-100-space:5px;
+  --os-token-100-blur:9px;
+  --os-token-100-lift:4px;
+}
+
+
+/* Student OS extension token 101 */
+:root {
+  --os-token-101-space:6px;
+  --os-token-101-blur:10px;
+  --os-token-101-lift:5px;
+}
+
+
+/* Student OS extension token 102 */
+:root {
+  --os-token-102-space:7px;
+  --os-token-102-blur:11px;
+  --os-token-102-lift:6px;
+}
+
+
+/* Student OS extension token 103 */
+:root {
+  --os-token-103-space:8px;
+  --os-token-103-blur:12px;
+  --os-token-103-lift:7px;
+}
+
+
+/* Student OS extension token 104 */
+:root {
+  --os-token-104-space:1px;
+  --os-token-104-blur:13px;
+  --os-token-104-lift:8px;
+}
+
+
+/* Student OS extension token 105 */
+:root {
+  --os-token-105-space:2px;
+  --os-token-105-blur:14px;
+  --os-token-105-lift:2px;
+}
+
+
+/* Student OS extension token 106 */
+:root {
+  --os-token-106-space:3px;
+  --os-token-106-blur:15px;
+  --os-token-106-lift:3px;
+}
+
+
+/* Student OS extension token 107 */
+:root {
+  --os-token-107-space:4px;
+  --os-token-107-blur:16px;
+  --os-token-107-lift:4px;
+}
+
+
+/* Student OS extension token 108 */
+:root {
+  --os-token-108-space:5px;
+  --os-token-108-blur:8px;
+  --os-token-108-lift:5px;
+}
+
+
+/* Student OS extension token 109 */
+:root {
+  --os-token-109-space:6px;
+  --os-token-109-blur:9px;
+  --os-token-109-lift:6px;
+}
+
+
+/* Student OS extension token 110 */
+:root {
+  --os-token-110-space:7px;
+  --os-token-110-blur:10px;
+  --os-token-110-lift:7px;
+}
+
+
+/* Student OS extension token 111 */
+:root {
+  --os-token-111-space:8px;
+  --os-token-111-blur:11px;
+  --os-token-111-lift:8px;
+}
+
+
+/* Student OS extension token 112 */
+:root {
+  --os-token-112-space:1px;
+  --os-token-112-blur:12px;
+  --os-token-112-lift:2px;
+}
+
+
+/* Student OS extension token 113 */
+:root {
+  --os-token-113-space:2px;
+  --os-token-113-blur:13px;
+  --os-token-113-lift:3px;
+}
+
+
+/* Student OS extension token 114 */
+:root {
+  --os-token-114-space:3px;
+  --os-token-114-blur:14px;
+  --os-token-114-lift:4px;
+}
+
+
+/* Student OS extension token 115 */
+:root {
+  --os-token-115-space:4px;
+  --os-token-115-blur:15px;
+  --os-token-115-lift:5px;
+}
+
+
+/* Student OS extension token 116 */
+:root {
+  --os-token-116-space:5px;
+  --os-token-116-blur:16px;
+  --os-token-116-lift:6px;
+}
+
+
+/* Student OS extension token 117 */
+:root {
+  --os-token-117-space:6px;
+  --os-token-117-blur:8px;
+  --os-token-117-lift:7px;
+}
+
+
+/* Student OS extension token 118 */
+:root {
+  --os-token-118-space:7px;
+  --os-token-118-blur:9px;
+  --os-token-118-lift:8px;
+}
+
+
+/* Student OS extension token 119 */
+:root {
+  --os-token-119-space:8px;
+  --os-token-119-blur:10px;
+  --os-token-119-lift:2px;
+}
+
+
+/* Student OS extension token 120 */
+:root {
+  --os-token-120-space:1px;
+  --os-token-120-blur:11px;
+  --os-token-120-lift:3px;
+}
+
+
+/* Student OS extension token 121 */
+:root {
+  --os-token-121-space:2px;
+  --os-token-121-blur:12px;
+  --os-token-121-lift:4px;
+}
+
+
+/* Student OS extension token 122 */
+:root {
+  --os-token-122-space:3px;
+  --os-token-122-blur:13px;
+  --os-token-122-lift:5px;
+}
+
+
+/* Student OS extension token 123 */
+:root {
+  --os-token-123-space:4px;
+  --os-token-123-blur:14px;
+  --os-token-123-lift:6px;
+}
+
+
+/* Student OS extension token 124 */
+:root {
+  --os-token-124-space:5px;
+  --os-token-124-blur:15px;
+  --os-token-124-lift:7px;
+}
+
+
+/* Student OS extension token 125 */
+:root {
+  --os-token-125-space:6px;
+  --os-token-125-blur:16px;
+  --os-token-125-lift:8px;
+}
+
+
+/* Student OS extension token 126 */
+:root {
+  --os-token-126-space:7px;
+  --os-token-126-blur:8px;
+  --os-token-126-lift:2px;
+}
+
+
+/* Student OS extension token 127 */
+:root {
+  --os-token-127-space:8px;
+  --os-token-127-blur:9px;
+  --os-token-127-lift:3px;
+}
+
+
+/* Student OS extension token 128 */
+:root {
+  --os-token-128-space:1px;
+  --os-token-128-blur:10px;
+  --os-token-128-lift:4px;
+}
+
+
+/* Student OS extension token 129 */
+:root {
+  --os-token-129-space:2px;
+  --os-token-129-blur:11px;
+  --os-token-129-lift:5px;
+}
+
+
+/* Student OS extension token 130 */
+:root {
+  --os-token-130-space:3px;
+  --os-token-130-blur:12px;
+  --os-token-130-lift:6px;
+}
+
+
+/* Student OS extension token 131 */
+:root {
+  --os-token-131-space:4px;
+  --os-token-131-blur:13px;
+  --os-token-131-lift:7px;
+}
+
+
+/* Student OS extension token 132 */
+:root {
+  --os-token-132-space:5px;
+  --os-token-132-blur:14px;
+  --os-token-132-lift:8px;
+}
+
+
+/* Student OS extension token 133 */
+:root {
+  --os-token-133-space:6px;
+  --os-token-133-blur:15px;
+  --os-token-133-lift:2px;
+}
+
+
+/* Student OS extension token 134 */
+:root {
+  --os-token-134-space:7px;
+  --os-token-134-blur:16px;
+  --os-token-134-lift:3px;
+}
+
+
+/* Student OS extension token 135 */
+:root {
+  --os-token-135-space:8px;
+  --os-token-135-blur:8px;
+  --os-token-135-lift:4px;
+}
+
+
+/* Student OS extension token 136 */
+:root {
+  --os-token-136-space:1px;
+  --os-token-136-blur:9px;
+  --os-token-136-lift:5px;
+}
+
+
+/* Student OS extension token 137 */
+:root {
+  --os-token-137-space:2px;
+  --os-token-137-blur:10px;
+  --os-token-137-lift:6px;
+}
+
+
+/* Student OS extension token 138 */
+:root {
+  --os-token-138-space:3px;
+  --os-token-138-blur:11px;
+  --os-token-138-lift:7px;
+}
+
+
+/* Student OS extension token 139 */
+:root {
+  --os-token-139-space:4px;
+  --os-token-139-blur:12px;
+  --os-token-139-lift:8px;
+}
+
+
+/* Student OS extension token 140 */
+:root {
+  --os-token-140-space:5px;
+  --os-token-140-blur:13px;
+  --os-token-140-lift:2px;
+}
+
+
+/* Student OS extension token 141 */
+:root {
+  --os-token-141-space:6px;
+  --os-token-141-blur:14px;
+  --os-token-141-lift:3px;
+}
+
+
+/* Student OS extension token 142 */
+:root {
+  --os-token-142-space:7px;
+  --os-token-142-blur:15px;
+  --os-token-142-lift:4px;
+}
+
+
+/* Student OS extension token 143 */
+:root {
+  --os-token-143-space:8px;
+  --os-token-143-blur:16px;
+  --os-token-143-lift:5px;
+}
+
+
+/* Student OS extension token 144 */
+:root {
+  --os-token-144-space:1px;
+  --os-token-144-blur:8px;
+  --os-token-144-lift:6px;
+}
+
+
+/* Student OS extension token 145 */
+:root {
+  --os-token-145-space:2px;
+  --os-token-145-blur:9px;
+  --os-token-145-lift:7px;
+}
+
+
+/* Student OS extension token 146 */
+:root {
+  --os-token-146-space:3px;
+  --os-token-146-blur:10px;
+  --os-token-146-lift:8px;
+}
+
+
+/* Student OS extension token 147 */
+:root {
+  --os-token-147-space:4px;
+  --os-token-147-blur:11px;
+  --os-token-147-lift:2px;
+}
+
+
+/* Student OS extension token 148 */
+:root {
+  --os-token-148-space:5px;
+  --os-token-148-blur:12px;
+  --os-token-148-lift:3px;
+}
+
+
+/* Student OS extension token 149 */
+:root {
+  --os-token-149-space:6px;
+  --os-token-149-blur:13px;
+  --os-token-149-lift:4px;
+}
+
+
+/* Student OS extension token 150 */
+:root {
+  --os-token-150-space:7px;
+  --os-token-150-blur:14px;
+  --os-token-150-lift:5px;
+}
