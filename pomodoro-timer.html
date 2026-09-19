@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pomodoro Timer | CampusKit</title>
+<meta name="description" content="Free 25-minute Pomodoro timer for students and focused study sessions.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a>
+<a href="cgpa-calculator.html">CGPA</a>
+<a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a>
+<a href="placement-guide.html">Placements</a>
+</nav>
+</header>
+<main><section class="hero"><div class="kicker">PRODUCTIVITY</div><h1>Pomodoro Timer</h1><p>Use 25-minute focus sessions to make study time more structured.</p></section>
+<section class="tool"><div id="clock" style="font-size:60px;font-weight:900;text-align:center">25:00</div><div style="text-align:center"><button onclick="start()">Start</button><button onclick="reset()">Reset</button></div></section>
+<section class="content"><h2>How it works</h2><ol><li>Choose one task.</li><li>Focus for 25 minutes.</li><li>Take a short break.</li><li>Repeat.</li></ol></section></main>
+<script>let s=1500,i;function show(){document.getElementById("clock").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}function start(){clearInterval(i);i=setInterval(()=>{if(s<=0){clearInterval(i);alert("Focus session complete!");return}s--;show()},1000)}function reset(){clearInterval(i);s=1500;show()}</script>
+<footer>CampusKit — Free student tools and resources.</footer>
+</body></html>

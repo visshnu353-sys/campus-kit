@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPA Calculator | CampusKit</title>
+<meta name="description" content="Free GPA calculator using course credits and grade points.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a>
+<a href="cgpa-calculator.html">CGPA</a>
+<a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a>
+<a href="placement-guide.html">Placements</a>
+</nav>
+</header>
+<main><section class="hero"><div class="kicker">ACADEMICS</div><h1>GPA Calculator</h1><p>Calculate a weighted GPA from course credits and grade points.</p></section>
+<section class="tool"><div id="rows"></div><button onclick="add()">+ Add course</button><button onclick="calc()">Calculate GPA</button><div id="out" class="result"></div></section>
+<section class="content"><h2>GPA and CGPA</h2><p>GPA commonly describes performance for a term, while CGPA generally represents cumulative performance. Check your institution's official grading rules for final academic records.</p></section></main>
+<script>function add(){let d=document.createElement("div");d.innerHTML="<input type=number placeholder=Credits><input type=number min=0 max=10 step=.1 placeholder=Grade>";document.getElementById("rows").appendChild(d)}for(let i=0;i<4;i++)add();function calc(){let c=0,p=0;document.querySelectorAll("#rows div").forEach(r=>{let a=+r.children[0].value||0,b=+r.children[1].value||0;c+=a;p+=a*b});document.getElementById("out").textContent=c?(p/c).toFixed(2):"Enter courses"}</script>
+<footer>CampusKit — Free student tools and resources.</footer>
+</body></html>

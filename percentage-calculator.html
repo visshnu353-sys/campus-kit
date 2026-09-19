@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Percentage Calculator | CampusKit</title>
+<meta name="description" content="Free percentage calculator for student marks and exam scores.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a>
+<a href="cgpa-calculator.html">CGPA</a>
+<a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a>
+<a href="placement-guide.html">Placements</a>
+</nav>
+</header>
+<main><section class="hero"><div class="kicker">ACADEMICS</div><h1>Percentage Calculator</h1><p>Calculate your marks percentage instantly.</p></section>
+<section class="tool"><input id="a" type=number placeholder="Marks obtained"><input id="b" type=number placeholder="Total marks"><button onclick="go()">Calculate Percentage</button><div id="o" class="result"></div></section>
+<section class="content"><h2>Percentage formula</h2><p>Percentage = (Marks Obtained ÷ Total Marks) × 100.</p></section></main>
+<script>function go(){let a=+document.getElementById("a").value,b=+document.getElementById("b").value;document.getElementById("o").textContent=b>0?((a/b)*100).toFixed(2)+"%":"Enter valid marks"}</script>
+<footer>CampusKit — Free student tools and resources.</footer>
+</body></html>
