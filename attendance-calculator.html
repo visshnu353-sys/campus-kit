@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attendance Calculator | CampusKit</title><meta name="description" content="Advanced attendance calculator for students with target planning, what-if analysis and subject tracking.">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="tools-premium.css">
+
+<style>
+.feature-wrap{max-width:1240px;margin:0 auto;padding:60px 26px 90px}
+.feature-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;padding:42px 0 35px}
+.feature-hero h1{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.065em;margin:8px 0 20px}
+.feature-hero p{max-width:680px;color:#9da5bb;font-size:17px;line-height:1.75}
+.feature-eyebrow{font-size:11px;letter-spacing:.25em;font-weight:900;color:#a78bfa;text-transform:uppercase}
+.feature-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#8b5cf6;margin-right:8px;box-shadow:0 0 14px #8b5cf6}
+.feature-orb{min-height:310px;border-radius:50%;border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;background:radial-gradient(circle,rgba(139,92,246,.2),transparent 62%);box-shadow:inset 0 0 70px rgba(76,201,240,.05);position:relative}
+.feature-orb:before,.feature-orb:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(139,92,246,.15)}
+.feature-orb:before{inset:30px}.feature-orb:after{inset:65px;border-color:rgba(76,201,240,.12)}
+.orb-value{position:relative;z-index:2;font-size:64px;font-weight:900;letter-spacing:-.07em;text-align:center}
+.orb-label{position:relative;z-index:2;color:#9da5bb;text-transform:uppercase;letter-spacing:.14em;font-size:10px;text-align:center}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature-panel{background:linear-gradient(145deg,rgba(22,26,43,.9),rgba(9,12,22,.78));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:25px;box-shadow:0 24px 80px rgba(0,0,0,.28);backdrop-filter:blur(20px)}
+.feature-panel h2,.feature-panel h3{margin-top:0;letter-spacing:-.035em}
+.feature-panel p{color:#9da5bb;line-height:1.7}
+.feature-label{display:block;font-size:11px;font-weight:800;color:#cbd0df;margin-bottom:7px;text-transform:uppercase;letter-spacing:.08em}
+.feature-input,.feature-select,.feature-textarea{width:100%;box-sizing:border-box;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:13px;color:#f5f7ff;padding:13px 14px;outline:none}
+.feature-input:focus,.feature-select:focus,.feature-textarea:focus{border-color:#8b5cf6;box-shadow:0 0 0 4px rgba(139,92,246,.1)}
+.feature-form{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.feature-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}
+.feature-btn{border:0;border-radius:13px;padding:12px 16px;font-weight:850;color:#fff;background:linear-gradient(135deg,#7657ff,#4c8dff);cursor:pointer}
+.feature-btn.secondary{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.feature-btn.danger{background:rgba(255,107,129,.1);color:#ff9aad;border:1px solid rgba(255,107,129,.2)}
+.feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.feature-stat{padding:17px;border-radius:17px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
+.feature-stat b{font-size:25px;display:block}.feature-stat span{font-size:10px;color:#8992aa;text-transform:uppercase;letter-spacing:.1em}
+.feature-section-title{display:flex;justify-content:space-between;align-items:end;margin:55px 0 17px}
+.feature-section-title h2{margin:0;font-size:30px;letter-spacing:-.04em}.feature-section-title span{color:#7f889e;font-size:12px}
+.feature-progress{height:9px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden;margin:15px 0}
+.feature-progress i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#4cc9f0);transition:.35s}
+.feature-badge{display:inline-flex;padding:6px 9px;border-radius:99px;background:rgba(139,92,246,.13);border:1px solid rgba(139,92,246,.2);color:#c0b0ff;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.feature-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}.feature-list li{color:#d8dceb;line-height:1.5}.feature-list li:before{content:"✓";color:#31d69b;font-weight:900;margin-right:9px}
+.feature-table{width:100%;border-collapse:collapse}.feature-table th,.feature-table td{text-align:left;padding:12px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}.feature-table th{color:#aeb5c9}.feature-table td{color:#dce0eb}
+.feature-note{padding:19px;border-radius:18px;border:1px solid rgba(76,201,240,.17);background:linear-gradient(135deg,rgba(76,201,240,.06),rgba(139,92,246,.07));color:#aeb5c9;line-height:1.65}
+.feature-empty{padding:30px;text-align:center;color:#7f889e;border:1px dashed rgba(255,255,255,.12);border-radius:18px}
+.feature-footer{margin-top:70px;border-top:1px solid rgba(255,255,255,.08);padding-top:24px;text-align:center;color:#687187;font-size:12px}
+@media(max-width:850px){.feature-hero{grid-template-columns:1fr}.feature-grid,.feature-grid-2{grid-template-columns:1fr}.feature-form{grid-template-columns:1fr}.feature-stats{grid-template-columns:1fr}.feature-wrap{padding:38px 18px 70px}.feature-hero h1{font-size:53px}.feature-orb{min-height:230px}}
+@media print{.nav,.feature-actions,.feature-orb,.feature-section-title{display:none!important}body{background:#fff!important;color:#111!important}.feature-panel{box-shadow:none;border:1px solid #ddd;color:#111}.feature-panel p,.feature-label{color:#444}}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-7TMDTHJH98');
+</script></head>
+<body class="ck-advanced-page"><header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a><a href="cgpa-calculator.html">CGPA</a>
+<a href="gpa-calculator.html">GPA</a><a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a><a href="placement-guide.html">Placements</a>
+<a href="student-project-ideas.html">Projects</a><a href="study-planner.html">Study Planner</a>
+</nav></header><main class="feature-wrap">
+<section class="feature-hero"><div><div class="feature-eyebrow">ATTENDANCE COMMAND CENTER</div>
+<h1>Know where you <span class="ck-gradient">stand.</span></h1>
+<p>Track attendance by subject, calculate your current percentage, estimate your attendance buffer and plan the classes you need to attend before an exam.</p></div>
+<div class="feature-orb"><div><div class="orb-value" id="overall">0%</div><div class="orb-label">overall attendance</div></div></div></section>
+
+<div class="feature-grid-2">
+<section class="feature-panel"><h2>Add subject</h2>
+<div class="feature-form">
+<div><label class="feature-label">Subject</label><input id="sub" class="feature-input" placeholder="Computer Networks"></div>
+<div><label class="feature-label">Required %</label><input id="req" class="feature-input" type="number" value="75"></div>
+<div><label class="feature-label">Attended</label><input id="att" class="feature-input" type="number" min="0" placeholder="32"></div>
+<div><label class="feature-label">Conducted</label><input id="cond" class="feature-input" type="number" min="1" placeholder="40"></div>
+</div><div class="feature-actions"><button class="feature-btn" onclick="addSubject()">Add subject</button><button class="feature-btn secondary" onclick="sampleData()">Load sample</button></div></section>
+
+<section class="feature-panel"><h2>Overall dashboard</h2>
+<div class="feature-stats"><div class="feature-stat"><b id="subjects">0</b><span>Subjects</span></div><div class="feature-stat"><b id="attendedTotal">0</b><span>Attended</span></div><div class="feature-stat"><b id="conductedTotal">0</b><span>Conducted</span></div></div>
+<div class="feature-progress"><i id="overallBar"></i></div><p id="overallMsg">Add subjects to begin.</p></section>
+</div>
+
+<div class="feature-section-title"><h2>Subject dashboard</h2><span>Saved in your browser</span></div>
+<div id="subjectList" class="feature-grid"></div>
+
+<div class="feature-section-title"><h2>What-if planner</h2><span>Plan future classes</span></div>
+<section class="feature-panel"><div class="feature-form">
+<div><label class="feature-label">Current attended</label><input id="wa" class="feature-input" type="number"></div>
+<div><label class="feature-label">Current conducted</label><input id="wc" class="feature-input" type="number"></div>
+<div><label class="feature-label">Future classes to attend</label><input id="wf" class="feature-input" type="number" value="5"></div>
+<div><label class="feature-label">Target %</label><input id="wt" class="feature-input" type="number" value="75"></div>
+</div><div class="feature-actions"><button class="feature-btn" onclick="whatIf()">Run simulation</button></div><div class="feature-note" id="whatResult" style="margin-top:17px">Enter values to simulate your future attendance.</div></section>
+
+<div class="feature-section-title"><h2>How attendance is calculated</h2><span>Formula</span></div>
+<div class="feature-panel"><p><strong>Attendance % = (Classes Attended ÷ Classes Conducted) × 100</strong></p>
+<ul class="feature-list"><li>Keep a buffer above your university's minimum requirement.</li><li>Use the what-if planner before deciding whether to miss a class.</li><li>Requirements can differ by institution and course, so verify your official rules.</li></ul></div>
+
+<footer class="feature-footer">CampusKit — Free student tools and resources.</footer></main>
+<script>
+let subjects=JSON.parse(localStorage.getItem('ck-attendance')||'[]');
+function persist(){localStorage.setItem('ck-attendance',JSON.stringify(subjects));render();}
+function addSubject(){let name=sub.value.trim(),a=+att.value,c=+cond.value,r=+req.value;if(!name||c<=0||a<0||a>c||r<0||r>100)return alert('Enter valid subject details.');subjects.push({name,a,c,r});sub.value='';att.value='';cond.value='';persist();}
+function removeSubject(i){subjects.splice(i,1);persist();}
+function sampleData(){subjects=[{name:'Computer Networks',a:34,c:40,r:75},{name:'DBMS',a:31,c:38,r:75},{name:'Operating Systems',a:27,c:35,r:75}];persist();}
+function render(){let A=subjects.reduce((s,x)=>s+x.a,0),C=subjects.reduce((s,x)=>s+x.c,0),p=C?A/C*100:0;overall.textContent=p.toFixed(1)+'%';overallBar.style.width=Math.min(p,100)+'%';subjectsEl=document.getElementById('subjects');subjectsEl.textContent=subjects.length;attendedTotal.textContent=A;conductedTotal.textContent=C;overallMsg.textContent=subjects.length?(p>=75?'Your combined attendance is at or above 75%.':'Your combined attendance is below 75%.'):'Add subjects to begin.';
+subjectList.innerHTML=subjects.length?subjects.map((x,i)=>{let q=x.a/x.c*100,need=q<x.r?Math.ceil((x.r*x.c-x.a)/(1-x.r/100)):0;return `<article class="feature-panel"><span class="feature-badge">${q>=x.r?'On track':'Needs attention'}</span><h3 style="margin-top:14px">${x.name}</h3><div class="feature-stats"><div class="feature-stat"><b>${q.toFixed(1)}%</b><span>Current</span></div><div class="feature-stat"><b>${x.a}/${x.c}</b><span>Classes</span></div><div class="feature-stat"><b>${need}</b><span>Needed</span></div></div><div class="feature-progress"><i style="width:${Math.min(q,100)}%"></i></div><p>Required: ${x.r}%. ${need?`Attend about ${need} consecutive classes to reach the target.`:'You currently meet the target.'}</p><button class="feature-btn danger" onclick="removeSubject(${i})">Remove</button></article>`}).join(''):'<div class="feature-empty">No subjects yet. Add your first subject above.</div>'; }
+function whatIf(){let a=+wa.value,c=+wc.value,f=+wf.value,t=+wt.value;if(c<=0||a<0||a>c||f<0||t<0||t>100)return alert('Enter valid values.');let p=(a+f)/(c+f)*100;whatResult.textContent=`After attending ${f} more classes, your projected attendance would be ${p.toFixed(2)}%. ${p>=t?'That reaches your target.':'That is still below your target.'}`;}
+render();
+</script></body></html>

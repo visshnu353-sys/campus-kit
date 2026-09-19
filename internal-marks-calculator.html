@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Internal Marks Calculator | CampusKit</title><meta name="description" content="Detailed internal marks calculator with weighted components, target planning and grade projection.">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="tools-premium.css">
+
+<style>
+.feature-wrap{max-width:1240px;margin:0 auto;padding:60px 26px 90px}
+.feature-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;padding:42px 0 35px}
+.feature-hero h1{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.065em;margin:8px 0 20px}
+.feature-hero p{max-width:680px;color:#9da5bb;font-size:17px;line-height:1.75}
+.feature-eyebrow{font-size:11px;letter-spacing:.25em;font-weight:900;color:#a78bfa;text-transform:uppercase}
+.feature-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#8b5cf6;margin-right:8px;box-shadow:0 0 14px #8b5cf6}
+.feature-orb{min-height:310px;border-radius:50%;border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;background:radial-gradient(circle,rgba(139,92,246,.2),transparent 62%);box-shadow:inset 0 0 70px rgba(76,201,240,.05);position:relative}
+.feature-orb:before,.feature-orb:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(139,92,246,.15)}
+.feature-orb:before{inset:30px}.feature-orb:after{inset:65px;border-color:rgba(76,201,240,.12)}
+.orb-value{position:relative;z-index:2;font-size:64px;font-weight:900;letter-spacing:-.07em;text-align:center}
+.orb-label{position:relative;z-index:2;color:#9da5bb;text-transform:uppercase;letter-spacing:.14em;font-size:10px;text-align:center}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature-panel{background:linear-gradient(145deg,rgba(22,26,43,.9),rgba(9,12,22,.78));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:25px;box-shadow:0 24px 80px rgba(0,0,0,.28);backdrop-filter:blur(20px)}
+.feature-panel h2,.feature-panel h3{margin-top:0;letter-spacing:-.035em}
+.feature-panel p{color:#9da5bb;line-height:1.7}
+.feature-label{display:block;font-size:11px;font-weight:800;color:#cbd0df;margin-bottom:7px;text-transform:uppercase;letter-spacing:.08em}
+.feature-input,.feature-select,.feature-textarea{width:100%;box-sizing:border-box;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:13px;color:#f5f7ff;padding:13px 14px;outline:none}
+.feature-input:focus,.feature-select:focus,.feature-textarea:focus{border-color:#8b5cf6;box-shadow:0 0 0 4px rgba(139,92,246,.1)}
+.feature-form{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.feature-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}
+.feature-btn{border:0;border-radius:13px;padding:12px 16px;font-weight:850;color:#fff;background:linear-gradient(135deg,#7657ff,#4c8dff);cursor:pointer}
+.feature-btn.secondary{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.feature-btn.danger{background:rgba(255,107,129,.1);color:#ff9aad;border:1px solid rgba(255,107,129,.2)}
+.feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.feature-stat{padding:17px;border-radius:17px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
+.feature-stat b{font-size:25px;display:block}.feature-stat span{font-size:10px;color:#8992aa;text-transform:uppercase;letter-spacing:.1em}
+.feature-section-title{display:flex;justify-content:space-between;align-items:end;margin:55px 0 17px}
+.feature-section-title h2{margin:0;font-size:30px;letter-spacing:-.04em}.feature-section-title span{color:#7f889e;font-size:12px}
+.feature-progress{height:9px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden;margin:15px 0}
+.feature-progress i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#4cc9f0);transition:.35s}
+.feature-badge{display:inline-flex;padding:6px 9px;border-radius:99px;background:rgba(139,92,246,.13);border:1px solid rgba(139,92,246,.2);color:#c0b0ff;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.feature-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}.feature-list li{color:#d8dceb;line-height:1.5}.feature-list li:before{content:"✓";color:#31d69b;font-weight:900;margin-right:9px}
+.feature-table{width:100%;border-collapse:collapse}.feature-table th,.feature-table td{text-align:left;padding:12px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}.feature-table th{color:#aeb5c9}.feature-table td{color:#dce0eb}
+.feature-note{padding:19px;border-radius:18px;border:1px solid rgba(76,201,240,.17);background:linear-gradient(135deg,rgba(76,201,240,.06),rgba(139,92,246,.07));color:#aeb5c9;line-height:1.65}
+.feature-empty{padding:30px;text-align:center;color:#7f889e;border:1px dashed rgba(255,255,255,.12);border-radius:18px}
+.feature-footer{margin-top:70px;border-top:1px solid rgba(255,255,255,.08);padding-top:24px;text-align:center;color:#687187;font-size:12px}
+@media(max-width:850px){.feature-hero{grid-template-columns:1fr}.feature-grid,.feature-grid-2{grid-template-columns:1fr}.feature-form{grid-template-columns:1fr}.feature-stats{grid-template-columns:1fr}.feature-wrap{padding:38px 18px 70px}.feature-hero h1{font-size:53px}.feature-orb{min-height:230px}}
+@media print{.nav,.feature-actions,.feature-orb,.feature-section-title{display:none!important}body{background:#fff!important;color:#111!important}.feature-panel{box-shadow:none;border:1px solid #ddd;color:#111}.feature-panel p,.feature-label{color:#444}}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-7TMDTHJH98');
+</script></head>
+<body class="ck-advanced-page"><header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a><a href="cgpa-calculator.html">CGPA</a>
+<a href="gpa-calculator.html">GPA</a><a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a><a href="placement-guide.html">Placements</a>
+<a href="student-project-ideas.html">Projects</a><a href="study-planner.html">Study Planner</a>
+</nav></header><main class="feature-wrap">
+<section class="feature-hero"><div><div class="feature-eyebrow">MARKS COMMAND CENTER</div>
+<h1>Turn marks into a <span class="ck-gradient">clear plan.</span></h1>
+<p>Build a weighted internal assessment model using tests, assignments, quizzes and custom components. Save the calculation locally and estimate what you need next.</p></div>
+<div class="feature-orb"><div><div class="orb-value" id="scoreBig">—</div><div class="orb-label">weighted score</div></div></div></section>
+
+<section class="feature-panel"><h2>Assessment components</h2><p>Add each component with its marks obtained and maximum marks. The calculator converts each component into a weighted contribution.</p>
+<div id="components"></div>
+<div class="feature-actions"><button class="feature-btn" onclick="addComponent()">+ Add component</button><button class="feature-btn" onclick="calculateMarks()">Calculate</button><button class="feature-btn secondary" onclick="loadMarks()">Sample</button><button class="feature-btn danger" onclick="clearMarks()">Clear</button></div></section>
+
+<div class="feature-stats"><div class="feature-stat"><b id="rawScore">0</b><span>Raw marks</span></div><div class="feature-stat"><b id="weightedScore">0</b><span>Weighted score</span></div><div class="feature-stat"><b id="componentCount">0</b><span>Components</span></div></div>
+
+<div class="feature-section-title"><h2>Target planner</h2><span>What do you need next?</span></div>
+<section class="feature-panel"><div class="feature-form">
+<div><label class="feature-label">Current weighted score</label><input id="currentScore" class="feature-input" type="number" readonly></div>
+<div><label class="feature-label">Target internal score</label><input id="targetScore" class="feature-input" type="number" value="40"></div>
+<div><label class="feature-label">Remaining weight</label><input id="remainingWeight" class="feature-input" type="number" value="20"></div>
+<div><label class="feature-label">Future maximum marks</label><input id="futureMax" class="feature-input" type="number" value="20"></div>
+</div><div class="feature-actions"><button class="feature-btn" onclick="targetPlan()">Calculate required marks</button></div>
+<div id="targetResult" class="feature-note" style="margin-top:16px">Calculate your current score first.</div></section>
+
+<div class="feature-section-title"><h2>Example structure</h2><span>Illustration only</span></div>
+<section class="feature-panel"><table class="feature-table"><tr><th>Component</th><th>Obtained</th><th>Maximum</th><th>Contribution</th></tr><tbody id="summaryTable"></tbody></table></section>
+
+<div class="feature-section-title"><h2>Important</h2><span>Academic accuracy</span></div>
+<div class="feature-note">Universities use different assessment schemes. Enter the exact component maximums and weights from your course outline. This tool is a planning aid, not an official grade record.</div>
+
+<footer class="feature-footer">CampusKit — Free student tools and resources.</footer></main>
+<script>
+let comps=JSON.parse(localStorage.getItem('ck-components')||'[]');
+function addComponent(n='',a='',m='',w=''){let d=document.createElement('div');d.className='feature-panel';d.style.marginTop='12px';d.innerHTML=`<div class="feature-form"><div><label class="feature-label">Component</label><input class="feature-input cname" value="${n}" placeholder="CAT 1"></div><div><label class="feature-label">Obtained</label><input class="feature-input cobt" type="number" min="0" value="${a}"></div><div><label class="feature-label">Maximum</label><input class="feature-input cmax" type="number" min="1" value="${m}"></div><div><label class="feature-label">Weight / contribution</label><input class="feature-input cweight" type="number" min="0" value="${w}" placeholder="e.g. 10"></div></div><button class="feature-btn danger" style="margin-top:12px" onclick="this.parentElement.remove()">Remove</button>`;components.appendChild(d);}
+function read(){return [...document.querySelectorAll('#components>.feature-panel')].map(d=>({n:d.querySelector('.cname').value,a:+d.querySelector('.cobt').value,m:+d.querySelector('.cmax').value,w:+d.querySelector('.cweight').value})).filter(x=>x.n&&x.m>0);}
+function calculateMarks(){comps=read();if(!comps.length)return alert('Add at least one component.');localStorage.setItem('ck-components',JSON.stringify(comps));let raw=0,weighted=0;summaryTable.innerHTML='';comps.forEach(x=>{raw+=x.a;let c=x.a/x.m*x.w;weighted+=c;summaryTable.innerHTML+=`<tr><td>${x.n}</td><td>${x.a}</td><td>${x.m}</td><td>${c.toFixed(2)}</td></tr>`});rawScore.textContent=raw.toFixed(1);weightedScore.textContent=weighted.toFixed(2);scoreBig.textContent=weighted.toFixed(1);currentScore.value=weighted.toFixed(2);componentCount.textContent=comps.length;}
+function loadMarks(){components.innerHTML='';addComponent('CAT 1',34,40,10);addComponent('Assignment',18,20,5);addComponent('Quiz',8,10,5);addComponent('Lab',18,20,10);calculateMarks();}
+function clearMarks(){components.innerHTML='';localStorage.removeItem('ck-components');summaryTable.innerHTML='';rawScore.textContent=weightedScore.textContent='0';scoreBig.textContent='—';currentScore.value='';componentCount.textContent='0';}
+function targetPlan(){let cur=+currentScore.value,t=+targetScore.value,rw=+remainingWeight.value,fm=+futureMax.value;if(rw<=0||fm<=0)return alert('Enter valid remaining values.');let need=t-cur,avg=need/rw*fm;targetResult.textContent=`You need approximately ${avg.toFixed(2)} marks out of ${fm} in the remaining component to reach ${t}.`+(avg>fm?' The target is above the available maximum.':'');}
+if(comps.length){comps.forEach(x=>addComponent(x.n,x.a,x.m,x.w));calculateMarks();}else{for(let i=0;i<3;i++)addComponent();}
+</script></body></html>

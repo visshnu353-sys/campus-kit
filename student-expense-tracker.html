@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Expense Tracker | CampusKit</title><meta name="description" content="Detailed student expense tracker with categories, budgets, summaries and local browser storage.">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="tools-premium.css">
+
+<style>
+.feature-wrap{max-width:1240px;margin:0 auto;padding:60px 26px 90px}
+.feature-hero{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center;padding:42px 0 35px}
+.feature-hero h1{font-size:clamp(48px,6vw,82px);line-height:.95;letter-spacing:-.065em;margin:8px 0 20px}
+.feature-hero p{max-width:680px;color:#9da5bb;font-size:17px;line-height:1.75}
+.feature-eyebrow{font-size:11px;letter-spacing:.25em;font-weight:900;color:#a78bfa;text-transform:uppercase}
+.feature-eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#8b5cf6;margin-right:8px;box-shadow:0 0 14px #8b5cf6}
+.feature-orb{min-height:310px;border-radius:50%;border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;background:radial-gradient(circle,rgba(139,92,246,.2),transparent 62%);box-shadow:inset 0 0 70px rgba(76,201,240,.05);position:relative}
+.feature-orb:before,.feature-orb:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(139,92,246,.15)}
+.feature-orb:before{inset:30px}.feature-orb:after{inset:65px;border-color:rgba(76,201,240,.12)}
+.orb-value{position:relative;z-index:2;font-size:64px;font-weight:900;letter-spacing:-.07em;text-align:center}
+.orb-label{position:relative;z-index:2;color:#9da5bb;text-transform:uppercase;letter-spacing:.14em;font-size:10px;text-align:center}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.feature-panel{background:linear-gradient(145deg,rgba(22,26,43,.9),rgba(9,12,22,.78));border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:25px;box-shadow:0 24px 80px rgba(0,0,0,.28);backdrop-filter:blur(20px)}
+.feature-panel h2,.feature-panel h3{margin-top:0;letter-spacing:-.035em}
+.feature-panel p{color:#9da5bb;line-height:1.7}
+.feature-label{display:block;font-size:11px;font-weight:800;color:#cbd0df;margin-bottom:7px;text-transform:uppercase;letter-spacing:.08em}
+.feature-input,.feature-select,.feature-textarea{width:100%;box-sizing:border-box;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:13px;color:#f5f7ff;padding:13px 14px;outline:none}
+.feature-input:focus,.feature-select:focus,.feature-textarea:focus{border-color:#8b5cf6;box-shadow:0 0 0 4px rgba(139,92,246,.1)}
+.feature-form{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+.feature-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}
+.feature-btn{border:0;border-radius:13px;padding:12px 16px;font-weight:850;color:#fff;background:linear-gradient(135deg,#7657ff,#4c8dff);cursor:pointer}
+.feature-btn.secondary{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.feature-btn.danger{background:rgba(255,107,129,.1);color:#ff9aad;border:1px solid rgba(255,107,129,.2)}
+.feature-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.feature-stat{padding:17px;border-radius:17px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08)}
+.feature-stat b{font-size:25px;display:block}.feature-stat span{font-size:10px;color:#8992aa;text-transform:uppercase;letter-spacing:.1em}
+.feature-section-title{display:flex;justify-content:space-between;align-items:end;margin:55px 0 17px}
+.feature-section-title h2{margin:0;font-size:30px;letter-spacing:-.04em}.feature-section-title span{color:#7f889e;font-size:12px}
+.feature-progress{height:9px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden;margin:15px 0}
+.feature-progress i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#8b5cf6,#4cc9f0);transition:.35s}
+.feature-badge{display:inline-flex;padding:6px 9px;border-radius:99px;background:rgba(139,92,246,.13);border:1px solid rgba(139,92,246,.2);color:#c0b0ff;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.feature-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}.feature-list li{color:#d8dceb;line-height:1.5}.feature-list li:before{content:"✓";color:#31d69b;font-weight:900;margin-right:9px}
+.feature-table{width:100%;border-collapse:collapse}.feature-table th,.feature-table td{text-align:left;padding:12px;border-bottom:1px solid rgba(255,255,255,.08);font-size:13px}.feature-table th{color:#aeb5c9}.feature-table td{color:#dce0eb}
+.feature-note{padding:19px;border-radius:18px;border:1px solid rgba(76,201,240,.17);background:linear-gradient(135deg,rgba(76,201,240,.06),rgba(139,92,246,.07));color:#aeb5c9;line-height:1.65}
+.feature-empty{padding:30px;text-align:center;color:#7f889e;border:1px dashed rgba(255,255,255,.12);border-radius:18px}
+.feature-footer{margin-top:70px;border-top:1px solid rgba(255,255,255,.08);padding-top:24px;text-align:center;color:#687187;font-size:12px}
+@media(max-width:850px){.feature-hero{grid-template-columns:1fr}.feature-grid,.feature-grid-2{grid-template-columns:1fr}.feature-form{grid-template-columns:1fr}.feature-stats{grid-template-columns:1fr}.feature-wrap{padding:38px 18px 70px}.feature-hero h1{font-size:53px}.feature-orb{min-height:230px}}
+@media print{.nav,.feature-actions,.feature-orb,.feature-section-title{display:none!important}body{background:#fff!important;color:#111!important}.feature-panel{box-shadow:none;border:1px solid #ddd;color:#111}.feature-panel p,.feature-label{color:#444}}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-7TMDTHJH98');
+</script></head>
+<body class="ck-advanced-page"><header class="nav">
+<a class="logo" href="index.html">Campus<span>Kit</span></a>
+<nav class="links">
+<a href="index.html">Home</a><a href="cgpa-calculator.html">CGPA</a>
+<a href="gpa-calculator.html">GPA</a><a href="percentage-calculator.html">Percentage</a>
+<a href="pomodoro-timer.html">Pomodoro</a><a href="placement-guide.html">Placements</a>
+<a href="student-project-ideas.html">Projects</a><a href="study-planner.html">Study Planner</a>
+</nav></header><main class="feature-wrap">
+<section class="feature-hero"><div><div class="feature-eyebrow">STUDENT FINANCE</div>
+<h1>See where your <span class="ck-gradient">money goes.</span></h1>
+<p>Track everyday spending, set a monthly budget and understand your largest expense categories without sending data to a server.</p></div>
+<div class="feature-orb"><div><div class="orb-value" id="moneyBig">₹0</div><div class="orb-label">current total</div></div></div></section>
+
+<div class="feature-grid-2">
+<section class="feature-panel"><h2>Add transaction</h2><div class="feature-form">
+<div><label class="feature-label">Description</label><input id="desc" class="feature-input" placeholder="Lunch"></div>
+<div><label class="feature-label">Amount ₹</label><input id="amount" class="feature-input" type="number" min="0.01" placeholder="120"></div>
+<div><label class="feature-label">Category</label><select id="cat" class="feature-select"><option>Food</option><option>Travel</option><option>Study</option><option>Subscriptions</option><option>Entertainment</option><option>Other</option></select></div>
+<div><label class="feature-label">Type</label><select id="type" class="feature-select"><option>Expense</option><option>Income</option></select></div>
+</div><div class="feature-actions"><button class="feature-btn" onclick="addTx()">Add transaction</button></div></section>
+<section class="feature-panel"><h2>Budget</h2><div class="feature-form"><div><label class="feature-label">Monthly budget ₹</label><input id="budget" class="feature-input" type="number" value="5000"></div></div><div class="feature-actions"><button class="feature-btn" onclick="saveBudget()">Save budget</button></div><div class="feature-progress"><i id="budgetBar"></i></div><p id="budgetMsg">Set a budget to see your usage.</p></section>
+</div>
+
+<div class="feature-stats"><div class="feature-stat"><b id="spent">₹0</b><span>Expenses</span></div><div class="feature-stat"><b id="income">₹0</b><span>Income</span></div><div class="feature-stat"><b id="balance">₹0</b><span>Balance</span></div></div>
+
+<div class="feature-section-title"><h2>Category breakdown</h2><span>Expense distribution</span></div>
+<section class="feature-panel"><div id="categories" class="feature-grid"></div></section>
+
+<div class="feature-section-title"><h2>Transactions</h2><span id="txCount">0 entries</span></div>
+<div id="transactions" class="feature-grid"></div>
+
+<div class="feature-actions"><button class="feature-btn danger" onclick="clearAll()">Delete all local data</button></div>
+<div class="feature-note" style="margin-top:18px">This tracker stores entries in your browser's localStorage. It is not a bank account or financial record.</div>
+
+<footer class="feature-footer">CampusKit — Free student tools and resources.</footer></main>
+<script>
+let tx=JSON.parse(localStorage.getItem('ck-transactions')||'[]');let bud=Number(localStorage.getItem('ck-budget')||5000);budget.value=bud;
+function save(){localStorage.setItem('ck-transactions',JSON.stringify(tx));render();}
+function addTx(){let d=desc.value.trim(),a=+amount.value,c=cat.value,t=type.value;if(!d||a<=0)return alert('Enter a description and valid amount.');tx.unshift({d,a,c,t,date:new Date().toLocaleDateString()});desc.value='';amount.value='';save();}
+function saveBudget(){let b=+budget.value;if(b<=0)return alert('Enter a valid budget.');bud=b;localStorage.setItem('ck-budget',bud);render();}
+function clearAll(){if(confirm('Delete all local expense data?')){tx=[];localStorage.removeItem('ck-transactions');render();}}
+function removeTx(i){tx.splice(i,1);save();}
+function render(){let expenses=tx.filter(x=>x.t==='Expense'),incomeTx=tx.filter(x=>x.t==='Income'),sp=expenses.reduce((s,x)=>s+x.a,0),inc=incomeTx.reduce((s,x)=>s+x.a,0);spent.textContent='₹'+sp.toFixed(0);income.textContent='₹'+inc.toFixed(0);balance.textContent='₹'+(inc-sp).toFixed(0);moneyBig.textContent='₹'+sp.toFixed(0);let pct=bud?sp/bud*100:0;budgetBar.style.width=Math.min(pct,100)+'%';budgetMsg.textContent=`₹${sp.toFixed(0)} of ₹${bud.toFixed(0)} used (${pct.toFixed(1)}%).`;txCount.textContent=tx.length+' entries';let map={};expenses.forEach(x=>map[x.c]=(map[x.c]||0)+x.a);let entries=Object.entries(map).sort((a,b)=>b[1]-a[1]);categories.innerHTML=entries.length?entries.map(([c,v])=>`<div class="feature-panel"><span class="feature-badge">${c}</span><h3 style="margin-top:14px">₹${v.toFixed(0)}</h3><div class="feature-progress"><i style="width:${sp?v/sp*100:0}%"></i></div><p>${sp?(v/sp*100).toFixed(1):0}% of expenses</p></div>`).join(''):'<div class="feature-empty">No expense categories yet.</div>';transactions.innerHTML=tx.length?tx.map((x,i)=>`<article class="feature-panel"><span class="feature-badge">${x.t}</span><h3 style="margin-top:14px">${x.d}</h3><p>${x.c} · ${x.date}</p><h2 style="margin:0">${x.t==='Expense'?'−':'+'}₹${x.a.toFixed(0)}</h2><button class="feature-btn danger" style="margin-top:14px" onclick="removeTx(${i})">Remove</button></article>`).join(''):'<div class="feature-empty">No transactions yet.</div>';}
+render();
+</script></body></html>
