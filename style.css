@@ -168,3 +168,5561 @@ body.dark .ad-slot{background:rgba(18,23,34,.25)}
 }
 @media(max-width:430px){.hero-left h1{font-size:47px}.hero-search{height:50px}.quick-links{display:none}.hero-orbit{height:315px}.floating-chip{font-size:8px}.glass-number{font-size:60px}.bento-card{padding:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* =========================================================
+   FUTURE COMPONENT SYSTEM
+   ========================================================= */
+
+.future-module{
+  display:none;
+}
+
+.future-module-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.future-module-index{
+  color:var(--primary,#635bff);
+  font:8px ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+.future-module-status{
+  color:var(--muted,#667085);
+  font:7px ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+.future-module-icon{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  margin-top:18px;
+  border-radius:12px;
+  color:var(--primary,#635bff);
+  background:rgba(99,91,255,.09);
+}
+
+.future-module-copy h3{
+  margin-top:14px;
+  color:var(--text,#101828);
+  font-size:17px;
+}
+
+.future-module-copy p{
+  margin-top:6px;
+  color:var(--muted,#667085);
+  font-size:10px;
+  line-height:1.7;
+}
+
+.future-module-copy button{
+  margin-top:12px;
+  padding:8px 10px;
+  border-radius:8px;
+  color:#fff;
+  background:var(--primary,#635bff);
+  font-size:8px;
+  font-weight:850;
+}
+
+/* Advanced hover language */
+.tool-card,
+.workspace-card,
+.resource-table>a,
+.premium-command,
+.dashboard-window{
+  will-change:transform;
+}
+
+.tool-card::selection,
+.workspace-card::selection{
+  background:var(--primary,#635bff);
+  color:#fff;
+}
+
+/* Fine-grain glass layers */
+.glass-layer-1{
+  background:rgba(255,255,255,.45);
+  backdrop-filter:blur(10px);
+}
+
+.glass-layer-2{
+  background:rgba(255,255,255,.60);
+  backdrop-filter:blur(18px);
+}
+
+.glass-layer-3{
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(28px);
+}
+
+body.dark .glass-layer-1{
+  background:rgba(17,22,33,.35);
+}
+
+body.dark .glass-layer-2{
+  background:rgba(17,22,33,.52);
+}
+
+body.dark .glass-layer-3{
+  background:rgba(17,22,33,.72);
+}
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 001
+   ========================================================= */
+:root {
+  --ck-module-001-accent:var(--primary, #635bff);
+  --ck-module-001-surface:var(--surface, #ffffff);
+  --ck-module-001-surface-soft:rgba(255,255,255,.72);
+  --ck-module-001-text:var(--text, #101828);
+  --ck-module-001-muted:var(--muted, #667085);
+  --ck-module-001-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-001-radius:20px;
+  --ck-module-001-gap:12px;
+  --ck-module-001-speed:.22s;
+}
+body.dark {
+  --ck-module-001-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 002
+   ========================================================= */
+:root {
+  --ck-module-002-accent:var(--primary, #635bff);
+  --ck-module-002-surface:var(--surface, #ffffff);
+  --ck-module-002-surface-soft:rgba(255,255,255,.72);
+  --ck-module-002-text:var(--text, #101828);
+  --ck-module-002-muted:var(--muted, #667085);
+  --ck-module-002-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-002-radius:20px;
+  --ck-module-002-gap:12px;
+  --ck-module-002-speed:.22s;
+}
+body.dark {
+  --ck-module-002-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 003
+   ========================================================= */
+:root {
+  --ck-module-003-accent:var(--primary, #635bff);
+  --ck-module-003-surface:var(--surface, #ffffff);
+  --ck-module-003-surface-soft:rgba(255,255,255,.72);
+  --ck-module-003-text:var(--text, #101828);
+  --ck-module-003-muted:var(--muted, #667085);
+  --ck-module-003-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-003-radius:20px;
+  --ck-module-003-gap:12px;
+  --ck-module-003-speed:.22s;
+}
+body.dark {
+  --ck-module-003-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 004
+   ========================================================= */
+:root {
+  --ck-module-004-accent:var(--primary, #635bff);
+  --ck-module-004-surface:var(--surface, #ffffff);
+  --ck-module-004-surface-soft:rgba(255,255,255,.72);
+  --ck-module-004-text:var(--text, #101828);
+  --ck-module-004-muted:var(--muted, #667085);
+  --ck-module-004-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-004-radius:20px;
+  --ck-module-004-gap:12px;
+  --ck-module-004-speed:.22s;
+}
+body.dark {
+  --ck-module-004-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 005
+   ========================================================= */
+:root {
+  --ck-module-005-accent:var(--primary, #635bff);
+  --ck-module-005-surface:var(--surface, #ffffff);
+  --ck-module-005-surface-soft:rgba(255,255,255,.72);
+  --ck-module-005-text:var(--text, #101828);
+  --ck-module-005-muted:var(--muted, #667085);
+  --ck-module-005-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-005-radius:20px;
+  --ck-module-005-gap:12px;
+  --ck-module-005-speed:.22s;
+}
+body.dark {
+  --ck-module-005-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 006
+   ========================================================= */
+:root {
+  --ck-module-006-accent:var(--primary, #635bff);
+  --ck-module-006-surface:var(--surface, #ffffff);
+  --ck-module-006-surface-soft:rgba(255,255,255,.72);
+  --ck-module-006-text:var(--text, #101828);
+  --ck-module-006-muted:var(--muted, #667085);
+  --ck-module-006-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-006-radius:20px;
+  --ck-module-006-gap:12px;
+  --ck-module-006-speed:.22s;
+}
+body.dark {
+  --ck-module-006-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 007
+   ========================================================= */
+:root {
+  --ck-module-007-accent:var(--primary, #635bff);
+  --ck-module-007-surface:var(--surface, #ffffff);
+  --ck-module-007-surface-soft:rgba(255,255,255,.72);
+  --ck-module-007-text:var(--text, #101828);
+  --ck-module-007-muted:var(--muted, #667085);
+  --ck-module-007-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-007-radius:20px;
+  --ck-module-007-gap:12px;
+  --ck-module-007-speed:.22s;
+}
+body.dark {
+  --ck-module-007-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 008
+   ========================================================= */
+:root {
+  --ck-module-008-accent:var(--primary, #635bff);
+  --ck-module-008-surface:var(--surface, #ffffff);
+  --ck-module-008-surface-soft:rgba(255,255,255,.72);
+  --ck-module-008-text:var(--text, #101828);
+  --ck-module-008-muted:var(--muted, #667085);
+  --ck-module-008-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-008-radius:20px;
+  --ck-module-008-gap:12px;
+  --ck-module-008-speed:.22s;
+}
+body.dark {
+  --ck-module-008-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 009
+   ========================================================= */
+:root {
+  --ck-module-009-accent:var(--primary, #635bff);
+  --ck-module-009-surface:var(--surface, #ffffff);
+  --ck-module-009-surface-soft:rgba(255,255,255,.72);
+  --ck-module-009-text:var(--text, #101828);
+  --ck-module-009-muted:var(--muted, #667085);
+  --ck-module-009-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-009-radius:20px;
+  --ck-module-009-gap:12px;
+  --ck-module-009-speed:.22s;
+}
+body.dark {
+  --ck-module-009-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 010
+   ========================================================= */
+:root {
+  --ck-module-010-accent:var(--primary, #635bff);
+  --ck-module-010-surface:var(--surface, #ffffff);
+  --ck-module-010-surface-soft:rgba(255,255,255,.72);
+  --ck-module-010-text:var(--text, #101828);
+  --ck-module-010-muted:var(--muted, #667085);
+  --ck-module-010-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-010-radius:20px;
+  --ck-module-010-gap:12px;
+  --ck-module-010-speed:.22s;
+}
+body.dark {
+  --ck-module-010-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 011
+   ========================================================= */
+:root {
+  --ck-module-011-accent:var(--primary, #635bff);
+  --ck-module-011-surface:var(--surface, #ffffff);
+  --ck-module-011-surface-soft:rgba(255,255,255,.72);
+  --ck-module-011-text:var(--text, #101828);
+  --ck-module-011-muted:var(--muted, #667085);
+  --ck-module-011-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-011-radius:20px;
+  --ck-module-011-gap:12px;
+  --ck-module-011-speed:.22s;
+}
+body.dark {
+  --ck-module-011-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 012
+   ========================================================= */
+:root {
+  --ck-module-012-accent:var(--primary, #635bff);
+  --ck-module-012-surface:var(--surface, #ffffff);
+  --ck-module-012-surface-soft:rgba(255,255,255,.72);
+  --ck-module-012-text:var(--text, #101828);
+  --ck-module-012-muted:var(--muted, #667085);
+  --ck-module-012-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-012-radius:20px;
+  --ck-module-012-gap:12px;
+  --ck-module-012-speed:.22s;
+}
+body.dark {
+  --ck-module-012-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 013
+   ========================================================= */
+:root {
+  --ck-module-013-accent:var(--primary, #635bff);
+  --ck-module-013-surface:var(--surface, #ffffff);
+  --ck-module-013-surface-soft:rgba(255,255,255,.72);
+  --ck-module-013-text:var(--text, #101828);
+  --ck-module-013-muted:var(--muted, #667085);
+  --ck-module-013-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-013-radius:20px;
+  --ck-module-013-gap:12px;
+  --ck-module-013-speed:.22s;
+}
+body.dark {
+  --ck-module-013-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 014
+   ========================================================= */
+:root {
+  --ck-module-014-accent:var(--primary, #635bff);
+  --ck-module-014-surface:var(--surface, #ffffff);
+  --ck-module-014-surface-soft:rgba(255,255,255,.72);
+  --ck-module-014-text:var(--text, #101828);
+  --ck-module-014-muted:var(--muted, #667085);
+  --ck-module-014-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-014-radius:20px;
+  --ck-module-014-gap:12px;
+  --ck-module-014-speed:.22s;
+}
+body.dark {
+  --ck-module-014-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 015
+   ========================================================= */
+:root {
+  --ck-module-015-accent:var(--primary, #635bff);
+  --ck-module-015-surface:var(--surface, #ffffff);
+  --ck-module-015-surface-soft:rgba(255,255,255,.72);
+  --ck-module-015-text:var(--text, #101828);
+  --ck-module-015-muted:var(--muted, #667085);
+  --ck-module-015-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-015-radius:20px;
+  --ck-module-015-gap:12px;
+  --ck-module-015-speed:.22s;
+}
+body.dark {
+  --ck-module-015-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 016
+   ========================================================= */
+:root {
+  --ck-module-016-accent:var(--primary, #635bff);
+  --ck-module-016-surface:var(--surface, #ffffff);
+  --ck-module-016-surface-soft:rgba(255,255,255,.72);
+  --ck-module-016-text:var(--text, #101828);
+  --ck-module-016-muted:var(--muted, #667085);
+  --ck-module-016-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-016-radius:20px;
+  --ck-module-016-gap:12px;
+  --ck-module-016-speed:.22s;
+}
+body.dark {
+  --ck-module-016-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 017
+   ========================================================= */
+:root {
+  --ck-module-017-accent:var(--primary, #635bff);
+  --ck-module-017-surface:var(--surface, #ffffff);
+  --ck-module-017-surface-soft:rgba(255,255,255,.72);
+  --ck-module-017-text:var(--text, #101828);
+  --ck-module-017-muted:var(--muted, #667085);
+  --ck-module-017-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-017-radius:20px;
+  --ck-module-017-gap:12px;
+  --ck-module-017-speed:.22s;
+}
+body.dark {
+  --ck-module-017-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 018
+   ========================================================= */
+:root {
+  --ck-module-018-accent:var(--primary, #635bff);
+  --ck-module-018-surface:var(--surface, #ffffff);
+  --ck-module-018-surface-soft:rgba(255,255,255,.72);
+  --ck-module-018-text:var(--text, #101828);
+  --ck-module-018-muted:var(--muted, #667085);
+  --ck-module-018-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-018-radius:20px;
+  --ck-module-018-gap:12px;
+  --ck-module-018-speed:.22s;
+}
+body.dark {
+  --ck-module-018-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 019
+   ========================================================= */
+:root {
+  --ck-module-019-accent:var(--primary, #635bff);
+  --ck-module-019-surface:var(--surface, #ffffff);
+  --ck-module-019-surface-soft:rgba(255,255,255,.72);
+  --ck-module-019-text:var(--text, #101828);
+  --ck-module-019-muted:var(--muted, #667085);
+  --ck-module-019-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-019-radius:20px;
+  --ck-module-019-gap:12px;
+  --ck-module-019-speed:.22s;
+}
+body.dark {
+  --ck-module-019-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 020
+   ========================================================= */
+:root {
+  --ck-module-020-accent:var(--primary, #635bff);
+  --ck-module-020-surface:var(--surface, #ffffff);
+  --ck-module-020-surface-soft:rgba(255,255,255,.72);
+  --ck-module-020-text:var(--text, #101828);
+  --ck-module-020-muted:var(--muted, #667085);
+  --ck-module-020-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-020-radius:20px;
+  --ck-module-020-gap:12px;
+  --ck-module-020-speed:.22s;
+}
+body.dark {
+  --ck-module-020-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 021
+   ========================================================= */
+:root {
+  --ck-module-021-accent:var(--primary, #635bff);
+  --ck-module-021-surface:var(--surface, #ffffff);
+  --ck-module-021-surface-soft:rgba(255,255,255,.72);
+  --ck-module-021-text:var(--text, #101828);
+  --ck-module-021-muted:var(--muted, #667085);
+  --ck-module-021-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-021-radius:20px;
+  --ck-module-021-gap:12px;
+  --ck-module-021-speed:.22s;
+}
+body.dark {
+  --ck-module-021-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 022
+   ========================================================= */
+:root {
+  --ck-module-022-accent:var(--primary, #635bff);
+  --ck-module-022-surface:var(--surface, #ffffff);
+  --ck-module-022-surface-soft:rgba(255,255,255,.72);
+  --ck-module-022-text:var(--text, #101828);
+  --ck-module-022-muted:var(--muted, #667085);
+  --ck-module-022-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-022-radius:20px;
+  --ck-module-022-gap:12px;
+  --ck-module-022-speed:.22s;
+}
+body.dark {
+  --ck-module-022-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 023
+   ========================================================= */
+:root {
+  --ck-module-023-accent:var(--primary, #635bff);
+  --ck-module-023-surface:var(--surface, #ffffff);
+  --ck-module-023-surface-soft:rgba(255,255,255,.72);
+  --ck-module-023-text:var(--text, #101828);
+  --ck-module-023-muted:var(--muted, #667085);
+  --ck-module-023-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-023-radius:20px;
+  --ck-module-023-gap:12px;
+  --ck-module-023-speed:.22s;
+}
+body.dark {
+  --ck-module-023-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 024
+   ========================================================= */
+:root {
+  --ck-module-024-accent:var(--primary, #635bff);
+  --ck-module-024-surface:var(--surface, #ffffff);
+  --ck-module-024-surface-soft:rgba(255,255,255,.72);
+  --ck-module-024-text:var(--text, #101828);
+  --ck-module-024-muted:var(--muted, #667085);
+  --ck-module-024-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-024-radius:20px;
+  --ck-module-024-gap:12px;
+  --ck-module-024-speed:.22s;
+}
+body.dark {
+  --ck-module-024-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 025
+   ========================================================= */
+:root {
+  --ck-module-025-accent:var(--primary, #635bff);
+  --ck-module-025-surface:var(--surface, #ffffff);
+  --ck-module-025-surface-soft:rgba(255,255,255,.72);
+  --ck-module-025-text:var(--text, #101828);
+  --ck-module-025-muted:var(--muted, #667085);
+  --ck-module-025-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-025-radius:20px;
+  --ck-module-025-gap:12px;
+  --ck-module-025-speed:.22s;
+}
+body.dark {
+  --ck-module-025-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 026
+   ========================================================= */
+:root {
+  --ck-module-026-accent:var(--primary, #635bff);
+  --ck-module-026-surface:var(--surface, #ffffff);
+  --ck-module-026-surface-soft:rgba(255,255,255,.72);
+  --ck-module-026-text:var(--text, #101828);
+  --ck-module-026-muted:var(--muted, #667085);
+  --ck-module-026-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-026-radius:20px;
+  --ck-module-026-gap:12px;
+  --ck-module-026-speed:.22s;
+}
+body.dark {
+  --ck-module-026-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 027
+   ========================================================= */
+:root {
+  --ck-module-027-accent:var(--primary, #635bff);
+  --ck-module-027-surface:var(--surface, #ffffff);
+  --ck-module-027-surface-soft:rgba(255,255,255,.72);
+  --ck-module-027-text:var(--text, #101828);
+  --ck-module-027-muted:var(--muted, #667085);
+  --ck-module-027-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-027-radius:20px;
+  --ck-module-027-gap:12px;
+  --ck-module-027-speed:.22s;
+}
+body.dark {
+  --ck-module-027-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 028
+   ========================================================= */
+:root {
+  --ck-module-028-accent:var(--primary, #635bff);
+  --ck-module-028-surface:var(--surface, #ffffff);
+  --ck-module-028-surface-soft:rgba(255,255,255,.72);
+  --ck-module-028-text:var(--text, #101828);
+  --ck-module-028-muted:var(--muted, #667085);
+  --ck-module-028-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-028-radius:20px;
+  --ck-module-028-gap:12px;
+  --ck-module-028-speed:.22s;
+}
+body.dark {
+  --ck-module-028-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 029
+   ========================================================= */
+:root {
+  --ck-module-029-accent:var(--primary, #635bff);
+  --ck-module-029-surface:var(--surface, #ffffff);
+  --ck-module-029-surface-soft:rgba(255,255,255,.72);
+  --ck-module-029-text:var(--text, #101828);
+  --ck-module-029-muted:var(--muted, #667085);
+  --ck-module-029-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-029-radius:20px;
+  --ck-module-029-gap:12px;
+  --ck-module-029-speed:.22s;
+}
+body.dark {
+  --ck-module-029-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 030
+   ========================================================= */
+:root {
+  --ck-module-030-accent:var(--primary, #635bff);
+  --ck-module-030-surface:var(--surface, #ffffff);
+  --ck-module-030-surface-soft:rgba(255,255,255,.72);
+  --ck-module-030-text:var(--text, #101828);
+  --ck-module-030-muted:var(--muted, #667085);
+  --ck-module-030-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-030-radius:20px;
+  --ck-module-030-gap:12px;
+  --ck-module-030-speed:.22s;
+}
+body.dark {
+  --ck-module-030-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 031
+   ========================================================= */
+:root {
+  --ck-module-031-accent:var(--primary, #635bff);
+  --ck-module-031-surface:var(--surface, #ffffff);
+  --ck-module-031-surface-soft:rgba(255,255,255,.72);
+  --ck-module-031-text:var(--text, #101828);
+  --ck-module-031-muted:var(--muted, #667085);
+  --ck-module-031-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-031-radius:20px;
+  --ck-module-031-gap:12px;
+  --ck-module-031-speed:.22s;
+}
+body.dark {
+  --ck-module-031-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 032
+   ========================================================= */
+:root {
+  --ck-module-032-accent:var(--primary, #635bff);
+  --ck-module-032-surface:var(--surface, #ffffff);
+  --ck-module-032-surface-soft:rgba(255,255,255,.72);
+  --ck-module-032-text:var(--text, #101828);
+  --ck-module-032-muted:var(--muted, #667085);
+  --ck-module-032-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-032-radius:20px;
+  --ck-module-032-gap:12px;
+  --ck-module-032-speed:.22s;
+}
+body.dark {
+  --ck-module-032-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 033
+   ========================================================= */
+:root {
+  --ck-module-033-accent:var(--primary, #635bff);
+  --ck-module-033-surface:var(--surface, #ffffff);
+  --ck-module-033-surface-soft:rgba(255,255,255,.72);
+  --ck-module-033-text:var(--text, #101828);
+  --ck-module-033-muted:var(--muted, #667085);
+  --ck-module-033-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-033-radius:20px;
+  --ck-module-033-gap:12px;
+  --ck-module-033-speed:.22s;
+}
+body.dark {
+  --ck-module-033-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 034
+   ========================================================= */
+:root {
+  --ck-module-034-accent:var(--primary, #635bff);
+  --ck-module-034-surface:var(--surface, #ffffff);
+  --ck-module-034-surface-soft:rgba(255,255,255,.72);
+  --ck-module-034-text:var(--text, #101828);
+  --ck-module-034-muted:var(--muted, #667085);
+  --ck-module-034-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-034-radius:20px;
+  --ck-module-034-gap:12px;
+  --ck-module-034-speed:.22s;
+}
+body.dark {
+  --ck-module-034-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 035
+   ========================================================= */
+:root {
+  --ck-module-035-accent:var(--primary, #635bff);
+  --ck-module-035-surface:var(--surface, #ffffff);
+  --ck-module-035-surface-soft:rgba(255,255,255,.72);
+  --ck-module-035-text:var(--text, #101828);
+  --ck-module-035-muted:var(--muted, #667085);
+  --ck-module-035-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-035-radius:20px;
+  --ck-module-035-gap:12px;
+  --ck-module-035-speed:.22s;
+}
+body.dark {
+  --ck-module-035-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 036
+   ========================================================= */
+:root {
+  --ck-module-036-accent:var(--primary, #635bff);
+  --ck-module-036-surface:var(--surface, #ffffff);
+  --ck-module-036-surface-soft:rgba(255,255,255,.72);
+  --ck-module-036-text:var(--text, #101828);
+  --ck-module-036-muted:var(--muted, #667085);
+  --ck-module-036-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-036-radius:20px;
+  --ck-module-036-gap:12px;
+  --ck-module-036-speed:.22s;
+}
+body.dark {
+  --ck-module-036-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 037
+   ========================================================= */
+:root {
+  --ck-module-037-accent:var(--primary, #635bff);
+  --ck-module-037-surface:var(--surface, #ffffff);
+  --ck-module-037-surface-soft:rgba(255,255,255,.72);
+  --ck-module-037-text:var(--text, #101828);
+  --ck-module-037-muted:var(--muted, #667085);
+  --ck-module-037-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-037-radius:20px;
+  --ck-module-037-gap:12px;
+  --ck-module-037-speed:.22s;
+}
+body.dark {
+  --ck-module-037-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 038
+   ========================================================= */
+:root {
+  --ck-module-038-accent:var(--primary, #635bff);
+  --ck-module-038-surface:var(--surface, #ffffff);
+  --ck-module-038-surface-soft:rgba(255,255,255,.72);
+  --ck-module-038-text:var(--text, #101828);
+  --ck-module-038-muted:var(--muted, #667085);
+  --ck-module-038-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-038-radius:20px;
+  --ck-module-038-gap:12px;
+  --ck-module-038-speed:.22s;
+}
+body.dark {
+  --ck-module-038-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 039
+   ========================================================= */
+:root {
+  --ck-module-039-accent:var(--primary, #635bff);
+  --ck-module-039-surface:var(--surface, #ffffff);
+  --ck-module-039-surface-soft:rgba(255,255,255,.72);
+  --ck-module-039-text:var(--text, #101828);
+  --ck-module-039-muted:var(--muted, #667085);
+  --ck-module-039-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-039-radius:20px;
+  --ck-module-039-gap:12px;
+  --ck-module-039-speed:.22s;
+}
+body.dark {
+  --ck-module-039-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 040
+   ========================================================= */
+:root {
+  --ck-module-040-accent:var(--primary, #635bff);
+  --ck-module-040-surface:var(--surface, #ffffff);
+  --ck-module-040-surface-soft:rgba(255,255,255,.72);
+  --ck-module-040-text:var(--text, #101828);
+  --ck-module-040-muted:var(--muted, #667085);
+  --ck-module-040-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-040-radius:20px;
+  --ck-module-040-gap:12px;
+  --ck-module-040-speed:.22s;
+}
+body.dark {
+  --ck-module-040-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 041
+   ========================================================= */
+:root {
+  --ck-module-041-accent:var(--primary, #635bff);
+  --ck-module-041-surface:var(--surface, #ffffff);
+  --ck-module-041-surface-soft:rgba(255,255,255,.72);
+  --ck-module-041-text:var(--text, #101828);
+  --ck-module-041-muted:var(--muted, #667085);
+  --ck-module-041-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-041-radius:20px;
+  --ck-module-041-gap:12px;
+  --ck-module-041-speed:.22s;
+}
+body.dark {
+  --ck-module-041-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 042
+   ========================================================= */
+:root {
+  --ck-module-042-accent:var(--primary, #635bff);
+  --ck-module-042-surface:var(--surface, #ffffff);
+  --ck-module-042-surface-soft:rgba(255,255,255,.72);
+  --ck-module-042-text:var(--text, #101828);
+  --ck-module-042-muted:var(--muted, #667085);
+  --ck-module-042-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-042-radius:20px;
+  --ck-module-042-gap:12px;
+  --ck-module-042-speed:.22s;
+}
+body.dark {
+  --ck-module-042-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 043
+   ========================================================= */
+:root {
+  --ck-module-043-accent:var(--primary, #635bff);
+  --ck-module-043-surface:var(--surface, #ffffff);
+  --ck-module-043-surface-soft:rgba(255,255,255,.72);
+  --ck-module-043-text:var(--text, #101828);
+  --ck-module-043-muted:var(--muted, #667085);
+  --ck-module-043-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-043-radius:20px;
+  --ck-module-043-gap:12px;
+  --ck-module-043-speed:.22s;
+}
+body.dark {
+  --ck-module-043-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 044
+   ========================================================= */
+:root {
+  --ck-module-044-accent:var(--primary, #635bff);
+  --ck-module-044-surface:var(--surface, #ffffff);
+  --ck-module-044-surface-soft:rgba(255,255,255,.72);
+  --ck-module-044-text:var(--text, #101828);
+  --ck-module-044-muted:var(--muted, #667085);
+  --ck-module-044-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-044-radius:20px;
+  --ck-module-044-gap:12px;
+  --ck-module-044-speed:.22s;
+}
+body.dark {
+  --ck-module-044-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 045
+   ========================================================= */
+:root {
+  --ck-module-045-accent:var(--primary, #635bff);
+  --ck-module-045-surface:var(--surface, #ffffff);
+  --ck-module-045-surface-soft:rgba(255,255,255,.72);
+  --ck-module-045-text:var(--text, #101828);
+  --ck-module-045-muted:var(--muted, #667085);
+  --ck-module-045-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-045-radius:20px;
+  --ck-module-045-gap:12px;
+  --ck-module-045-speed:.22s;
+}
+body.dark {
+  --ck-module-045-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 046
+   ========================================================= */
+:root {
+  --ck-module-046-accent:var(--primary, #635bff);
+  --ck-module-046-surface:var(--surface, #ffffff);
+  --ck-module-046-surface-soft:rgba(255,255,255,.72);
+  --ck-module-046-text:var(--text, #101828);
+  --ck-module-046-muted:var(--muted, #667085);
+  --ck-module-046-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-046-radius:20px;
+  --ck-module-046-gap:12px;
+  --ck-module-046-speed:.22s;
+}
+body.dark {
+  --ck-module-046-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 047
+   ========================================================= */
+:root {
+  --ck-module-047-accent:var(--primary, #635bff);
+  --ck-module-047-surface:var(--surface, #ffffff);
+  --ck-module-047-surface-soft:rgba(255,255,255,.72);
+  --ck-module-047-text:var(--text, #101828);
+  --ck-module-047-muted:var(--muted, #667085);
+  --ck-module-047-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-047-radius:20px;
+  --ck-module-047-gap:12px;
+  --ck-module-047-speed:.22s;
+}
+body.dark {
+  --ck-module-047-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 048
+   ========================================================= */
+:root {
+  --ck-module-048-accent:var(--primary, #635bff);
+  --ck-module-048-surface:var(--surface, #ffffff);
+  --ck-module-048-surface-soft:rgba(255,255,255,.72);
+  --ck-module-048-text:var(--text, #101828);
+  --ck-module-048-muted:var(--muted, #667085);
+  --ck-module-048-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-048-radius:20px;
+  --ck-module-048-gap:12px;
+  --ck-module-048-speed:.22s;
+}
+body.dark {
+  --ck-module-048-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 049
+   ========================================================= */
+:root {
+  --ck-module-049-accent:var(--primary, #635bff);
+  --ck-module-049-surface:var(--surface, #ffffff);
+  --ck-module-049-surface-soft:rgba(255,255,255,.72);
+  --ck-module-049-text:var(--text, #101828);
+  --ck-module-049-muted:var(--muted, #667085);
+  --ck-module-049-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-049-radius:20px;
+  --ck-module-049-gap:12px;
+  --ck-module-049-speed:.22s;
+}
+body.dark {
+  --ck-module-049-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 050
+   ========================================================= */
+:root {
+  --ck-module-050-accent:var(--primary, #635bff);
+  --ck-module-050-surface:var(--surface, #ffffff);
+  --ck-module-050-surface-soft:rgba(255,255,255,.72);
+  --ck-module-050-text:var(--text, #101828);
+  --ck-module-050-muted:var(--muted, #667085);
+  --ck-module-050-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-050-radius:20px;
+  --ck-module-050-gap:12px;
+  --ck-module-050-speed:.22s;
+}
+body.dark {
+  --ck-module-050-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 051
+   ========================================================= */
+:root {
+  --ck-module-051-accent:var(--primary, #635bff);
+  --ck-module-051-surface:var(--surface, #ffffff);
+  --ck-module-051-surface-soft:rgba(255,255,255,.72);
+  --ck-module-051-text:var(--text, #101828);
+  --ck-module-051-muted:var(--muted, #667085);
+  --ck-module-051-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-051-radius:20px;
+  --ck-module-051-gap:12px;
+  --ck-module-051-speed:.22s;
+}
+body.dark {
+  --ck-module-051-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 052
+   ========================================================= */
+:root {
+  --ck-module-052-accent:var(--primary, #635bff);
+  --ck-module-052-surface:var(--surface, #ffffff);
+  --ck-module-052-surface-soft:rgba(255,255,255,.72);
+  --ck-module-052-text:var(--text, #101828);
+  --ck-module-052-muted:var(--muted, #667085);
+  --ck-module-052-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-052-radius:20px;
+  --ck-module-052-gap:12px;
+  --ck-module-052-speed:.22s;
+}
+body.dark {
+  --ck-module-052-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 053
+   ========================================================= */
+:root {
+  --ck-module-053-accent:var(--primary, #635bff);
+  --ck-module-053-surface:var(--surface, #ffffff);
+  --ck-module-053-surface-soft:rgba(255,255,255,.72);
+  --ck-module-053-text:var(--text, #101828);
+  --ck-module-053-muted:var(--muted, #667085);
+  --ck-module-053-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-053-radius:20px;
+  --ck-module-053-gap:12px;
+  --ck-module-053-speed:.22s;
+}
+body.dark {
+  --ck-module-053-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 054
+   ========================================================= */
+:root {
+  --ck-module-054-accent:var(--primary, #635bff);
+  --ck-module-054-surface:var(--surface, #ffffff);
+  --ck-module-054-surface-soft:rgba(255,255,255,.72);
+  --ck-module-054-text:var(--text, #101828);
+  --ck-module-054-muted:var(--muted, #667085);
+  --ck-module-054-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-054-radius:20px;
+  --ck-module-054-gap:12px;
+  --ck-module-054-speed:.22s;
+}
+body.dark {
+  --ck-module-054-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 055
+   ========================================================= */
+:root {
+  --ck-module-055-accent:var(--primary, #635bff);
+  --ck-module-055-surface:var(--surface, #ffffff);
+  --ck-module-055-surface-soft:rgba(255,255,255,.72);
+  --ck-module-055-text:var(--text, #101828);
+  --ck-module-055-muted:var(--muted, #667085);
+  --ck-module-055-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-055-radius:20px;
+  --ck-module-055-gap:12px;
+  --ck-module-055-speed:.22s;
+}
+body.dark {
+  --ck-module-055-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 056
+   ========================================================= */
+:root {
+  --ck-module-056-accent:var(--primary, #635bff);
+  --ck-module-056-surface:var(--surface, #ffffff);
+  --ck-module-056-surface-soft:rgba(255,255,255,.72);
+  --ck-module-056-text:var(--text, #101828);
+  --ck-module-056-muted:var(--muted, #667085);
+  --ck-module-056-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-056-radius:20px;
+  --ck-module-056-gap:12px;
+  --ck-module-056-speed:.22s;
+}
+body.dark {
+  --ck-module-056-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 057
+   ========================================================= */
+:root {
+  --ck-module-057-accent:var(--primary, #635bff);
+  --ck-module-057-surface:var(--surface, #ffffff);
+  --ck-module-057-surface-soft:rgba(255,255,255,.72);
+  --ck-module-057-text:var(--text, #101828);
+  --ck-module-057-muted:var(--muted, #667085);
+  --ck-module-057-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-057-radius:20px;
+  --ck-module-057-gap:12px;
+  --ck-module-057-speed:.22s;
+}
+body.dark {
+  --ck-module-057-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 058
+   ========================================================= */
+:root {
+  --ck-module-058-accent:var(--primary, #635bff);
+  --ck-module-058-surface:var(--surface, #ffffff);
+  --ck-module-058-surface-soft:rgba(255,255,255,.72);
+  --ck-module-058-text:var(--text, #101828);
+  --ck-module-058-muted:var(--muted, #667085);
+  --ck-module-058-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-058-radius:20px;
+  --ck-module-058-gap:12px;
+  --ck-module-058-speed:.22s;
+}
+body.dark {
+  --ck-module-058-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 059
+   ========================================================= */
+:root {
+  --ck-module-059-accent:var(--primary, #635bff);
+  --ck-module-059-surface:var(--surface, #ffffff);
+  --ck-module-059-surface-soft:rgba(255,255,255,.72);
+  --ck-module-059-text:var(--text, #101828);
+  --ck-module-059-muted:var(--muted, #667085);
+  --ck-module-059-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-059-radius:20px;
+  --ck-module-059-gap:12px;
+  --ck-module-059-speed:.22s;
+}
+body.dark {
+  --ck-module-059-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 060
+   ========================================================= */
+:root {
+  --ck-module-060-accent:var(--primary, #635bff);
+  --ck-module-060-surface:var(--surface, #ffffff);
+  --ck-module-060-surface-soft:rgba(255,255,255,.72);
+  --ck-module-060-text:var(--text, #101828);
+  --ck-module-060-muted:var(--muted, #667085);
+  --ck-module-060-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-060-radius:20px;
+  --ck-module-060-gap:12px;
+  --ck-module-060-speed:.22s;
+}
+body.dark {
+  --ck-module-060-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 061
+   ========================================================= */
+:root {
+  --ck-module-061-accent:var(--primary, #635bff);
+  --ck-module-061-surface:var(--surface, #ffffff);
+  --ck-module-061-surface-soft:rgba(255,255,255,.72);
+  --ck-module-061-text:var(--text, #101828);
+  --ck-module-061-muted:var(--muted, #667085);
+  --ck-module-061-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-061-radius:20px;
+  --ck-module-061-gap:12px;
+  --ck-module-061-speed:.22s;
+}
+body.dark {
+  --ck-module-061-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 062
+   ========================================================= */
+:root {
+  --ck-module-062-accent:var(--primary, #635bff);
+  --ck-module-062-surface:var(--surface, #ffffff);
+  --ck-module-062-surface-soft:rgba(255,255,255,.72);
+  --ck-module-062-text:var(--text, #101828);
+  --ck-module-062-muted:var(--muted, #667085);
+  --ck-module-062-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-062-radius:20px;
+  --ck-module-062-gap:12px;
+  --ck-module-062-speed:.22s;
+}
+body.dark {
+  --ck-module-062-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 063
+   ========================================================= */
+:root {
+  --ck-module-063-accent:var(--primary, #635bff);
+  --ck-module-063-surface:var(--surface, #ffffff);
+  --ck-module-063-surface-soft:rgba(255,255,255,.72);
+  --ck-module-063-text:var(--text, #101828);
+  --ck-module-063-muted:var(--muted, #667085);
+  --ck-module-063-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-063-radius:20px;
+  --ck-module-063-gap:12px;
+  --ck-module-063-speed:.22s;
+}
+body.dark {
+  --ck-module-063-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 064
+   ========================================================= */
+:root {
+  --ck-module-064-accent:var(--primary, #635bff);
+  --ck-module-064-surface:var(--surface, #ffffff);
+  --ck-module-064-surface-soft:rgba(255,255,255,.72);
+  --ck-module-064-text:var(--text, #101828);
+  --ck-module-064-muted:var(--muted, #667085);
+  --ck-module-064-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-064-radius:20px;
+  --ck-module-064-gap:12px;
+  --ck-module-064-speed:.22s;
+}
+body.dark {
+  --ck-module-064-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 065
+   ========================================================= */
+:root {
+  --ck-module-065-accent:var(--primary, #635bff);
+  --ck-module-065-surface:var(--surface, #ffffff);
+  --ck-module-065-surface-soft:rgba(255,255,255,.72);
+  --ck-module-065-text:var(--text, #101828);
+  --ck-module-065-muted:var(--muted, #667085);
+  --ck-module-065-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-065-radius:20px;
+  --ck-module-065-gap:12px;
+  --ck-module-065-speed:.22s;
+}
+body.dark {
+  --ck-module-065-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 066
+   ========================================================= */
+:root {
+  --ck-module-066-accent:var(--primary, #635bff);
+  --ck-module-066-surface:var(--surface, #ffffff);
+  --ck-module-066-surface-soft:rgba(255,255,255,.72);
+  --ck-module-066-text:var(--text, #101828);
+  --ck-module-066-muted:var(--muted, #667085);
+  --ck-module-066-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-066-radius:20px;
+  --ck-module-066-gap:12px;
+  --ck-module-066-speed:.22s;
+}
+body.dark {
+  --ck-module-066-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 067
+   ========================================================= */
+:root {
+  --ck-module-067-accent:var(--primary, #635bff);
+  --ck-module-067-surface:var(--surface, #ffffff);
+  --ck-module-067-surface-soft:rgba(255,255,255,.72);
+  --ck-module-067-text:var(--text, #101828);
+  --ck-module-067-muted:var(--muted, #667085);
+  --ck-module-067-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-067-radius:20px;
+  --ck-module-067-gap:12px;
+  --ck-module-067-speed:.22s;
+}
+body.dark {
+  --ck-module-067-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 068
+   ========================================================= */
+:root {
+  --ck-module-068-accent:var(--primary, #635bff);
+  --ck-module-068-surface:var(--surface, #ffffff);
+  --ck-module-068-surface-soft:rgba(255,255,255,.72);
+  --ck-module-068-text:var(--text, #101828);
+  --ck-module-068-muted:var(--muted, #667085);
+  --ck-module-068-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-068-radius:20px;
+  --ck-module-068-gap:12px;
+  --ck-module-068-speed:.22s;
+}
+body.dark {
+  --ck-module-068-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 069
+   ========================================================= */
+:root {
+  --ck-module-069-accent:var(--primary, #635bff);
+  --ck-module-069-surface:var(--surface, #ffffff);
+  --ck-module-069-surface-soft:rgba(255,255,255,.72);
+  --ck-module-069-text:var(--text, #101828);
+  --ck-module-069-muted:var(--muted, #667085);
+  --ck-module-069-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-069-radius:20px;
+  --ck-module-069-gap:12px;
+  --ck-module-069-speed:.22s;
+}
+body.dark {
+  --ck-module-069-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 070
+   ========================================================= */
+:root {
+  --ck-module-070-accent:var(--primary, #635bff);
+  --ck-module-070-surface:var(--surface, #ffffff);
+  --ck-module-070-surface-soft:rgba(255,255,255,.72);
+  --ck-module-070-text:var(--text, #101828);
+  --ck-module-070-muted:var(--muted, #667085);
+  --ck-module-070-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-070-radius:20px;
+  --ck-module-070-gap:12px;
+  --ck-module-070-speed:.22s;
+}
+body.dark {
+  --ck-module-070-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 071
+   ========================================================= */
+:root {
+  --ck-module-071-accent:var(--primary, #635bff);
+  --ck-module-071-surface:var(--surface, #ffffff);
+  --ck-module-071-surface-soft:rgba(255,255,255,.72);
+  --ck-module-071-text:var(--text, #101828);
+  --ck-module-071-muted:var(--muted, #667085);
+  --ck-module-071-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-071-radius:20px;
+  --ck-module-071-gap:12px;
+  --ck-module-071-speed:.22s;
+}
+body.dark {
+  --ck-module-071-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 072
+   ========================================================= */
+:root {
+  --ck-module-072-accent:var(--primary, #635bff);
+  --ck-module-072-surface:var(--surface, #ffffff);
+  --ck-module-072-surface-soft:rgba(255,255,255,.72);
+  --ck-module-072-text:var(--text, #101828);
+  --ck-module-072-muted:var(--muted, #667085);
+  --ck-module-072-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-072-radius:20px;
+  --ck-module-072-gap:12px;
+  --ck-module-072-speed:.22s;
+}
+body.dark {
+  --ck-module-072-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 073
+   ========================================================= */
+:root {
+  --ck-module-073-accent:var(--primary, #635bff);
+  --ck-module-073-surface:var(--surface, #ffffff);
+  --ck-module-073-surface-soft:rgba(255,255,255,.72);
+  --ck-module-073-text:var(--text, #101828);
+  --ck-module-073-muted:var(--muted, #667085);
+  --ck-module-073-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-073-radius:20px;
+  --ck-module-073-gap:12px;
+  --ck-module-073-speed:.22s;
+}
+body.dark {
+  --ck-module-073-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 074
+   ========================================================= */
+:root {
+  --ck-module-074-accent:var(--primary, #635bff);
+  --ck-module-074-surface:var(--surface, #ffffff);
+  --ck-module-074-surface-soft:rgba(255,255,255,.72);
+  --ck-module-074-text:var(--text, #101828);
+  --ck-module-074-muted:var(--muted, #667085);
+  --ck-module-074-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-074-radius:20px;
+  --ck-module-074-gap:12px;
+  --ck-module-074-speed:.22s;
+}
+body.dark {
+  --ck-module-074-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 075
+   ========================================================= */
+:root {
+  --ck-module-075-accent:var(--primary, #635bff);
+  --ck-module-075-surface:var(--surface, #ffffff);
+  --ck-module-075-surface-soft:rgba(255,255,255,.72);
+  --ck-module-075-text:var(--text, #101828);
+  --ck-module-075-muted:var(--muted, #667085);
+  --ck-module-075-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-075-radius:20px;
+  --ck-module-075-gap:12px;
+  --ck-module-075-speed:.22s;
+}
+body.dark {
+  --ck-module-075-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 076
+   ========================================================= */
+:root {
+  --ck-module-076-accent:var(--primary, #635bff);
+  --ck-module-076-surface:var(--surface, #ffffff);
+  --ck-module-076-surface-soft:rgba(255,255,255,.72);
+  --ck-module-076-text:var(--text, #101828);
+  --ck-module-076-muted:var(--muted, #667085);
+  --ck-module-076-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-076-radius:20px;
+  --ck-module-076-gap:12px;
+  --ck-module-076-speed:.22s;
+}
+body.dark {
+  --ck-module-076-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 077
+   ========================================================= */
+:root {
+  --ck-module-077-accent:var(--primary, #635bff);
+  --ck-module-077-surface:var(--surface, #ffffff);
+  --ck-module-077-surface-soft:rgba(255,255,255,.72);
+  --ck-module-077-text:var(--text, #101828);
+  --ck-module-077-muted:var(--muted, #667085);
+  --ck-module-077-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-077-radius:20px;
+  --ck-module-077-gap:12px;
+  --ck-module-077-speed:.22s;
+}
+body.dark {
+  --ck-module-077-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 078
+   ========================================================= */
+:root {
+  --ck-module-078-accent:var(--primary, #635bff);
+  --ck-module-078-surface:var(--surface, #ffffff);
+  --ck-module-078-surface-soft:rgba(255,255,255,.72);
+  --ck-module-078-text:var(--text, #101828);
+  --ck-module-078-muted:var(--muted, #667085);
+  --ck-module-078-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-078-radius:20px;
+  --ck-module-078-gap:12px;
+  --ck-module-078-speed:.22s;
+}
+body.dark {
+  --ck-module-078-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 079
+   ========================================================= */
+:root {
+  --ck-module-079-accent:var(--primary, #635bff);
+  --ck-module-079-surface:var(--surface, #ffffff);
+  --ck-module-079-surface-soft:rgba(255,255,255,.72);
+  --ck-module-079-text:var(--text, #101828);
+  --ck-module-079-muted:var(--muted, #667085);
+  --ck-module-079-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-079-radius:20px;
+  --ck-module-079-gap:12px;
+  --ck-module-079-speed:.22s;
+}
+body.dark {
+  --ck-module-079-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 080
+   ========================================================= */
+:root {
+  --ck-module-080-accent:var(--primary, #635bff);
+  --ck-module-080-surface:var(--surface, #ffffff);
+  --ck-module-080-surface-soft:rgba(255,255,255,.72);
+  --ck-module-080-text:var(--text, #101828);
+  --ck-module-080-muted:var(--muted, #667085);
+  --ck-module-080-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-080-radius:20px;
+  --ck-module-080-gap:12px;
+  --ck-module-080-speed:.22s;
+}
+body.dark {
+  --ck-module-080-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 081
+   ========================================================= */
+:root {
+  --ck-module-081-accent:var(--primary, #635bff);
+  --ck-module-081-surface:var(--surface, #ffffff);
+  --ck-module-081-surface-soft:rgba(255,255,255,.72);
+  --ck-module-081-text:var(--text, #101828);
+  --ck-module-081-muted:var(--muted, #667085);
+  --ck-module-081-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-081-radius:20px;
+  --ck-module-081-gap:12px;
+  --ck-module-081-speed:.22s;
+}
+body.dark {
+  --ck-module-081-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 082
+   ========================================================= */
+:root {
+  --ck-module-082-accent:var(--primary, #635bff);
+  --ck-module-082-surface:var(--surface, #ffffff);
+  --ck-module-082-surface-soft:rgba(255,255,255,.72);
+  --ck-module-082-text:var(--text, #101828);
+  --ck-module-082-muted:var(--muted, #667085);
+  --ck-module-082-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-082-radius:20px;
+  --ck-module-082-gap:12px;
+  --ck-module-082-speed:.22s;
+}
+body.dark {
+  --ck-module-082-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 083
+   ========================================================= */
+:root {
+  --ck-module-083-accent:var(--primary, #635bff);
+  --ck-module-083-surface:var(--surface, #ffffff);
+  --ck-module-083-surface-soft:rgba(255,255,255,.72);
+  --ck-module-083-text:var(--text, #101828);
+  --ck-module-083-muted:var(--muted, #667085);
+  --ck-module-083-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-083-radius:20px;
+  --ck-module-083-gap:12px;
+  --ck-module-083-speed:.22s;
+}
+body.dark {
+  --ck-module-083-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 084
+   ========================================================= */
+:root {
+  --ck-module-084-accent:var(--primary, #635bff);
+  --ck-module-084-surface:var(--surface, #ffffff);
+  --ck-module-084-surface-soft:rgba(255,255,255,.72);
+  --ck-module-084-text:var(--text, #101828);
+  --ck-module-084-muted:var(--muted, #667085);
+  --ck-module-084-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-084-radius:20px;
+  --ck-module-084-gap:12px;
+  --ck-module-084-speed:.22s;
+}
+body.dark {
+  --ck-module-084-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 085
+   ========================================================= */
+:root {
+  --ck-module-085-accent:var(--primary, #635bff);
+  --ck-module-085-surface:var(--surface, #ffffff);
+  --ck-module-085-surface-soft:rgba(255,255,255,.72);
+  --ck-module-085-text:var(--text, #101828);
+  --ck-module-085-muted:var(--muted, #667085);
+  --ck-module-085-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-085-radius:20px;
+  --ck-module-085-gap:12px;
+  --ck-module-085-speed:.22s;
+}
+body.dark {
+  --ck-module-085-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 086
+   ========================================================= */
+:root {
+  --ck-module-086-accent:var(--primary, #635bff);
+  --ck-module-086-surface:var(--surface, #ffffff);
+  --ck-module-086-surface-soft:rgba(255,255,255,.72);
+  --ck-module-086-text:var(--text, #101828);
+  --ck-module-086-muted:var(--muted, #667085);
+  --ck-module-086-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-086-radius:20px;
+  --ck-module-086-gap:12px;
+  --ck-module-086-speed:.22s;
+}
+body.dark {
+  --ck-module-086-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 087
+   ========================================================= */
+:root {
+  --ck-module-087-accent:var(--primary, #635bff);
+  --ck-module-087-surface:var(--surface, #ffffff);
+  --ck-module-087-surface-soft:rgba(255,255,255,.72);
+  --ck-module-087-text:var(--text, #101828);
+  --ck-module-087-muted:var(--muted, #667085);
+  --ck-module-087-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-087-radius:20px;
+  --ck-module-087-gap:12px;
+  --ck-module-087-speed:.22s;
+}
+body.dark {
+  --ck-module-087-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 088
+   ========================================================= */
+:root {
+  --ck-module-088-accent:var(--primary, #635bff);
+  --ck-module-088-surface:var(--surface, #ffffff);
+  --ck-module-088-surface-soft:rgba(255,255,255,.72);
+  --ck-module-088-text:var(--text, #101828);
+  --ck-module-088-muted:var(--muted, #667085);
+  --ck-module-088-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-088-radius:20px;
+  --ck-module-088-gap:12px;
+  --ck-module-088-speed:.22s;
+}
+body.dark {
+  --ck-module-088-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 089
+   ========================================================= */
+:root {
+  --ck-module-089-accent:var(--primary, #635bff);
+  --ck-module-089-surface:var(--surface, #ffffff);
+  --ck-module-089-surface-soft:rgba(255,255,255,.72);
+  --ck-module-089-text:var(--text, #101828);
+  --ck-module-089-muted:var(--muted, #667085);
+  --ck-module-089-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-089-radius:20px;
+  --ck-module-089-gap:12px;
+  --ck-module-089-speed:.22s;
+}
+body.dark {
+  --ck-module-089-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 090
+   ========================================================= */
+:root {
+  --ck-module-090-accent:var(--primary, #635bff);
+  --ck-module-090-surface:var(--surface, #ffffff);
+  --ck-module-090-surface-soft:rgba(255,255,255,.72);
+  --ck-module-090-text:var(--text, #101828);
+  --ck-module-090-muted:var(--muted, #667085);
+  --ck-module-090-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-090-radius:20px;
+  --ck-module-090-gap:12px;
+  --ck-module-090-speed:.22s;
+}
+body.dark {
+  --ck-module-090-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 091
+   ========================================================= */
+:root {
+  --ck-module-091-accent:var(--primary, #635bff);
+  --ck-module-091-surface:var(--surface, #ffffff);
+  --ck-module-091-surface-soft:rgba(255,255,255,.72);
+  --ck-module-091-text:var(--text, #101828);
+  --ck-module-091-muted:var(--muted, #667085);
+  --ck-module-091-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-091-radius:20px;
+  --ck-module-091-gap:12px;
+  --ck-module-091-speed:.22s;
+}
+body.dark {
+  --ck-module-091-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 092
+   ========================================================= */
+:root {
+  --ck-module-092-accent:var(--primary, #635bff);
+  --ck-module-092-surface:var(--surface, #ffffff);
+  --ck-module-092-surface-soft:rgba(255,255,255,.72);
+  --ck-module-092-text:var(--text, #101828);
+  --ck-module-092-muted:var(--muted, #667085);
+  --ck-module-092-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-092-radius:20px;
+  --ck-module-092-gap:12px;
+  --ck-module-092-speed:.22s;
+}
+body.dark {
+  --ck-module-092-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 093
+   ========================================================= */
+:root {
+  --ck-module-093-accent:var(--primary, #635bff);
+  --ck-module-093-surface:var(--surface, #ffffff);
+  --ck-module-093-surface-soft:rgba(255,255,255,.72);
+  --ck-module-093-text:var(--text, #101828);
+  --ck-module-093-muted:var(--muted, #667085);
+  --ck-module-093-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-093-radius:20px;
+  --ck-module-093-gap:12px;
+  --ck-module-093-speed:.22s;
+}
+body.dark {
+  --ck-module-093-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 094
+   ========================================================= */
+:root {
+  --ck-module-094-accent:var(--primary, #635bff);
+  --ck-module-094-surface:var(--surface, #ffffff);
+  --ck-module-094-surface-soft:rgba(255,255,255,.72);
+  --ck-module-094-text:var(--text, #101828);
+  --ck-module-094-muted:var(--muted, #667085);
+  --ck-module-094-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-094-radius:20px;
+  --ck-module-094-gap:12px;
+  --ck-module-094-speed:.22s;
+}
+body.dark {
+  --ck-module-094-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 095
+   ========================================================= */
+:root {
+  --ck-module-095-accent:var(--primary, #635bff);
+  --ck-module-095-surface:var(--surface, #ffffff);
+  --ck-module-095-surface-soft:rgba(255,255,255,.72);
+  --ck-module-095-text:var(--text, #101828);
+  --ck-module-095-muted:var(--muted, #667085);
+  --ck-module-095-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-095-radius:20px;
+  --ck-module-095-gap:12px;
+  --ck-module-095-speed:.22s;
+}
+body.dark {
+  --ck-module-095-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 096
+   ========================================================= */
+:root {
+  --ck-module-096-accent:var(--primary, #635bff);
+  --ck-module-096-surface:var(--surface, #ffffff);
+  --ck-module-096-surface-soft:rgba(255,255,255,.72);
+  --ck-module-096-text:var(--text, #101828);
+  --ck-module-096-muted:var(--muted, #667085);
+  --ck-module-096-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-096-radius:20px;
+  --ck-module-096-gap:12px;
+  --ck-module-096-speed:.22s;
+}
+body.dark {
+  --ck-module-096-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 097
+   ========================================================= */
+:root {
+  --ck-module-097-accent:var(--primary, #635bff);
+  --ck-module-097-surface:var(--surface, #ffffff);
+  --ck-module-097-surface-soft:rgba(255,255,255,.72);
+  --ck-module-097-text:var(--text, #101828);
+  --ck-module-097-muted:var(--muted, #667085);
+  --ck-module-097-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-097-radius:20px;
+  --ck-module-097-gap:12px;
+  --ck-module-097-speed:.22s;
+}
+body.dark {
+  --ck-module-097-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 098
+   ========================================================= */
+:root {
+  --ck-module-098-accent:var(--primary, #635bff);
+  --ck-module-098-surface:var(--surface, #ffffff);
+  --ck-module-098-surface-soft:rgba(255,255,255,.72);
+  --ck-module-098-text:var(--text, #101828);
+  --ck-module-098-muted:var(--muted, #667085);
+  --ck-module-098-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-098-radius:20px;
+  --ck-module-098-gap:12px;
+  --ck-module-098-speed:.22s;
+}
+body.dark {
+  --ck-module-098-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 099
+   ========================================================= */
+:root {
+  --ck-module-099-accent:var(--primary, #635bff);
+  --ck-module-099-surface:var(--surface, #ffffff);
+  --ck-module-099-surface-soft:rgba(255,255,255,.72);
+  --ck-module-099-text:var(--text, #101828);
+  --ck-module-099-muted:var(--muted, #667085);
+  --ck-module-099-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-099-radius:20px;
+  --ck-module-099-gap:12px;
+  --ck-module-099-speed:.22s;
+}
+body.dark {
+  --ck-module-099-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 100
+   ========================================================= */
+:root {
+  --ck-module-100-accent:var(--primary, #635bff);
+  --ck-module-100-surface:var(--surface, #ffffff);
+  --ck-module-100-surface-soft:rgba(255,255,255,.72);
+  --ck-module-100-text:var(--text, #101828);
+  --ck-module-100-muted:var(--muted, #667085);
+  --ck-module-100-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-100-radius:20px;
+  --ck-module-100-gap:12px;
+  --ck-module-100-speed:.22s;
+}
+body.dark {
+  --ck-module-100-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 101
+   ========================================================= */
+:root {
+  --ck-module-101-accent:var(--primary, #635bff);
+  --ck-module-101-surface:var(--surface, #ffffff);
+  --ck-module-101-surface-soft:rgba(255,255,255,.72);
+  --ck-module-101-text:var(--text, #101828);
+  --ck-module-101-muted:var(--muted, #667085);
+  --ck-module-101-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-101-radius:20px;
+  --ck-module-101-gap:12px;
+  --ck-module-101-speed:.22s;
+}
+body.dark {
+  --ck-module-101-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 102
+   ========================================================= */
+:root {
+  --ck-module-102-accent:var(--primary, #635bff);
+  --ck-module-102-surface:var(--surface, #ffffff);
+  --ck-module-102-surface-soft:rgba(255,255,255,.72);
+  --ck-module-102-text:var(--text, #101828);
+  --ck-module-102-muted:var(--muted, #667085);
+  --ck-module-102-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-102-radius:20px;
+  --ck-module-102-gap:12px;
+  --ck-module-102-speed:.22s;
+}
+body.dark {
+  --ck-module-102-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 103
+   ========================================================= */
+:root {
+  --ck-module-103-accent:var(--primary, #635bff);
+  --ck-module-103-surface:var(--surface, #ffffff);
+  --ck-module-103-surface-soft:rgba(255,255,255,.72);
+  --ck-module-103-text:var(--text, #101828);
+  --ck-module-103-muted:var(--muted, #667085);
+  --ck-module-103-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-103-radius:20px;
+  --ck-module-103-gap:12px;
+  --ck-module-103-speed:.22s;
+}
+body.dark {
+  --ck-module-103-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 104
+   ========================================================= */
+:root {
+  --ck-module-104-accent:var(--primary, #635bff);
+  --ck-module-104-surface:var(--surface, #ffffff);
+  --ck-module-104-surface-soft:rgba(255,255,255,.72);
+  --ck-module-104-text:var(--text, #101828);
+  --ck-module-104-muted:var(--muted, #667085);
+  --ck-module-104-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-104-radius:20px;
+  --ck-module-104-gap:12px;
+  --ck-module-104-speed:.22s;
+}
+body.dark {
+  --ck-module-104-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 105
+   ========================================================= */
+:root {
+  --ck-module-105-accent:var(--primary, #635bff);
+  --ck-module-105-surface:var(--surface, #ffffff);
+  --ck-module-105-surface-soft:rgba(255,255,255,.72);
+  --ck-module-105-text:var(--text, #101828);
+  --ck-module-105-muted:var(--muted, #667085);
+  --ck-module-105-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-105-radius:20px;
+  --ck-module-105-gap:12px;
+  --ck-module-105-speed:.22s;
+}
+body.dark {
+  --ck-module-105-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 106
+   ========================================================= */
+:root {
+  --ck-module-106-accent:var(--primary, #635bff);
+  --ck-module-106-surface:var(--surface, #ffffff);
+  --ck-module-106-surface-soft:rgba(255,255,255,.72);
+  --ck-module-106-text:var(--text, #101828);
+  --ck-module-106-muted:var(--muted, #667085);
+  --ck-module-106-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-106-radius:20px;
+  --ck-module-106-gap:12px;
+  --ck-module-106-speed:.22s;
+}
+body.dark {
+  --ck-module-106-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 107
+   ========================================================= */
+:root {
+  --ck-module-107-accent:var(--primary, #635bff);
+  --ck-module-107-surface:var(--surface, #ffffff);
+  --ck-module-107-surface-soft:rgba(255,255,255,.72);
+  --ck-module-107-text:var(--text, #101828);
+  --ck-module-107-muted:var(--muted, #667085);
+  --ck-module-107-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-107-radius:20px;
+  --ck-module-107-gap:12px;
+  --ck-module-107-speed:.22s;
+}
+body.dark {
+  --ck-module-107-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 108
+   ========================================================= */
+:root {
+  --ck-module-108-accent:var(--primary, #635bff);
+  --ck-module-108-surface:var(--surface, #ffffff);
+  --ck-module-108-surface-soft:rgba(255,255,255,.72);
+  --ck-module-108-text:var(--text, #101828);
+  --ck-module-108-muted:var(--muted, #667085);
+  --ck-module-108-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-108-radius:20px;
+  --ck-module-108-gap:12px;
+  --ck-module-108-speed:.22s;
+}
+body.dark {
+  --ck-module-108-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 109
+   ========================================================= */
+:root {
+  --ck-module-109-accent:var(--primary, #635bff);
+  --ck-module-109-surface:var(--surface, #ffffff);
+  --ck-module-109-surface-soft:rgba(255,255,255,.72);
+  --ck-module-109-text:var(--text, #101828);
+  --ck-module-109-muted:var(--muted, #667085);
+  --ck-module-109-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-109-radius:20px;
+  --ck-module-109-gap:12px;
+  --ck-module-109-speed:.22s;
+}
+body.dark {
+  --ck-module-109-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 110
+   ========================================================= */
+:root {
+  --ck-module-110-accent:var(--primary, #635bff);
+  --ck-module-110-surface:var(--surface, #ffffff);
+  --ck-module-110-surface-soft:rgba(255,255,255,.72);
+  --ck-module-110-text:var(--text, #101828);
+  --ck-module-110-muted:var(--muted, #667085);
+  --ck-module-110-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-110-radius:20px;
+  --ck-module-110-gap:12px;
+  --ck-module-110-speed:.22s;
+}
+body.dark {
+  --ck-module-110-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 111
+   ========================================================= */
+:root {
+  --ck-module-111-accent:var(--primary, #635bff);
+  --ck-module-111-surface:var(--surface, #ffffff);
+  --ck-module-111-surface-soft:rgba(255,255,255,.72);
+  --ck-module-111-text:var(--text, #101828);
+  --ck-module-111-muted:var(--muted, #667085);
+  --ck-module-111-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-111-radius:20px;
+  --ck-module-111-gap:12px;
+  --ck-module-111-speed:.22s;
+}
+body.dark {
+  --ck-module-111-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 112
+   ========================================================= */
+:root {
+  --ck-module-112-accent:var(--primary, #635bff);
+  --ck-module-112-surface:var(--surface, #ffffff);
+  --ck-module-112-surface-soft:rgba(255,255,255,.72);
+  --ck-module-112-text:var(--text, #101828);
+  --ck-module-112-muted:var(--muted, #667085);
+  --ck-module-112-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-112-radius:20px;
+  --ck-module-112-gap:12px;
+  --ck-module-112-speed:.22s;
+}
+body.dark {
+  --ck-module-112-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 113
+   ========================================================= */
+:root {
+  --ck-module-113-accent:var(--primary, #635bff);
+  --ck-module-113-surface:var(--surface, #ffffff);
+  --ck-module-113-surface-soft:rgba(255,255,255,.72);
+  --ck-module-113-text:var(--text, #101828);
+  --ck-module-113-muted:var(--muted, #667085);
+  --ck-module-113-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-113-radius:20px;
+  --ck-module-113-gap:12px;
+  --ck-module-113-speed:.22s;
+}
+body.dark {
+  --ck-module-113-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 114
+   ========================================================= */
+:root {
+  --ck-module-114-accent:var(--primary, #635bff);
+  --ck-module-114-surface:var(--surface, #ffffff);
+  --ck-module-114-surface-soft:rgba(255,255,255,.72);
+  --ck-module-114-text:var(--text, #101828);
+  --ck-module-114-muted:var(--muted, #667085);
+  --ck-module-114-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-114-radius:20px;
+  --ck-module-114-gap:12px;
+  --ck-module-114-speed:.22s;
+}
+body.dark {
+  --ck-module-114-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 115
+   ========================================================= */
+:root {
+  --ck-module-115-accent:var(--primary, #635bff);
+  --ck-module-115-surface:var(--surface, #ffffff);
+  --ck-module-115-surface-soft:rgba(255,255,255,.72);
+  --ck-module-115-text:var(--text, #101828);
+  --ck-module-115-muted:var(--muted, #667085);
+  --ck-module-115-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-115-radius:20px;
+  --ck-module-115-gap:12px;
+  --ck-module-115-speed:.22s;
+}
+body.dark {
+  --ck-module-115-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 116
+   ========================================================= */
+:root {
+  --ck-module-116-accent:var(--primary, #635bff);
+  --ck-module-116-surface:var(--surface, #ffffff);
+  --ck-module-116-surface-soft:rgba(255,255,255,.72);
+  --ck-module-116-text:var(--text, #101828);
+  --ck-module-116-muted:var(--muted, #667085);
+  --ck-module-116-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-116-radius:20px;
+  --ck-module-116-gap:12px;
+  --ck-module-116-speed:.22s;
+}
+body.dark {
+  --ck-module-116-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 117
+   ========================================================= */
+:root {
+  --ck-module-117-accent:var(--primary, #635bff);
+  --ck-module-117-surface:var(--surface, #ffffff);
+  --ck-module-117-surface-soft:rgba(255,255,255,.72);
+  --ck-module-117-text:var(--text, #101828);
+  --ck-module-117-muted:var(--muted, #667085);
+  --ck-module-117-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-117-radius:20px;
+  --ck-module-117-gap:12px;
+  --ck-module-117-speed:.22s;
+}
+body.dark {
+  --ck-module-117-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 118
+   ========================================================= */
+:root {
+  --ck-module-118-accent:var(--primary, #635bff);
+  --ck-module-118-surface:var(--surface, #ffffff);
+  --ck-module-118-surface-soft:rgba(255,255,255,.72);
+  --ck-module-118-text:var(--text, #101828);
+  --ck-module-118-muted:var(--muted, #667085);
+  --ck-module-118-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-118-radius:20px;
+  --ck-module-118-gap:12px;
+  --ck-module-118-speed:.22s;
+}
+body.dark {
+  --ck-module-118-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 119
+   ========================================================= */
+:root {
+  --ck-module-119-accent:var(--primary, #635bff);
+  --ck-module-119-surface:var(--surface, #ffffff);
+  --ck-module-119-surface-soft:rgba(255,255,255,.72);
+  --ck-module-119-text:var(--text, #101828);
+  --ck-module-119-muted:var(--muted, #667085);
+  --ck-module-119-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-119-radius:20px;
+  --ck-module-119-gap:12px;
+  --ck-module-119-speed:.22s;
+}
+body.dark {
+  --ck-module-119-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 120
+   ========================================================= */
+:root {
+  --ck-module-120-accent:var(--primary, #635bff);
+  --ck-module-120-surface:var(--surface, #ffffff);
+  --ck-module-120-surface-soft:rgba(255,255,255,.72);
+  --ck-module-120-text:var(--text, #101828);
+  --ck-module-120-muted:var(--muted, #667085);
+  --ck-module-120-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-120-radius:20px;
+  --ck-module-120-gap:12px;
+  --ck-module-120-speed:.22s;
+}
+body.dark {
+  --ck-module-120-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 121
+   ========================================================= */
+:root {
+  --ck-module-121-accent:var(--primary, #635bff);
+  --ck-module-121-surface:var(--surface, #ffffff);
+  --ck-module-121-surface-soft:rgba(255,255,255,.72);
+  --ck-module-121-text:var(--text, #101828);
+  --ck-module-121-muted:var(--muted, #667085);
+  --ck-module-121-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-121-radius:20px;
+  --ck-module-121-gap:12px;
+  --ck-module-121-speed:.22s;
+}
+body.dark {
+  --ck-module-121-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 122
+   ========================================================= */
+:root {
+  --ck-module-122-accent:var(--primary, #635bff);
+  --ck-module-122-surface:var(--surface, #ffffff);
+  --ck-module-122-surface-soft:rgba(255,255,255,.72);
+  --ck-module-122-text:var(--text, #101828);
+  --ck-module-122-muted:var(--muted, #667085);
+  --ck-module-122-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-122-radius:20px;
+  --ck-module-122-gap:12px;
+  --ck-module-122-speed:.22s;
+}
+body.dark {
+  --ck-module-122-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 123
+   ========================================================= */
+:root {
+  --ck-module-123-accent:var(--primary, #635bff);
+  --ck-module-123-surface:var(--surface, #ffffff);
+  --ck-module-123-surface-soft:rgba(255,255,255,.72);
+  --ck-module-123-text:var(--text, #101828);
+  --ck-module-123-muted:var(--muted, #667085);
+  --ck-module-123-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-123-radius:20px;
+  --ck-module-123-gap:12px;
+  --ck-module-123-speed:.22s;
+}
+body.dark {
+  --ck-module-123-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 124
+   ========================================================= */
+:root {
+  --ck-module-124-accent:var(--primary, #635bff);
+  --ck-module-124-surface:var(--surface, #ffffff);
+  --ck-module-124-surface-soft:rgba(255,255,255,.72);
+  --ck-module-124-text:var(--text, #101828);
+  --ck-module-124-muted:var(--muted, #667085);
+  --ck-module-124-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-124-radius:20px;
+  --ck-module-124-gap:12px;
+  --ck-module-124-speed:.22s;
+}
+body.dark {
+  --ck-module-124-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 125
+   ========================================================= */
+:root {
+  --ck-module-125-accent:var(--primary, #635bff);
+  --ck-module-125-surface:var(--surface, #ffffff);
+  --ck-module-125-surface-soft:rgba(255,255,255,.72);
+  --ck-module-125-text:var(--text, #101828);
+  --ck-module-125-muted:var(--muted, #667085);
+  --ck-module-125-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-125-radius:20px;
+  --ck-module-125-gap:12px;
+  --ck-module-125-speed:.22s;
+}
+body.dark {
+  --ck-module-125-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 126
+   ========================================================= */
+:root {
+  --ck-module-126-accent:var(--primary, #635bff);
+  --ck-module-126-surface:var(--surface, #ffffff);
+  --ck-module-126-surface-soft:rgba(255,255,255,.72);
+  --ck-module-126-text:var(--text, #101828);
+  --ck-module-126-muted:var(--muted, #667085);
+  --ck-module-126-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-126-radius:20px;
+  --ck-module-126-gap:12px;
+  --ck-module-126-speed:.22s;
+}
+body.dark {
+  --ck-module-126-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 127
+   ========================================================= */
+:root {
+  --ck-module-127-accent:var(--primary, #635bff);
+  --ck-module-127-surface:var(--surface, #ffffff);
+  --ck-module-127-surface-soft:rgba(255,255,255,.72);
+  --ck-module-127-text:var(--text, #101828);
+  --ck-module-127-muted:var(--muted, #667085);
+  --ck-module-127-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-127-radius:20px;
+  --ck-module-127-gap:12px;
+  --ck-module-127-speed:.22s;
+}
+body.dark {
+  --ck-module-127-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 128
+   ========================================================= */
+:root {
+  --ck-module-128-accent:var(--primary, #635bff);
+  --ck-module-128-surface:var(--surface, #ffffff);
+  --ck-module-128-surface-soft:rgba(255,255,255,.72);
+  --ck-module-128-text:var(--text, #101828);
+  --ck-module-128-muted:var(--muted, #667085);
+  --ck-module-128-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-128-radius:20px;
+  --ck-module-128-gap:12px;
+  --ck-module-128-speed:.22s;
+}
+body.dark {
+  --ck-module-128-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 129
+   ========================================================= */
+:root {
+  --ck-module-129-accent:var(--primary, #635bff);
+  --ck-module-129-surface:var(--surface, #ffffff);
+  --ck-module-129-surface-soft:rgba(255,255,255,.72);
+  --ck-module-129-text:var(--text, #101828);
+  --ck-module-129-muted:var(--muted, #667085);
+  --ck-module-129-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-129-radius:20px;
+  --ck-module-129-gap:12px;
+  --ck-module-129-speed:.22s;
+}
+body.dark {
+  --ck-module-129-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 130
+   ========================================================= */
+:root {
+  --ck-module-130-accent:var(--primary, #635bff);
+  --ck-module-130-surface:var(--surface, #ffffff);
+  --ck-module-130-surface-soft:rgba(255,255,255,.72);
+  --ck-module-130-text:var(--text, #101828);
+  --ck-module-130-muted:var(--muted, #667085);
+  --ck-module-130-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-130-radius:20px;
+  --ck-module-130-gap:12px;
+  --ck-module-130-speed:.22s;
+}
+body.dark {
+  --ck-module-130-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 131
+   ========================================================= */
+:root {
+  --ck-module-131-accent:var(--primary, #635bff);
+  --ck-module-131-surface:var(--surface, #ffffff);
+  --ck-module-131-surface-soft:rgba(255,255,255,.72);
+  --ck-module-131-text:var(--text, #101828);
+  --ck-module-131-muted:var(--muted, #667085);
+  --ck-module-131-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-131-radius:20px;
+  --ck-module-131-gap:12px;
+  --ck-module-131-speed:.22s;
+}
+body.dark {
+  --ck-module-131-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 132
+   ========================================================= */
+:root {
+  --ck-module-132-accent:var(--primary, #635bff);
+  --ck-module-132-surface:var(--surface, #ffffff);
+  --ck-module-132-surface-soft:rgba(255,255,255,.72);
+  --ck-module-132-text:var(--text, #101828);
+  --ck-module-132-muted:var(--muted, #667085);
+  --ck-module-132-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-132-radius:20px;
+  --ck-module-132-gap:12px;
+  --ck-module-132-speed:.22s;
+}
+body.dark {
+  --ck-module-132-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 133
+   ========================================================= */
+:root {
+  --ck-module-133-accent:var(--primary, #635bff);
+  --ck-module-133-surface:var(--surface, #ffffff);
+  --ck-module-133-surface-soft:rgba(255,255,255,.72);
+  --ck-module-133-text:var(--text, #101828);
+  --ck-module-133-muted:var(--muted, #667085);
+  --ck-module-133-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-133-radius:20px;
+  --ck-module-133-gap:12px;
+  --ck-module-133-speed:.22s;
+}
+body.dark {
+  --ck-module-133-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 134
+   ========================================================= */
+:root {
+  --ck-module-134-accent:var(--primary, #635bff);
+  --ck-module-134-surface:var(--surface, #ffffff);
+  --ck-module-134-surface-soft:rgba(255,255,255,.72);
+  --ck-module-134-text:var(--text, #101828);
+  --ck-module-134-muted:var(--muted, #667085);
+  --ck-module-134-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-134-radius:20px;
+  --ck-module-134-gap:12px;
+  --ck-module-134-speed:.22s;
+}
+body.dark {
+  --ck-module-134-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 135
+   ========================================================= */
+:root {
+  --ck-module-135-accent:var(--primary, #635bff);
+  --ck-module-135-surface:var(--surface, #ffffff);
+  --ck-module-135-surface-soft:rgba(255,255,255,.72);
+  --ck-module-135-text:var(--text, #101828);
+  --ck-module-135-muted:var(--muted, #667085);
+  --ck-module-135-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-135-radius:20px;
+  --ck-module-135-gap:12px;
+  --ck-module-135-speed:.22s;
+}
+body.dark {
+  --ck-module-135-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 136
+   ========================================================= */
+:root {
+  --ck-module-136-accent:var(--primary, #635bff);
+  --ck-module-136-surface:var(--surface, #ffffff);
+  --ck-module-136-surface-soft:rgba(255,255,255,.72);
+  --ck-module-136-text:var(--text, #101828);
+  --ck-module-136-muted:var(--muted, #667085);
+  --ck-module-136-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-136-radius:20px;
+  --ck-module-136-gap:12px;
+  --ck-module-136-speed:.22s;
+}
+body.dark {
+  --ck-module-136-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 137
+   ========================================================= */
+:root {
+  --ck-module-137-accent:var(--primary, #635bff);
+  --ck-module-137-surface:var(--surface, #ffffff);
+  --ck-module-137-surface-soft:rgba(255,255,255,.72);
+  --ck-module-137-text:var(--text, #101828);
+  --ck-module-137-muted:var(--muted, #667085);
+  --ck-module-137-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-137-radius:20px;
+  --ck-module-137-gap:12px;
+  --ck-module-137-speed:.22s;
+}
+body.dark {
+  --ck-module-137-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 138
+   ========================================================= */
+:root {
+  --ck-module-138-accent:var(--primary, #635bff);
+  --ck-module-138-surface:var(--surface, #ffffff);
+  --ck-module-138-surface-soft:rgba(255,255,255,.72);
+  --ck-module-138-text:var(--text, #101828);
+  --ck-module-138-muted:var(--muted, #667085);
+  --ck-module-138-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-138-radius:20px;
+  --ck-module-138-gap:12px;
+  --ck-module-138-speed:.22s;
+}
+body.dark {
+  --ck-module-138-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 139
+   ========================================================= */
+:root {
+  --ck-module-139-accent:var(--primary, #635bff);
+  --ck-module-139-surface:var(--surface, #ffffff);
+  --ck-module-139-surface-soft:rgba(255,255,255,.72);
+  --ck-module-139-text:var(--text, #101828);
+  --ck-module-139-muted:var(--muted, #667085);
+  --ck-module-139-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-139-radius:20px;
+  --ck-module-139-gap:12px;
+  --ck-module-139-speed:.22s;
+}
+body.dark {
+  --ck-module-139-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 140
+   ========================================================= */
+:root {
+  --ck-module-140-accent:var(--primary, #635bff);
+  --ck-module-140-surface:var(--surface, #ffffff);
+  --ck-module-140-surface-soft:rgba(255,255,255,.72);
+  --ck-module-140-text:var(--text, #101828);
+  --ck-module-140-muted:var(--muted, #667085);
+  --ck-module-140-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-140-radius:20px;
+  --ck-module-140-gap:12px;
+  --ck-module-140-speed:.22s;
+}
+body.dark {
+  --ck-module-140-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 141
+   ========================================================= */
+:root {
+  --ck-module-141-accent:var(--primary, #635bff);
+  --ck-module-141-surface:var(--surface, #ffffff);
+  --ck-module-141-surface-soft:rgba(255,255,255,.72);
+  --ck-module-141-text:var(--text, #101828);
+  --ck-module-141-muted:var(--muted, #667085);
+  --ck-module-141-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-141-radius:20px;
+  --ck-module-141-gap:12px;
+  --ck-module-141-speed:.22s;
+}
+body.dark {
+  --ck-module-141-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 142
+   ========================================================= */
+:root {
+  --ck-module-142-accent:var(--primary, #635bff);
+  --ck-module-142-surface:var(--surface, #ffffff);
+  --ck-module-142-surface-soft:rgba(255,255,255,.72);
+  --ck-module-142-text:var(--text, #101828);
+  --ck-module-142-muted:var(--muted, #667085);
+  --ck-module-142-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-142-radius:20px;
+  --ck-module-142-gap:12px;
+  --ck-module-142-speed:.22s;
+}
+body.dark {
+  --ck-module-142-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 143
+   ========================================================= */
+:root {
+  --ck-module-143-accent:var(--primary, #635bff);
+  --ck-module-143-surface:var(--surface, #ffffff);
+  --ck-module-143-surface-soft:rgba(255,255,255,.72);
+  --ck-module-143-text:var(--text, #101828);
+  --ck-module-143-muted:var(--muted, #667085);
+  --ck-module-143-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-143-radius:20px;
+  --ck-module-143-gap:12px;
+  --ck-module-143-speed:.22s;
+}
+body.dark {
+  --ck-module-143-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 144
+   ========================================================= */
+:root {
+  --ck-module-144-accent:var(--primary, #635bff);
+  --ck-module-144-surface:var(--surface, #ffffff);
+  --ck-module-144-surface-soft:rgba(255,255,255,.72);
+  --ck-module-144-text:var(--text, #101828);
+  --ck-module-144-muted:var(--muted, #667085);
+  --ck-module-144-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-144-radius:20px;
+  --ck-module-144-gap:12px;
+  --ck-module-144-speed:.22s;
+}
+body.dark {
+  --ck-module-144-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 145
+   ========================================================= */
+:root {
+  --ck-module-145-accent:var(--primary, #635bff);
+  --ck-module-145-surface:var(--surface, #ffffff);
+  --ck-module-145-surface-soft:rgba(255,255,255,.72);
+  --ck-module-145-text:var(--text, #101828);
+  --ck-module-145-muted:var(--muted, #667085);
+  --ck-module-145-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-145-radius:20px;
+  --ck-module-145-gap:12px;
+  --ck-module-145-speed:.22s;
+}
+body.dark {
+  --ck-module-145-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 146
+   ========================================================= */
+:root {
+  --ck-module-146-accent:var(--primary, #635bff);
+  --ck-module-146-surface:var(--surface, #ffffff);
+  --ck-module-146-surface-soft:rgba(255,255,255,.72);
+  --ck-module-146-text:var(--text, #101828);
+  --ck-module-146-muted:var(--muted, #667085);
+  --ck-module-146-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-146-radius:20px;
+  --ck-module-146-gap:12px;
+  --ck-module-146-speed:.22s;
+}
+body.dark {
+  --ck-module-146-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 147
+   ========================================================= */
+:root {
+  --ck-module-147-accent:var(--primary, #635bff);
+  --ck-module-147-surface:var(--surface, #ffffff);
+  --ck-module-147-surface-soft:rgba(255,255,255,.72);
+  --ck-module-147-text:var(--text, #101828);
+  --ck-module-147-muted:var(--muted, #667085);
+  --ck-module-147-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-147-radius:20px;
+  --ck-module-147-gap:12px;
+  --ck-module-147-speed:.22s;
+}
+body.dark {
+  --ck-module-147-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 148
+   ========================================================= */
+:root {
+  --ck-module-148-accent:var(--primary, #635bff);
+  --ck-module-148-surface:var(--surface, #ffffff);
+  --ck-module-148-surface-soft:rgba(255,255,255,.72);
+  --ck-module-148-text:var(--text, #101828);
+  --ck-module-148-muted:var(--muted, #667085);
+  --ck-module-148-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-148-radius:20px;
+  --ck-module-148-gap:12px;
+  --ck-module-148-speed:.22s;
+}
+body.dark {
+  --ck-module-148-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 149
+   ========================================================= */
+:root {
+  --ck-module-149-accent:var(--primary, #635bff);
+  --ck-module-149-surface:var(--surface, #ffffff);
+  --ck-module-149-surface-soft:rgba(255,255,255,.72);
+  --ck-module-149-text:var(--text, #101828);
+  --ck-module-149-muted:var(--muted, #667085);
+  --ck-module-149-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-149-radius:20px;
+  --ck-module-149-gap:12px;
+  --ck-module-149-speed:.22s;
+}
+body.dark {
+  --ck-module-149-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 150
+   ========================================================= */
+:root {
+  --ck-module-150-accent:var(--primary, #635bff);
+  --ck-module-150-surface:var(--surface, #ffffff);
+  --ck-module-150-surface-soft:rgba(255,255,255,.72);
+  --ck-module-150-text:var(--text, #101828);
+  --ck-module-150-muted:var(--muted, #667085);
+  --ck-module-150-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-150-radius:20px;
+  --ck-module-150-gap:12px;
+  --ck-module-150-speed:.22s;
+}
+body.dark {
+  --ck-module-150-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 151
+   ========================================================= */
+:root {
+  --ck-module-151-accent:var(--primary, #635bff);
+  --ck-module-151-surface:var(--surface, #ffffff);
+  --ck-module-151-surface-soft:rgba(255,255,255,.72);
+  --ck-module-151-text:var(--text, #101828);
+  --ck-module-151-muted:var(--muted, #667085);
+  --ck-module-151-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-151-radius:20px;
+  --ck-module-151-gap:12px;
+  --ck-module-151-speed:.22s;
+}
+body.dark {
+  --ck-module-151-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 152
+   ========================================================= */
+:root {
+  --ck-module-152-accent:var(--primary, #635bff);
+  --ck-module-152-surface:var(--surface, #ffffff);
+  --ck-module-152-surface-soft:rgba(255,255,255,.72);
+  --ck-module-152-text:var(--text, #101828);
+  --ck-module-152-muted:var(--muted, #667085);
+  --ck-module-152-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-152-radius:20px;
+  --ck-module-152-gap:12px;
+  --ck-module-152-speed:.22s;
+}
+body.dark {
+  --ck-module-152-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 153
+   ========================================================= */
+:root {
+  --ck-module-153-accent:var(--primary, #635bff);
+  --ck-module-153-surface:var(--surface, #ffffff);
+  --ck-module-153-surface-soft:rgba(255,255,255,.72);
+  --ck-module-153-text:var(--text, #101828);
+  --ck-module-153-muted:var(--muted, #667085);
+  --ck-module-153-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-153-radius:20px;
+  --ck-module-153-gap:12px;
+  --ck-module-153-speed:.22s;
+}
+body.dark {
+  --ck-module-153-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 154
+   ========================================================= */
+:root {
+  --ck-module-154-accent:var(--primary, #635bff);
+  --ck-module-154-surface:var(--surface, #ffffff);
+  --ck-module-154-surface-soft:rgba(255,255,255,.72);
+  --ck-module-154-text:var(--text, #101828);
+  --ck-module-154-muted:var(--muted, #667085);
+  --ck-module-154-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-154-radius:20px;
+  --ck-module-154-gap:12px;
+  --ck-module-154-speed:.22s;
+}
+body.dark {
+  --ck-module-154-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 155
+   ========================================================= */
+:root {
+  --ck-module-155-accent:var(--primary, #635bff);
+  --ck-module-155-surface:var(--surface, #ffffff);
+  --ck-module-155-surface-soft:rgba(255,255,255,.72);
+  --ck-module-155-text:var(--text, #101828);
+  --ck-module-155-muted:var(--muted, #667085);
+  --ck-module-155-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-155-radius:20px;
+  --ck-module-155-gap:12px;
+  --ck-module-155-speed:.22s;
+}
+body.dark {
+  --ck-module-155-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 156
+   ========================================================= */
+:root {
+  --ck-module-156-accent:var(--primary, #635bff);
+  --ck-module-156-surface:var(--surface, #ffffff);
+  --ck-module-156-surface-soft:rgba(255,255,255,.72);
+  --ck-module-156-text:var(--text, #101828);
+  --ck-module-156-muted:var(--muted, #667085);
+  --ck-module-156-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-156-radius:20px;
+  --ck-module-156-gap:12px;
+  --ck-module-156-speed:.22s;
+}
+body.dark {
+  --ck-module-156-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 157
+   ========================================================= */
+:root {
+  --ck-module-157-accent:var(--primary, #635bff);
+  --ck-module-157-surface:var(--surface, #ffffff);
+  --ck-module-157-surface-soft:rgba(255,255,255,.72);
+  --ck-module-157-text:var(--text, #101828);
+  --ck-module-157-muted:var(--muted, #667085);
+  --ck-module-157-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-157-radius:20px;
+  --ck-module-157-gap:12px;
+  --ck-module-157-speed:.22s;
+}
+body.dark {
+  --ck-module-157-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 158
+   ========================================================= */
+:root {
+  --ck-module-158-accent:var(--primary, #635bff);
+  --ck-module-158-surface:var(--surface, #ffffff);
+  --ck-module-158-surface-soft:rgba(255,255,255,.72);
+  --ck-module-158-text:var(--text, #101828);
+  --ck-module-158-muted:var(--muted, #667085);
+  --ck-module-158-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-158-radius:20px;
+  --ck-module-158-gap:12px;
+  --ck-module-158-speed:.22s;
+}
+body.dark {
+  --ck-module-158-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 159
+   ========================================================= */
+:root {
+  --ck-module-159-accent:var(--primary, #635bff);
+  --ck-module-159-surface:var(--surface, #ffffff);
+  --ck-module-159-surface-soft:rgba(255,255,255,.72);
+  --ck-module-159-text:var(--text, #101828);
+  --ck-module-159-muted:var(--muted, #667085);
+  --ck-module-159-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-159-radius:20px;
+  --ck-module-159-gap:12px;
+  --ck-module-159-speed:.22s;
+}
+body.dark {
+  --ck-module-159-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 160
+   ========================================================= */
+:root {
+  --ck-module-160-accent:var(--primary, #635bff);
+  --ck-module-160-surface:var(--surface, #ffffff);
+  --ck-module-160-surface-soft:rgba(255,255,255,.72);
+  --ck-module-160-text:var(--text, #101828);
+  --ck-module-160-muted:var(--muted, #667085);
+  --ck-module-160-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-160-radius:20px;
+  --ck-module-160-gap:12px;
+  --ck-module-160-speed:.22s;
+}
+body.dark {
+  --ck-module-160-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 161
+   ========================================================= */
+:root {
+  --ck-module-161-accent:var(--primary, #635bff);
+  --ck-module-161-surface:var(--surface, #ffffff);
+  --ck-module-161-surface-soft:rgba(255,255,255,.72);
+  --ck-module-161-text:var(--text, #101828);
+  --ck-module-161-muted:var(--muted, #667085);
+  --ck-module-161-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-161-radius:20px;
+  --ck-module-161-gap:12px;
+  --ck-module-161-speed:.22s;
+}
+body.dark {
+  --ck-module-161-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 162
+   ========================================================= */
+:root {
+  --ck-module-162-accent:var(--primary, #635bff);
+  --ck-module-162-surface:var(--surface, #ffffff);
+  --ck-module-162-surface-soft:rgba(255,255,255,.72);
+  --ck-module-162-text:var(--text, #101828);
+  --ck-module-162-muted:var(--muted, #667085);
+  --ck-module-162-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-162-radius:20px;
+  --ck-module-162-gap:12px;
+  --ck-module-162-speed:.22s;
+}
+body.dark {
+  --ck-module-162-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 163
+   ========================================================= */
+:root {
+  --ck-module-163-accent:var(--primary, #635bff);
+  --ck-module-163-surface:var(--surface, #ffffff);
+  --ck-module-163-surface-soft:rgba(255,255,255,.72);
+  --ck-module-163-text:var(--text, #101828);
+  --ck-module-163-muted:var(--muted, #667085);
+  --ck-module-163-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-163-radius:20px;
+  --ck-module-163-gap:12px;
+  --ck-module-163-speed:.22s;
+}
+body.dark {
+  --ck-module-163-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 164
+   ========================================================= */
+:root {
+  --ck-module-164-accent:var(--primary, #635bff);
+  --ck-module-164-surface:var(--surface, #ffffff);
+  --ck-module-164-surface-soft:rgba(255,255,255,.72);
+  --ck-module-164-text:var(--text, #101828);
+  --ck-module-164-muted:var(--muted, #667085);
+  --ck-module-164-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-164-radius:20px;
+  --ck-module-164-gap:12px;
+  --ck-module-164-speed:.22s;
+}
+body.dark {
+  --ck-module-164-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 165
+   ========================================================= */
+:root {
+  --ck-module-165-accent:var(--primary, #635bff);
+  --ck-module-165-surface:var(--surface, #ffffff);
+  --ck-module-165-surface-soft:rgba(255,255,255,.72);
+  --ck-module-165-text:var(--text, #101828);
+  --ck-module-165-muted:var(--muted, #667085);
+  --ck-module-165-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-165-radius:20px;
+  --ck-module-165-gap:12px;
+  --ck-module-165-speed:.22s;
+}
+body.dark {
+  --ck-module-165-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 166
+   ========================================================= */
+:root {
+  --ck-module-166-accent:var(--primary, #635bff);
+  --ck-module-166-surface:var(--surface, #ffffff);
+  --ck-module-166-surface-soft:rgba(255,255,255,.72);
+  --ck-module-166-text:var(--text, #101828);
+  --ck-module-166-muted:var(--muted, #667085);
+  --ck-module-166-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-166-radius:20px;
+  --ck-module-166-gap:12px;
+  --ck-module-166-speed:.22s;
+}
+body.dark {
+  --ck-module-166-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 167
+   ========================================================= */
+:root {
+  --ck-module-167-accent:var(--primary, #635bff);
+  --ck-module-167-surface:var(--surface, #ffffff);
+  --ck-module-167-surface-soft:rgba(255,255,255,.72);
+  --ck-module-167-text:var(--text, #101828);
+  --ck-module-167-muted:var(--muted, #667085);
+  --ck-module-167-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-167-radius:20px;
+  --ck-module-167-gap:12px;
+  --ck-module-167-speed:.22s;
+}
+body.dark {
+  --ck-module-167-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 168
+   ========================================================= */
+:root {
+  --ck-module-168-accent:var(--primary, #635bff);
+  --ck-module-168-surface:var(--surface, #ffffff);
+  --ck-module-168-surface-soft:rgba(255,255,255,.72);
+  --ck-module-168-text:var(--text, #101828);
+  --ck-module-168-muted:var(--muted, #667085);
+  --ck-module-168-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-168-radius:20px;
+  --ck-module-168-gap:12px;
+  --ck-module-168-speed:.22s;
+}
+body.dark {
+  --ck-module-168-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 169
+   ========================================================= */
+:root {
+  --ck-module-169-accent:var(--primary, #635bff);
+  --ck-module-169-surface:var(--surface, #ffffff);
+  --ck-module-169-surface-soft:rgba(255,255,255,.72);
+  --ck-module-169-text:var(--text, #101828);
+  --ck-module-169-muted:var(--muted, #667085);
+  --ck-module-169-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-169-radius:20px;
+  --ck-module-169-gap:12px;
+  --ck-module-169-speed:.22s;
+}
+body.dark {
+  --ck-module-169-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 170
+   ========================================================= */
+:root {
+  --ck-module-170-accent:var(--primary, #635bff);
+  --ck-module-170-surface:var(--surface, #ffffff);
+  --ck-module-170-surface-soft:rgba(255,255,255,.72);
+  --ck-module-170-text:var(--text, #101828);
+  --ck-module-170-muted:var(--muted, #667085);
+  --ck-module-170-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-170-radius:20px;
+  --ck-module-170-gap:12px;
+  --ck-module-170-speed:.22s;
+}
+body.dark {
+  --ck-module-170-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 171
+   ========================================================= */
+:root {
+  --ck-module-171-accent:var(--primary, #635bff);
+  --ck-module-171-surface:var(--surface, #ffffff);
+  --ck-module-171-surface-soft:rgba(255,255,255,.72);
+  --ck-module-171-text:var(--text, #101828);
+  --ck-module-171-muted:var(--muted, #667085);
+  --ck-module-171-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-171-radius:20px;
+  --ck-module-171-gap:12px;
+  --ck-module-171-speed:.22s;
+}
+body.dark {
+  --ck-module-171-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 172
+   ========================================================= */
+:root {
+  --ck-module-172-accent:var(--primary, #635bff);
+  --ck-module-172-surface:var(--surface, #ffffff);
+  --ck-module-172-surface-soft:rgba(255,255,255,.72);
+  --ck-module-172-text:var(--text, #101828);
+  --ck-module-172-muted:var(--muted, #667085);
+  --ck-module-172-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-172-radius:20px;
+  --ck-module-172-gap:12px;
+  --ck-module-172-speed:.22s;
+}
+body.dark {
+  --ck-module-172-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 173
+   ========================================================= */
+:root {
+  --ck-module-173-accent:var(--primary, #635bff);
+  --ck-module-173-surface:var(--surface, #ffffff);
+  --ck-module-173-surface-soft:rgba(255,255,255,.72);
+  --ck-module-173-text:var(--text, #101828);
+  --ck-module-173-muted:var(--muted, #667085);
+  --ck-module-173-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-173-radius:20px;
+  --ck-module-173-gap:12px;
+  --ck-module-173-speed:.22s;
+}
+body.dark {
+  --ck-module-173-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 174
+   ========================================================= */
+:root {
+  --ck-module-174-accent:var(--primary, #635bff);
+  --ck-module-174-surface:var(--surface, #ffffff);
+  --ck-module-174-surface-soft:rgba(255,255,255,.72);
+  --ck-module-174-text:var(--text, #101828);
+  --ck-module-174-muted:var(--muted, #667085);
+  --ck-module-174-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-174-radius:20px;
+  --ck-module-174-gap:12px;
+  --ck-module-174-speed:.22s;
+}
+body.dark {
+  --ck-module-174-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 175
+   ========================================================= */
+:root {
+  --ck-module-175-accent:var(--primary, #635bff);
+  --ck-module-175-surface:var(--surface, #ffffff);
+  --ck-module-175-surface-soft:rgba(255,255,255,.72);
+  --ck-module-175-text:var(--text, #101828);
+  --ck-module-175-muted:var(--muted, #667085);
+  --ck-module-175-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-175-radius:20px;
+  --ck-module-175-gap:12px;
+  --ck-module-175-speed:.22s;
+}
+body.dark {
+  --ck-module-175-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 176
+   ========================================================= */
+:root {
+  --ck-module-176-accent:var(--primary, #635bff);
+  --ck-module-176-surface:var(--surface, #ffffff);
+  --ck-module-176-surface-soft:rgba(255,255,255,.72);
+  --ck-module-176-text:var(--text, #101828);
+  --ck-module-176-muted:var(--muted, #667085);
+  --ck-module-176-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-176-radius:20px;
+  --ck-module-176-gap:12px;
+  --ck-module-176-speed:.22s;
+}
+body.dark {
+  --ck-module-176-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 177
+   ========================================================= */
+:root {
+  --ck-module-177-accent:var(--primary, #635bff);
+  --ck-module-177-surface:var(--surface, #ffffff);
+  --ck-module-177-surface-soft:rgba(255,255,255,.72);
+  --ck-module-177-text:var(--text, #101828);
+  --ck-module-177-muted:var(--muted, #667085);
+  --ck-module-177-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-177-radius:20px;
+  --ck-module-177-gap:12px;
+  --ck-module-177-speed:.22s;
+}
+body.dark {
+  --ck-module-177-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 178
+   ========================================================= */
+:root {
+  --ck-module-178-accent:var(--primary, #635bff);
+  --ck-module-178-surface:var(--surface, #ffffff);
+  --ck-module-178-surface-soft:rgba(255,255,255,.72);
+  --ck-module-178-text:var(--text, #101828);
+  --ck-module-178-muted:var(--muted, #667085);
+  --ck-module-178-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-178-radius:20px;
+  --ck-module-178-gap:12px;
+  --ck-module-178-speed:.22s;
+}
+body.dark {
+  --ck-module-178-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 179
+   ========================================================= */
+:root {
+  --ck-module-179-accent:var(--primary, #635bff);
+  --ck-module-179-surface:var(--surface, #ffffff);
+  --ck-module-179-surface-soft:rgba(255,255,255,.72);
+  --ck-module-179-text:var(--text, #101828);
+  --ck-module-179-muted:var(--muted, #667085);
+  --ck-module-179-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-179-radius:20px;
+  --ck-module-179-gap:12px;
+  --ck-module-179-speed:.22s;
+}
+body.dark {
+  --ck-module-179-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 180
+   ========================================================= */
+:root {
+  --ck-module-180-accent:var(--primary, #635bff);
+  --ck-module-180-surface:var(--surface, #ffffff);
+  --ck-module-180-surface-soft:rgba(255,255,255,.72);
+  --ck-module-180-text:var(--text, #101828);
+  --ck-module-180-muted:var(--muted, #667085);
+  --ck-module-180-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-180-radius:20px;
+  --ck-module-180-gap:12px;
+  --ck-module-180-speed:.22s;
+}
+body.dark {
+  --ck-module-180-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 181
+   ========================================================= */
+:root {
+  --ck-module-181-accent:var(--primary, #635bff);
+  --ck-module-181-surface:var(--surface, #ffffff);
+  --ck-module-181-surface-soft:rgba(255,255,255,.72);
+  --ck-module-181-text:var(--text, #101828);
+  --ck-module-181-muted:var(--muted, #667085);
+  --ck-module-181-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-181-radius:20px;
+  --ck-module-181-gap:12px;
+  --ck-module-181-speed:.22s;
+}
+body.dark {
+  --ck-module-181-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 182
+   ========================================================= */
+:root {
+  --ck-module-182-accent:var(--primary, #635bff);
+  --ck-module-182-surface:var(--surface, #ffffff);
+  --ck-module-182-surface-soft:rgba(255,255,255,.72);
+  --ck-module-182-text:var(--text, #101828);
+  --ck-module-182-muted:var(--muted, #667085);
+  --ck-module-182-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-182-radius:20px;
+  --ck-module-182-gap:12px;
+  --ck-module-182-speed:.22s;
+}
+body.dark {
+  --ck-module-182-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 183
+   ========================================================= */
+:root {
+  --ck-module-183-accent:var(--primary, #635bff);
+  --ck-module-183-surface:var(--surface, #ffffff);
+  --ck-module-183-surface-soft:rgba(255,255,255,.72);
+  --ck-module-183-text:var(--text, #101828);
+  --ck-module-183-muted:var(--muted, #667085);
+  --ck-module-183-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-183-radius:20px;
+  --ck-module-183-gap:12px;
+  --ck-module-183-speed:.22s;
+}
+body.dark {
+  --ck-module-183-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 184
+   ========================================================= */
+:root {
+  --ck-module-184-accent:var(--primary, #635bff);
+  --ck-module-184-surface:var(--surface, #ffffff);
+  --ck-module-184-surface-soft:rgba(255,255,255,.72);
+  --ck-module-184-text:var(--text, #101828);
+  --ck-module-184-muted:var(--muted, #667085);
+  --ck-module-184-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-184-radius:20px;
+  --ck-module-184-gap:12px;
+  --ck-module-184-speed:.22s;
+}
+body.dark {
+  --ck-module-184-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 185
+   ========================================================= */
+:root {
+  --ck-module-185-accent:var(--primary, #635bff);
+  --ck-module-185-surface:var(--surface, #ffffff);
+  --ck-module-185-surface-soft:rgba(255,255,255,.72);
+  --ck-module-185-text:var(--text, #101828);
+  --ck-module-185-muted:var(--muted, #667085);
+  --ck-module-185-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-185-radius:20px;
+  --ck-module-185-gap:12px;
+  --ck-module-185-speed:.22s;
+}
+body.dark {
+  --ck-module-185-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 186
+   ========================================================= */
+:root {
+  --ck-module-186-accent:var(--primary, #635bff);
+  --ck-module-186-surface:var(--surface, #ffffff);
+  --ck-module-186-surface-soft:rgba(255,255,255,.72);
+  --ck-module-186-text:var(--text, #101828);
+  --ck-module-186-muted:var(--muted, #667085);
+  --ck-module-186-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-186-radius:20px;
+  --ck-module-186-gap:12px;
+  --ck-module-186-speed:.22s;
+}
+body.dark {
+  --ck-module-186-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 187
+   ========================================================= */
+:root {
+  --ck-module-187-accent:var(--primary, #635bff);
+  --ck-module-187-surface:var(--surface, #ffffff);
+  --ck-module-187-surface-soft:rgba(255,255,255,.72);
+  --ck-module-187-text:var(--text, #101828);
+  --ck-module-187-muted:var(--muted, #667085);
+  --ck-module-187-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-187-radius:20px;
+  --ck-module-187-gap:12px;
+  --ck-module-187-speed:.22s;
+}
+body.dark {
+  --ck-module-187-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 188
+   ========================================================= */
+:root {
+  --ck-module-188-accent:var(--primary, #635bff);
+  --ck-module-188-surface:var(--surface, #ffffff);
+  --ck-module-188-surface-soft:rgba(255,255,255,.72);
+  --ck-module-188-text:var(--text, #101828);
+  --ck-module-188-muted:var(--muted, #667085);
+  --ck-module-188-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-188-radius:20px;
+  --ck-module-188-gap:12px;
+  --ck-module-188-speed:.22s;
+}
+body.dark {
+  --ck-module-188-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 189
+   ========================================================= */
+:root {
+  --ck-module-189-accent:var(--primary, #635bff);
+  --ck-module-189-surface:var(--surface, #ffffff);
+  --ck-module-189-surface-soft:rgba(255,255,255,.72);
+  --ck-module-189-text:var(--text, #101828);
+  --ck-module-189-muted:var(--muted, #667085);
+  --ck-module-189-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-189-radius:20px;
+  --ck-module-189-gap:12px;
+  --ck-module-189-speed:.22s;
+}
+body.dark {
+  --ck-module-189-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 190
+   ========================================================= */
+:root {
+  --ck-module-190-accent:var(--primary, #635bff);
+  --ck-module-190-surface:var(--surface, #ffffff);
+  --ck-module-190-surface-soft:rgba(255,255,255,.72);
+  --ck-module-190-text:var(--text, #101828);
+  --ck-module-190-muted:var(--muted, #667085);
+  --ck-module-190-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-190-radius:20px;
+  --ck-module-190-gap:12px;
+  --ck-module-190-speed:.22s;
+}
+body.dark {
+  --ck-module-190-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 191
+   ========================================================= */
+:root {
+  --ck-module-191-accent:var(--primary, #635bff);
+  --ck-module-191-surface:var(--surface, #ffffff);
+  --ck-module-191-surface-soft:rgba(255,255,255,.72);
+  --ck-module-191-text:var(--text, #101828);
+  --ck-module-191-muted:var(--muted, #667085);
+  --ck-module-191-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-191-radius:20px;
+  --ck-module-191-gap:12px;
+  --ck-module-191-speed:.22s;
+}
+body.dark {
+  --ck-module-191-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 192
+   ========================================================= */
+:root {
+  --ck-module-192-accent:var(--primary, #635bff);
+  --ck-module-192-surface:var(--surface, #ffffff);
+  --ck-module-192-surface-soft:rgba(255,255,255,.72);
+  --ck-module-192-text:var(--text, #101828);
+  --ck-module-192-muted:var(--muted, #667085);
+  --ck-module-192-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-192-radius:20px;
+  --ck-module-192-gap:12px;
+  --ck-module-192-speed:.22s;
+}
+body.dark {
+  --ck-module-192-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 193
+   ========================================================= */
+:root {
+  --ck-module-193-accent:var(--primary, #635bff);
+  --ck-module-193-surface:var(--surface, #ffffff);
+  --ck-module-193-surface-soft:rgba(255,255,255,.72);
+  --ck-module-193-text:var(--text, #101828);
+  --ck-module-193-muted:var(--muted, #667085);
+  --ck-module-193-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-193-radius:20px;
+  --ck-module-193-gap:12px;
+  --ck-module-193-speed:.22s;
+}
+body.dark {
+  --ck-module-193-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 194
+   ========================================================= */
+:root {
+  --ck-module-194-accent:var(--primary, #635bff);
+  --ck-module-194-surface:var(--surface, #ffffff);
+  --ck-module-194-surface-soft:rgba(255,255,255,.72);
+  --ck-module-194-text:var(--text, #101828);
+  --ck-module-194-muted:var(--muted, #667085);
+  --ck-module-194-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-194-radius:20px;
+  --ck-module-194-gap:12px;
+  --ck-module-194-speed:.22s;
+}
+body.dark {
+  --ck-module-194-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 195
+   ========================================================= */
+:root {
+  --ck-module-195-accent:var(--primary, #635bff);
+  --ck-module-195-surface:var(--surface, #ffffff);
+  --ck-module-195-surface-soft:rgba(255,255,255,.72);
+  --ck-module-195-text:var(--text, #101828);
+  --ck-module-195-muted:var(--muted, #667085);
+  --ck-module-195-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-195-radius:20px;
+  --ck-module-195-gap:12px;
+  --ck-module-195-speed:.22s;
+}
+body.dark {
+  --ck-module-195-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 196
+   ========================================================= */
+:root {
+  --ck-module-196-accent:var(--primary, #635bff);
+  --ck-module-196-surface:var(--surface, #ffffff);
+  --ck-module-196-surface-soft:rgba(255,255,255,.72);
+  --ck-module-196-text:var(--text, #101828);
+  --ck-module-196-muted:var(--muted, #667085);
+  --ck-module-196-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-196-radius:20px;
+  --ck-module-196-gap:12px;
+  --ck-module-196-speed:.22s;
+}
+body.dark {
+  --ck-module-196-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 197
+   ========================================================= */
+:root {
+  --ck-module-197-accent:var(--primary, #635bff);
+  --ck-module-197-surface:var(--surface, #ffffff);
+  --ck-module-197-surface-soft:rgba(255,255,255,.72);
+  --ck-module-197-text:var(--text, #101828);
+  --ck-module-197-muted:var(--muted, #667085);
+  --ck-module-197-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-197-radius:20px;
+  --ck-module-197-gap:12px;
+  --ck-module-197-speed:.22s;
+}
+body.dark {
+  --ck-module-197-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 198
+   ========================================================= */
+:root {
+  --ck-module-198-accent:var(--primary, #635bff);
+  --ck-module-198-surface:var(--surface, #ffffff);
+  --ck-module-198-surface-soft:rgba(255,255,255,.72);
+  --ck-module-198-text:var(--text, #101828);
+  --ck-module-198-muted:var(--muted, #667085);
+  --ck-module-198-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-198-radius:20px;
+  --ck-module-198-gap:12px;
+  --ck-module-198-speed:.22s;
+}
+body.dark {
+  --ck-module-198-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 199
+   ========================================================= */
+:root {
+  --ck-module-199-accent:var(--primary, #635bff);
+  --ck-module-199-surface:var(--surface, #ffffff);
+  --ck-module-199-surface-soft:rgba(255,255,255,.72);
+  --ck-module-199-text:var(--text, #101828);
+  --ck-module-199-muted:var(--muted, #667085);
+  --ck-module-199-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-199-radius:20px;
+  --ck-module-199-gap:12px;
+  --ck-module-199-speed:.22s;
+}
+body.dark {
+  --ck-module-199-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 200
+   ========================================================= */
+:root {
+  --ck-module-200-accent:var(--primary, #635bff);
+  --ck-module-200-surface:var(--surface, #ffffff);
+  --ck-module-200-surface-soft:rgba(255,255,255,.72);
+  --ck-module-200-text:var(--text, #101828);
+  --ck-module-200-muted:var(--muted, #667085);
+  --ck-module-200-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-200-radius:20px;
+  --ck-module-200-gap:12px;
+  --ck-module-200-speed:.22s;
+}
+body.dark {
+  --ck-module-200-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 201
+   ========================================================= */
+:root {
+  --ck-module-201-accent:var(--primary, #635bff);
+  --ck-module-201-surface:var(--surface, #ffffff);
+  --ck-module-201-surface-soft:rgba(255,255,255,.72);
+  --ck-module-201-text:var(--text, #101828);
+  --ck-module-201-muted:var(--muted, #667085);
+  --ck-module-201-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-201-radius:20px;
+  --ck-module-201-gap:12px;
+  --ck-module-201-speed:.22s;
+}
+body.dark {
+  --ck-module-201-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 202
+   ========================================================= */
+:root {
+  --ck-module-202-accent:var(--primary, #635bff);
+  --ck-module-202-surface:var(--surface, #ffffff);
+  --ck-module-202-surface-soft:rgba(255,255,255,.72);
+  --ck-module-202-text:var(--text, #101828);
+  --ck-module-202-muted:var(--muted, #667085);
+  --ck-module-202-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-202-radius:20px;
+  --ck-module-202-gap:12px;
+  --ck-module-202-speed:.22s;
+}
+body.dark {
+  --ck-module-202-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 203
+   ========================================================= */
+:root {
+  --ck-module-203-accent:var(--primary, #635bff);
+  --ck-module-203-surface:var(--surface, #ffffff);
+  --ck-module-203-surface-soft:rgba(255,255,255,.72);
+  --ck-module-203-text:var(--text, #101828);
+  --ck-module-203-muted:var(--muted, #667085);
+  --ck-module-203-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-203-radius:20px;
+  --ck-module-203-gap:12px;
+  --ck-module-203-speed:.22s;
+}
+body.dark {
+  --ck-module-203-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 204
+   ========================================================= */
+:root {
+  --ck-module-204-accent:var(--primary, #635bff);
+  --ck-module-204-surface:var(--surface, #ffffff);
+  --ck-module-204-surface-soft:rgba(255,255,255,.72);
+  --ck-module-204-text:var(--text, #101828);
+  --ck-module-204-muted:var(--muted, #667085);
+  --ck-module-204-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-204-radius:20px;
+  --ck-module-204-gap:12px;
+  --ck-module-204-speed:.22s;
+}
+body.dark {
+  --ck-module-204-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 205
+   ========================================================= */
+:root {
+  --ck-module-205-accent:var(--primary, #635bff);
+  --ck-module-205-surface:var(--surface, #ffffff);
+  --ck-module-205-surface-soft:rgba(255,255,255,.72);
+  --ck-module-205-text:var(--text, #101828);
+  --ck-module-205-muted:var(--muted, #667085);
+  --ck-module-205-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-205-radius:20px;
+  --ck-module-205-gap:12px;
+  --ck-module-205-speed:.22s;
+}
+body.dark {
+  --ck-module-205-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 206
+   ========================================================= */
+:root {
+  --ck-module-206-accent:var(--primary, #635bff);
+  --ck-module-206-surface:var(--surface, #ffffff);
+  --ck-module-206-surface-soft:rgba(255,255,255,.72);
+  --ck-module-206-text:var(--text, #101828);
+  --ck-module-206-muted:var(--muted, #667085);
+  --ck-module-206-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-206-radius:20px;
+  --ck-module-206-gap:12px;
+  --ck-module-206-speed:.22s;
+}
+body.dark {
+  --ck-module-206-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 207
+   ========================================================= */
+:root {
+  --ck-module-207-accent:var(--primary, #635bff);
+  --ck-module-207-surface:var(--surface, #ffffff);
+  --ck-module-207-surface-soft:rgba(255,255,255,.72);
+  --ck-module-207-text:var(--text, #101828);
+  --ck-module-207-muted:var(--muted, #667085);
+  --ck-module-207-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-207-radius:20px;
+  --ck-module-207-gap:12px;
+  --ck-module-207-speed:.22s;
+}
+body.dark {
+  --ck-module-207-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 208
+   ========================================================= */
+:root {
+  --ck-module-208-accent:var(--primary, #635bff);
+  --ck-module-208-surface:var(--surface, #ffffff);
+  --ck-module-208-surface-soft:rgba(255,255,255,.72);
+  --ck-module-208-text:var(--text, #101828);
+  --ck-module-208-muted:var(--muted, #667085);
+  --ck-module-208-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-208-radius:20px;
+  --ck-module-208-gap:12px;
+  --ck-module-208-speed:.22s;
+}
+body.dark {
+  --ck-module-208-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 209
+   ========================================================= */
+:root {
+  --ck-module-209-accent:var(--primary, #635bff);
+  --ck-module-209-surface:var(--surface, #ffffff);
+  --ck-module-209-surface-soft:rgba(255,255,255,.72);
+  --ck-module-209-text:var(--text, #101828);
+  --ck-module-209-muted:var(--muted, #667085);
+  --ck-module-209-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-209-radius:20px;
+  --ck-module-209-gap:12px;
+  --ck-module-209-speed:.22s;
+}
+body.dark {
+  --ck-module-209-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 210
+   ========================================================= */
+:root {
+  --ck-module-210-accent:var(--primary, #635bff);
+  --ck-module-210-surface:var(--surface, #ffffff);
+  --ck-module-210-surface-soft:rgba(255,255,255,.72);
+  --ck-module-210-text:var(--text, #101828);
+  --ck-module-210-muted:var(--muted, #667085);
+  --ck-module-210-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-210-radius:20px;
+  --ck-module-210-gap:12px;
+  --ck-module-210-speed:.22s;
+}
+body.dark {
+  --ck-module-210-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 211
+   ========================================================= */
+:root {
+  --ck-module-211-accent:var(--primary, #635bff);
+  --ck-module-211-surface:var(--surface, #ffffff);
+  --ck-module-211-surface-soft:rgba(255,255,255,.72);
+  --ck-module-211-text:var(--text, #101828);
+  --ck-module-211-muted:var(--muted, #667085);
+  --ck-module-211-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-211-radius:20px;
+  --ck-module-211-gap:12px;
+  --ck-module-211-speed:.22s;
+}
+body.dark {
+  --ck-module-211-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 212
+   ========================================================= */
+:root {
+  --ck-module-212-accent:var(--primary, #635bff);
+  --ck-module-212-surface:var(--surface, #ffffff);
+  --ck-module-212-surface-soft:rgba(255,255,255,.72);
+  --ck-module-212-text:var(--text, #101828);
+  --ck-module-212-muted:var(--muted, #667085);
+  --ck-module-212-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-212-radius:20px;
+  --ck-module-212-gap:12px;
+  --ck-module-212-speed:.22s;
+}
+body.dark {
+  --ck-module-212-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 213
+   ========================================================= */
+:root {
+  --ck-module-213-accent:var(--primary, #635bff);
+  --ck-module-213-surface:var(--surface, #ffffff);
+  --ck-module-213-surface-soft:rgba(255,255,255,.72);
+  --ck-module-213-text:var(--text, #101828);
+  --ck-module-213-muted:var(--muted, #667085);
+  --ck-module-213-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-213-radius:20px;
+  --ck-module-213-gap:12px;
+  --ck-module-213-speed:.22s;
+}
+body.dark {
+  --ck-module-213-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 214
+   ========================================================= */
+:root {
+  --ck-module-214-accent:var(--primary, #635bff);
+  --ck-module-214-surface:var(--surface, #ffffff);
+  --ck-module-214-surface-soft:rgba(255,255,255,.72);
+  --ck-module-214-text:var(--text, #101828);
+  --ck-module-214-muted:var(--muted, #667085);
+  --ck-module-214-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-214-radius:20px;
+  --ck-module-214-gap:12px;
+  --ck-module-214-speed:.22s;
+}
+body.dark {
+  --ck-module-214-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 215
+   ========================================================= */
+:root {
+  --ck-module-215-accent:var(--primary, #635bff);
+  --ck-module-215-surface:var(--surface, #ffffff);
+  --ck-module-215-surface-soft:rgba(255,255,255,.72);
+  --ck-module-215-text:var(--text, #101828);
+  --ck-module-215-muted:var(--muted, #667085);
+  --ck-module-215-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-215-radius:20px;
+  --ck-module-215-gap:12px;
+  --ck-module-215-speed:.22s;
+}
+body.dark {
+  --ck-module-215-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 216
+   ========================================================= */
+:root {
+  --ck-module-216-accent:var(--primary, #635bff);
+  --ck-module-216-surface:var(--surface, #ffffff);
+  --ck-module-216-surface-soft:rgba(255,255,255,.72);
+  --ck-module-216-text:var(--text, #101828);
+  --ck-module-216-muted:var(--muted, #667085);
+  --ck-module-216-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-216-radius:20px;
+  --ck-module-216-gap:12px;
+  --ck-module-216-speed:.22s;
+}
+body.dark {
+  --ck-module-216-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 217
+   ========================================================= */
+:root {
+  --ck-module-217-accent:var(--primary, #635bff);
+  --ck-module-217-surface:var(--surface, #ffffff);
+  --ck-module-217-surface-soft:rgba(255,255,255,.72);
+  --ck-module-217-text:var(--text, #101828);
+  --ck-module-217-muted:var(--muted, #667085);
+  --ck-module-217-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-217-radius:20px;
+  --ck-module-217-gap:12px;
+  --ck-module-217-speed:.22s;
+}
+body.dark {
+  --ck-module-217-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 218
+   ========================================================= */
+:root {
+  --ck-module-218-accent:var(--primary, #635bff);
+  --ck-module-218-surface:var(--surface, #ffffff);
+  --ck-module-218-surface-soft:rgba(255,255,255,.72);
+  --ck-module-218-text:var(--text, #101828);
+  --ck-module-218-muted:var(--muted, #667085);
+  --ck-module-218-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-218-radius:20px;
+  --ck-module-218-gap:12px;
+  --ck-module-218-speed:.22s;
+}
+body.dark {
+  --ck-module-218-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 219
+   ========================================================= */
+:root {
+  --ck-module-219-accent:var(--primary, #635bff);
+  --ck-module-219-surface:var(--surface, #ffffff);
+  --ck-module-219-surface-soft:rgba(255,255,255,.72);
+  --ck-module-219-text:var(--text, #101828);
+  --ck-module-219-muted:var(--muted, #667085);
+  --ck-module-219-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-219-radius:20px;
+  --ck-module-219-gap:12px;
+  --ck-module-219-speed:.22s;
+}
+body.dark {
+  --ck-module-219-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 220
+   ========================================================= */
+:root {
+  --ck-module-220-accent:var(--primary, #635bff);
+  --ck-module-220-surface:var(--surface, #ffffff);
+  --ck-module-220-surface-soft:rgba(255,255,255,.72);
+  --ck-module-220-text:var(--text, #101828);
+  --ck-module-220-muted:var(--muted, #667085);
+  --ck-module-220-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-220-radius:20px;
+  --ck-module-220-gap:12px;
+  --ck-module-220-speed:.22s;
+}
+body.dark {
+  --ck-module-220-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 221
+   ========================================================= */
+:root {
+  --ck-module-221-accent:var(--primary, #635bff);
+  --ck-module-221-surface:var(--surface, #ffffff);
+  --ck-module-221-surface-soft:rgba(255,255,255,.72);
+  --ck-module-221-text:var(--text, #101828);
+  --ck-module-221-muted:var(--muted, #667085);
+  --ck-module-221-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-221-radius:20px;
+  --ck-module-221-gap:12px;
+  --ck-module-221-speed:.22s;
+}
+body.dark {
+  --ck-module-221-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 222
+   ========================================================= */
+:root {
+  --ck-module-222-accent:var(--primary, #635bff);
+  --ck-module-222-surface:var(--surface, #ffffff);
+  --ck-module-222-surface-soft:rgba(255,255,255,.72);
+  --ck-module-222-text:var(--text, #101828);
+  --ck-module-222-muted:var(--muted, #667085);
+  --ck-module-222-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-222-radius:20px;
+  --ck-module-222-gap:12px;
+  --ck-module-222-speed:.22s;
+}
+body.dark {
+  --ck-module-222-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 223
+   ========================================================= */
+:root {
+  --ck-module-223-accent:var(--primary, #635bff);
+  --ck-module-223-surface:var(--surface, #ffffff);
+  --ck-module-223-surface-soft:rgba(255,255,255,.72);
+  --ck-module-223-text:var(--text, #101828);
+  --ck-module-223-muted:var(--muted, #667085);
+  --ck-module-223-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-223-radius:20px;
+  --ck-module-223-gap:12px;
+  --ck-module-223-speed:.22s;
+}
+body.dark {
+  --ck-module-223-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 224
+   ========================================================= */
+:root {
+  --ck-module-224-accent:var(--primary, #635bff);
+  --ck-module-224-surface:var(--surface, #ffffff);
+  --ck-module-224-surface-soft:rgba(255,255,255,.72);
+  --ck-module-224-text:var(--text, #101828);
+  --ck-module-224-muted:var(--muted, #667085);
+  --ck-module-224-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-224-radius:20px;
+  --ck-module-224-gap:12px;
+  --ck-module-224-speed:.22s;
+}
+body.dark {
+  --ck-module-224-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 225
+   ========================================================= */
+:root {
+  --ck-module-225-accent:var(--primary, #635bff);
+  --ck-module-225-surface:var(--surface, #ffffff);
+  --ck-module-225-surface-soft:rgba(255,255,255,.72);
+  --ck-module-225-text:var(--text, #101828);
+  --ck-module-225-muted:var(--muted, #667085);
+  --ck-module-225-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-225-radius:20px;
+  --ck-module-225-gap:12px;
+  --ck-module-225-speed:.22s;
+}
+body.dark {
+  --ck-module-225-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 226
+   ========================================================= */
+:root {
+  --ck-module-226-accent:var(--primary, #635bff);
+  --ck-module-226-surface:var(--surface, #ffffff);
+  --ck-module-226-surface-soft:rgba(255,255,255,.72);
+  --ck-module-226-text:var(--text, #101828);
+  --ck-module-226-muted:var(--muted, #667085);
+  --ck-module-226-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-226-radius:20px;
+  --ck-module-226-gap:12px;
+  --ck-module-226-speed:.22s;
+}
+body.dark {
+  --ck-module-226-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 227
+   ========================================================= */
+:root {
+  --ck-module-227-accent:var(--primary, #635bff);
+  --ck-module-227-surface:var(--surface, #ffffff);
+  --ck-module-227-surface-soft:rgba(255,255,255,.72);
+  --ck-module-227-text:var(--text, #101828);
+  --ck-module-227-muted:var(--muted, #667085);
+  --ck-module-227-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-227-radius:20px;
+  --ck-module-227-gap:12px;
+  --ck-module-227-speed:.22s;
+}
+body.dark {
+  --ck-module-227-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 228
+   ========================================================= */
+:root {
+  --ck-module-228-accent:var(--primary, #635bff);
+  --ck-module-228-surface:var(--surface, #ffffff);
+  --ck-module-228-surface-soft:rgba(255,255,255,.72);
+  --ck-module-228-text:var(--text, #101828);
+  --ck-module-228-muted:var(--muted, #667085);
+  --ck-module-228-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-228-radius:20px;
+  --ck-module-228-gap:12px;
+  --ck-module-228-speed:.22s;
+}
+body.dark {
+  --ck-module-228-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 229
+   ========================================================= */
+:root {
+  --ck-module-229-accent:var(--primary, #635bff);
+  --ck-module-229-surface:var(--surface, #ffffff);
+  --ck-module-229-surface-soft:rgba(255,255,255,.72);
+  --ck-module-229-text:var(--text, #101828);
+  --ck-module-229-muted:var(--muted, #667085);
+  --ck-module-229-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-229-radius:20px;
+  --ck-module-229-gap:12px;
+  --ck-module-229-speed:.22s;
+}
+body.dark {
+  --ck-module-229-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 230
+   ========================================================= */
+:root {
+  --ck-module-230-accent:var(--primary, #635bff);
+  --ck-module-230-surface:var(--surface, #ffffff);
+  --ck-module-230-surface-soft:rgba(255,255,255,.72);
+  --ck-module-230-text:var(--text, #101828);
+  --ck-module-230-muted:var(--muted, #667085);
+  --ck-module-230-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-230-radius:20px;
+  --ck-module-230-gap:12px;
+  --ck-module-230-speed:.22s;
+}
+body.dark {
+  --ck-module-230-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 231
+   ========================================================= */
+:root {
+  --ck-module-231-accent:var(--primary, #635bff);
+  --ck-module-231-surface:var(--surface, #ffffff);
+  --ck-module-231-surface-soft:rgba(255,255,255,.72);
+  --ck-module-231-text:var(--text, #101828);
+  --ck-module-231-muted:var(--muted, #667085);
+  --ck-module-231-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-231-radius:20px;
+  --ck-module-231-gap:12px;
+  --ck-module-231-speed:.22s;
+}
+body.dark {
+  --ck-module-231-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 232
+   ========================================================= */
+:root {
+  --ck-module-232-accent:var(--primary, #635bff);
+  --ck-module-232-surface:var(--surface, #ffffff);
+  --ck-module-232-surface-soft:rgba(255,255,255,.72);
+  --ck-module-232-text:var(--text, #101828);
+  --ck-module-232-muted:var(--muted, #667085);
+  --ck-module-232-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-232-radius:20px;
+  --ck-module-232-gap:12px;
+  --ck-module-232-speed:.22s;
+}
+body.dark {
+  --ck-module-232-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 233
+   ========================================================= */
+:root {
+  --ck-module-233-accent:var(--primary, #635bff);
+  --ck-module-233-surface:var(--surface, #ffffff);
+  --ck-module-233-surface-soft:rgba(255,255,255,.72);
+  --ck-module-233-text:var(--text, #101828);
+  --ck-module-233-muted:var(--muted, #667085);
+  --ck-module-233-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-233-radius:20px;
+  --ck-module-233-gap:12px;
+  --ck-module-233-speed:.22s;
+}
+body.dark {
+  --ck-module-233-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 234
+   ========================================================= */
+:root {
+  --ck-module-234-accent:var(--primary, #635bff);
+  --ck-module-234-surface:var(--surface, #ffffff);
+  --ck-module-234-surface-soft:rgba(255,255,255,.72);
+  --ck-module-234-text:var(--text, #101828);
+  --ck-module-234-muted:var(--muted, #667085);
+  --ck-module-234-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-234-radius:20px;
+  --ck-module-234-gap:12px;
+  --ck-module-234-speed:.22s;
+}
+body.dark {
+  --ck-module-234-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 235
+   ========================================================= */
+:root {
+  --ck-module-235-accent:var(--primary, #635bff);
+  --ck-module-235-surface:var(--surface, #ffffff);
+  --ck-module-235-surface-soft:rgba(255,255,255,.72);
+  --ck-module-235-text:var(--text, #101828);
+  --ck-module-235-muted:var(--muted, #667085);
+  --ck-module-235-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-235-radius:20px;
+  --ck-module-235-gap:12px;
+  --ck-module-235-speed:.22s;
+}
+body.dark {
+  --ck-module-235-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 236
+   ========================================================= */
+:root {
+  --ck-module-236-accent:var(--primary, #635bff);
+  --ck-module-236-surface:var(--surface, #ffffff);
+  --ck-module-236-surface-soft:rgba(255,255,255,.72);
+  --ck-module-236-text:var(--text, #101828);
+  --ck-module-236-muted:var(--muted, #667085);
+  --ck-module-236-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-236-radius:20px;
+  --ck-module-236-gap:12px;
+  --ck-module-236-speed:.22s;
+}
+body.dark {
+  --ck-module-236-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 237
+   ========================================================= */
+:root {
+  --ck-module-237-accent:var(--primary, #635bff);
+  --ck-module-237-surface:var(--surface, #ffffff);
+  --ck-module-237-surface-soft:rgba(255,255,255,.72);
+  --ck-module-237-text:var(--text, #101828);
+  --ck-module-237-muted:var(--muted, #667085);
+  --ck-module-237-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-237-radius:20px;
+  --ck-module-237-gap:12px;
+  --ck-module-237-speed:.22s;
+}
+body.dark {
+  --ck-module-237-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 238
+   ========================================================= */
+:root {
+  --ck-module-238-accent:var(--primary, #635bff);
+  --ck-module-238-surface:var(--surface, #ffffff);
+  --ck-module-238-surface-soft:rgba(255,255,255,.72);
+  --ck-module-238-text:var(--text, #101828);
+  --ck-module-238-muted:var(--muted, #667085);
+  --ck-module-238-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-238-radius:20px;
+  --ck-module-238-gap:12px;
+  --ck-module-238-speed:.22s;
+}
+body.dark {
+  --ck-module-238-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 239
+   ========================================================= */
+:root {
+  --ck-module-239-accent:var(--primary, #635bff);
+  --ck-module-239-surface:var(--surface, #ffffff);
+  --ck-module-239-surface-soft:rgba(255,255,255,.72);
+  --ck-module-239-text:var(--text, #101828);
+  --ck-module-239-muted:var(--muted, #667085);
+  --ck-module-239-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-239-radius:20px;
+  --ck-module-239-gap:12px;
+  --ck-module-239-speed:.22s;
+}
+body.dark {
+  --ck-module-239-surface-soft:rgba(17,22,33,.72);
+}
+
+
+/* =========================================================
+   ADVANCED MODULE TOKEN GROUP 240
+   ========================================================= */
+:root {
+  --ck-module-240-accent:var(--primary, #635bff);
+  --ck-module-240-surface:var(--surface, #ffffff);
+  --ck-module-240-surface-soft:rgba(255,255,255,.72);
+  --ck-module-240-text:var(--text, #101828);
+  --ck-module-240-muted:var(--muted, #667085);
+  --ck-module-240-border:var(--line, rgba(16,24,40,.09));
+  --ck-module-240-radius:20px;
+  --ck-module-240-gap:12px;
+  --ck-module-240-speed:.22s;
+}
+body.dark {
+  --ck-module-240-surface-soft:rgba(17,22,33,.72);
+}
+
+/* Advanced utility 001 */
+.ck-u-gap-001{gap:2px;}
+.ck-u-radius-001{border-radius:9px;}
+.ck-u-opacity-001{opacity:0.1;}
+
+
+/* Advanced utility 002 */
+.ck-u-gap-002{gap:3px;}
+.ck-u-radius-002{border-radius:10px;}
+.ck-u-opacity-002{opacity:0.2;}
+
+
+/* Advanced utility 003 */
+.ck-u-gap-003{gap:4px;}
+.ck-u-radius-003{border-radius:11px;}
+.ck-u-opacity-003{opacity:0.3;}
+
+
+/* Advanced utility 004 */
+.ck-u-gap-004{gap:5px;}
+.ck-u-radius-004{border-radius:12px;}
+.ck-u-opacity-004{opacity:0.4;}
+
+
+/* Advanced utility 005 */
+.ck-u-gap-005{gap:6px;}
+.ck-u-radius-005{border-radius:13px;}
+.ck-u-opacity-005{opacity:0.5;}
+
+
+/* Advanced utility 006 */
+.ck-u-gap-006{gap:7px;}
+.ck-u-radius-006{border-radius:14px;}
+.ck-u-opacity-006{opacity:0.6;}
+
+
+/* Advanced utility 007 */
+.ck-u-gap-007{gap:8px;}
+.ck-u-radius-007{border-radius:15px;}
+.ck-u-opacity-007{opacity:0.7;}
+
+
+/* Advanced utility 008 */
+.ck-u-gap-008{gap:9px;}
+.ck-u-radius-008{border-radius:16px;}
+.ck-u-opacity-008{opacity:0.8;}
+
+
+/* Advanced utility 009 */
+.ck-u-gap-009{gap:10px;}
+.ck-u-radius-009{border-radius:8px;}
+.ck-u-opacity-009{opacity:0.9;}
+
+
+/* Advanced utility 010 */
+.ck-u-gap-010{gap:11px;}
+.ck-u-radius-010{border-radius:9px;}
+.ck-u-opacity-010{opacity:0.1;}
+
+
+/* Advanced utility 011 */
+.ck-u-gap-011{gap:12px;}
+.ck-u-radius-011{border-radius:10px;}
+.ck-u-opacity-011{opacity:0.1;}
+
+
+/* Advanced utility 012 */
+.ck-u-gap-012{gap:1px;}
+.ck-u-radius-012{border-radius:11px;}
+.ck-u-opacity-012{opacity:0.2;}
+
+
+/* Advanced utility 013 */
+.ck-u-gap-013{gap:2px;}
+.ck-u-radius-013{border-radius:12px;}
+.ck-u-opacity-013{opacity:0.3;}
+
+
+/* Advanced utility 014 */
+.ck-u-gap-014{gap:3px;}
+.ck-u-radius-014{border-radius:13px;}
+.ck-u-opacity-014{opacity:0.4;}
+
+
+/* Advanced utility 015 */
+.ck-u-gap-015{gap:4px;}
+.ck-u-radius-015{border-radius:14px;}
+.ck-u-opacity-015{opacity:0.5;}
+
+
+/* Advanced utility 016 */
+.ck-u-gap-016{gap:5px;}
+.ck-u-radius-016{border-radius:15px;}
+.ck-u-opacity-016{opacity:0.6;}
+
+
+/* Advanced utility 017 */
+.ck-u-gap-017{gap:6px;}
+.ck-u-radius-017{border-radius:16px;}
+.ck-u-opacity-017{opacity:0.7;}
+
+
+/* Advanced utility 018 */
+.ck-u-gap-018{gap:7px;}
+.ck-u-radius-018{border-radius:8px;}
+.ck-u-opacity-018{opacity:0.8;}
+
+
+/* Advanced utility 019 */
+.ck-u-gap-019{gap:8px;}
+.ck-u-radius-019{border-radius:9px;}
+.ck-u-opacity-019{opacity:0.9;}
+
+
+/* Advanced utility 020 */
+.ck-u-gap-020{gap:9px;}
+.ck-u-radius-020{border-radius:10px;}
+.ck-u-opacity-020{opacity:0.1;}
+
+
+/* Advanced utility 021 */
+.ck-u-gap-021{gap:10px;}
+.ck-u-radius-021{border-radius:11px;}
+.ck-u-opacity-021{opacity:0.1;}
+
+
+/* Advanced utility 022 */
+.ck-u-gap-022{gap:11px;}
+.ck-u-radius-022{border-radius:12px;}
+.ck-u-opacity-022{opacity:0.2;}
+
+
+/* Advanced utility 023 */
+.ck-u-gap-023{gap:12px;}
+.ck-u-radius-023{border-radius:13px;}
+.ck-u-opacity-023{opacity:0.3;}
+
+
+/* Advanced utility 024 */
+.ck-u-gap-024{gap:1px;}
+.ck-u-radius-024{border-radius:14px;}
+.ck-u-opacity-024{opacity:0.4;}
+
+
+/* Advanced utility 025 */
+.ck-u-gap-025{gap:2px;}
+.ck-u-radius-025{border-radius:15px;}
+.ck-u-opacity-025{opacity:0.5;}
+
+
+/* Advanced utility 026 */
+.ck-u-gap-026{gap:3px;}
+.ck-u-radius-026{border-radius:16px;}
+.ck-u-opacity-026{opacity:0.6;}
+
+
+/* Advanced utility 027 */
+.ck-u-gap-027{gap:4px;}
+.ck-u-radius-027{border-radius:8px;}
+.ck-u-opacity-027{opacity:0.7;}
+
+
+/* Advanced utility 028 */
+.ck-u-gap-028{gap:5px;}
+.ck-u-radius-028{border-radius:9px;}
+.ck-u-opacity-028{opacity:0.8;}
+
+
+/* Advanced utility 029 */
+.ck-u-gap-029{gap:6px;}
+.ck-u-radius-029{border-radius:10px;}
+.ck-u-opacity-029{opacity:0.9;}
+
+
+/* Advanced utility 030 */
+.ck-u-gap-030{gap:7px;}
+.ck-u-radius-030{border-radius:11px;}
+.ck-u-opacity-030{opacity:0.1;}
+
+
+/* Advanced utility 031 */
+.ck-u-gap-031{gap:8px;}
+.ck-u-radius-031{border-radius:12px;}
+.ck-u-opacity-031{opacity:0.1;}
+
+
+/* Advanced utility 032 */
+.ck-u-gap-032{gap:9px;}
+.ck-u-radius-032{border-radius:13px;}
+.ck-u-opacity-032{opacity:0.2;}
+
+
+/* Advanced utility 033 */
+.ck-u-gap-033{gap:10px;}
+.ck-u-radius-033{border-radius:14px;}
+.ck-u-opacity-033{opacity:0.3;}
+
+
+/* Advanced utility 034 */
+.ck-u-gap-034{gap:11px;}
+.ck-u-radius-034{border-radius:15px;}
+.ck-u-opacity-034{opacity:0.4;}
+
+
+/* Advanced utility 035 */
+.ck-u-gap-035{gap:12px;}
+.ck-u-radius-035{border-radius:16px;}
+.ck-u-opacity-035{opacity:0.5;}
+
+
+/* Advanced utility 036 */
+.ck-u-gap-036{gap:1px;}
+.ck-u-radius-036{border-radius:8px;}
+.ck-u-opacity-036{opacity:0.6;}
+
+
+/* Advanced utility 037 */
+.ck-u-gap-037{gap:2px;}
+.ck-u-radius-037{border-radius:9px;}
+.ck-u-opacity-037{opacity:0.7;}
+
+
+/* Advanced utility 038 */
+.ck-u-gap-038{gap:3px;}
+.ck-u-radius-038{border-radius:10px;}
+.ck-u-opacity-038{opacity:0.8;}
+
+
+/* Advanced utility 039 */
+.ck-u-gap-039{gap:4px;}
+.ck-u-radius-039{border-radius:11px;}
+.ck-u-opacity-039{opacity:0.9;}
+
+
+/* Advanced utility 040 */
+.ck-u-gap-040{gap:5px;}
+.ck-u-radius-040{border-radius:12px;}
+.ck-u-opacity-040{opacity:0.1;}
+
+
+/* Advanced utility 041 */
+.ck-u-gap-041{gap:6px;}
+.ck-u-radius-041{border-radius:13px;}
+.ck-u-opacity-041{opacity:0.1;}
+
+
+/* Advanced utility 042 */
+.ck-u-gap-042{gap:7px;}
+.ck-u-radius-042{border-radius:14px;}
+.ck-u-opacity-042{opacity:0.2;}
+
+
+/* Advanced utility 043 */
+.ck-u-gap-043{gap:8px;}
+.ck-u-radius-043{border-radius:15px;}
+.ck-u-opacity-043{opacity:0.3;}
+
+
+/* Advanced utility 044 */
+.ck-u-gap-044{gap:9px;}
+.ck-u-radius-044{border-radius:16px;}
+.ck-u-opacity-044{opacity:0.4;}
+
+
+/* Advanced utility 045 */
+.ck-u-gap-045{gap:10px;}
+.ck-u-radius-045{border-radius:8px;}
+.ck-u-opacity-045{opacity:0.5;}
+
+
+/* Advanced utility 046 */
+.ck-u-gap-046{gap:11px;}
+.ck-u-radius-046{border-radius:9px;}
+.ck-u-opacity-046{opacity:0.6;}
+
+
+/* Advanced utility 047 */
+.ck-u-gap-047{gap:12px;}
+.ck-u-radius-047{border-radius:10px;}
+.ck-u-opacity-047{opacity:0.7;}
+
+
+/* Advanced utility 048 */
+.ck-u-gap-048{gap:1px;}
+.ck-u-radius-048{border-radius:11px;}
+.ck-u-opacity-048{opacity:0.8;}
+
+
+/* Advanced utility 049 */
+.ck-u-gap-049{gap:2px;}
+.ck-u-radius-049{border-radius:12px;}
+.ck-u-opacity-049{opacity:0.9;}
+
+
+/* Advanced utility 050 */
+.ck-u-gap-050{gap:3px;}
+.ck-u-radius-050{border-radius:13px;}
+.ck-u-opacity-050{opacity:0.1;}
+
+
+/* Advanced utility 051 */
+.ck-u-gap-051{gap:4px;}
+.ck-u-radius-051{border-radius:14px;}
+.ck-u-opacity-051{opacity:0.1;}
+
+
+/* Advanced utility 052 */
+.ck-u-gap-052{gap:5px;}
+.ck-u-radius-052{border-radius:15px;}
+.ck-u-opacity-052{opacity:0.2;}
+
+
+/* Advanced utility 053 */
+.ck-u-gap-053{gap:6px;}
+.ck-u-radius-053{border-radius:16px;}
+.ck-u-opacity-053{opacity:0.3;}
+
+
+/* Advanced utility 054 */
+.ck-u-gap-054{gap:7px;}
+.ck-u-radius-054{border-radius:8px;}
+.ck-u-opacity-054{opacity:0.4;}
+
+
+/* Advanced utility 055 */
+.ck-u-gap-055{gap:8px;}
+.ck-u-radius-055{border-radius:9px;}
+.ck-u-opacity-055{opacity:0.5;}
+
+
+/* Advanced utility 056 */
+.ck-u-gap-056{gap:9px;}
+.ck-u-radius-056{border-radius:10px;}
+.ck-u-opacity-056{opacity:0.6;}
+
+
+/* Advanced utility 057 */
+.ck-u-gap-057{gap:10px;}
+.ck-u-radius-057{border-radius:11px;}
+.ck-u-opacity-057{opacity:0.7;}
+
+
+/* Advanced utility 058 */
+.ck-u-gap-058{gap:11px;}
+.ck-u-radius-058{border-radius:12px;}
+.ck-u-opacity-058{opacity:0.8;}
+
+
+/* Advanced utility 059 */
+.ck-u-gap-059{gap:12px;}
+.ck-u-radius-059{border-radius:13px;}
+.ck-u-opacity-059{opacity:0.9;}
+
+
+/* Advanced utility 060 */
+.ck-u-gap-060{gap:1px;}
+.ck-u-radius-060{border-radius:14px;}
+.ck-u-opacity-060{opacity:0.1;}
+
+
+/* Advanced utility 061 */
+.ck-u-gap-061{gap:2px;}
+.ck-u-radius-061{border-radius:15px;}
+.ck-u-opacity-061{opacity:0.1;}
+
+
+/* Advanced utility 062 */
+.ck-u-gap-062{gap:3px;}
+.ck-u-radius-062{border-radius:16px;}
+.ck-u-opacity-062{opacity:0.2;}
+
+
+/* Advanced utility 063 */
+.ck-u-gap-063{gap:4px;}
+.ck-u-radius-063{border-radius:8px;}
+.ck-u-opacity-063{opacity:0.3;}
+
+
+/* Advanced utility 064 */
+.ck-u-gap-064{gap:5px;}
+.ck-u-radius-064{border-radius:9px;}
+.ck-u-opacity-064{opacity:0.4;}
+
+
+/* Advanced utility 065 */
+.ck-u-gap-065{gap:6px;}
+.ck-u-radius-065{border-radius:10px;}
+.ck-u-opacity-065{opacity:0.5;}
+
+
+/* Advanced utility 066 */
+.ck-u-gap-066{gap:7px;}
+.ck-u-radius-066{border-radius:11px;}
+.ck-u-opacity-066{opacity:0.6;}
+
+
+/* Advanced utility 067 */
+.ck-u-gap-067{gap:8px;}
+.ck-u-radius-067{border-radius:12px;}
+.ck-u-opacity-067{opacity:0.7;}
+
+
+/* Advanced utility 068 */
+.ck-u-gap-068{gap:9px;}
+.ck-u-radius-068{border-radius:13px;}
+.ck-u-opacity-068{opacity:0.8;}
+
+
+/* Advanced utility 069 */
+.ck-u-gap-069{gap:10px;}
+.ck-u-radius-069{border-radius:14px;}
+.ck-u-opacity-069{opacity:0.9;}
+
+
+/* Advanced utility 070 */
+.ck-u-gap-070{gap:11px;}
+.ck-u-radius-070{border-radius:15px;}
+.ck-u-opacity-070{opacity:0.1;}
+
+
+/* Advanced utility 071 */
+.ck-u-gap-071{gap:12px;}
+.ck-u-radius-071{border-radius:16px;}
+.ck-u-opacity-071{opacity:0.1;}
+
+
+/* Advanced utility 072 */
+.ck-u-gap-072{gap:1px;}
+.ck-u-radius-072{border-radius:8px;}
+.ck-u-opacity-072{opacity:0.2;}
+
+
+/* Advanced utility 073 */
+.ck-u-gap-073{gap:2px;}
+.ck-u-radius-073{border-radius:9px;}
+.ck-u-opacity-073{opacity:0.3;}
+
+
+/* Advanced utility 074 */
+.ck-u-gap-074{gap:3px;}
+.ck-u-radius-074{border-radius:10px;}
+.ck-u-opacity-074{opacity:0.4;}
+
+
+/* Advanced utility 075 */
+.ck-u-gap-075{gap:4px;}
+.ck-u-radius-075{border-radius:11px;}
+.ck-u-opacity-075{opacity:0.5;}
+
+
+/* Advanced utility 076 */
+.ck-u-gap-076{gap:5px;}
+.ck-u-radius-076{border-radius:12px;}
+.ck-u-opacity-076{opacity:0.6;}
+
+
+/* Advanced utility 077 */
+.ck-u-gap-077{gap:6px;}
+.ck-u-radius-077{border-radius:13px;}
+.ck-u-opacity-077{opacity:0.7;}
+
+
+/* Advanced utility 078 */
+.ck-u-gap-078{gap:7px;}
+.ck-u-radius-078{border-radius:14px;}
+.ck-u-opacity-078{opacity:0.8;}
+
+
+/* Advanced utility 079 */
+.ck-u-gap-079{gap:8px;}
+.ck-u-radius-079{border-radius:15px;}
+.ck-u-opacity-079{opacity:0.9;}
+
+
+/* Advanced utility 080 */
+.ck-u-gap-080{gap:9px;}
+.ck-u-radius-080{border-radius:16px;}
+.ck-u-opacity-080{opacity:0.1;}
+
+
+/* Advanced utility 081 */
+.ck-u-gap-081{gap:10px;}
+.ck-u-radius-081{border-radius:8px;}
+.ck-u-opacity-081{opacity:0.1;}
+
+
+/* Advanced utility 082 */
+.ck-u-gap-082{gap:11px;}
+.ck-u-radius-082{border-radius:9px;}
+.ck-u-opacity-082{opacity:0.2;}
+
+
+/* Advanced utility 083 */
+.ck-u-gap-083{gap:12px;}
+.ck-u-radius-083{border-radius:10px;}
+.ck-u-opacity-083{opacity:0.3;}
+
+
+/* Advanced utility 084 */
+.ck-u-gap-084{gap:1px;}
+.ck-u-radius-084{border-radius:11px;}
+.ck-u-opacity-084{opacity:0.4;}
+
+
+/* Advanced utility 085 */
+.ck-u-gap-085{gap:2px;}
+.ck-u-radius-085{border-radius:12px;}
+.ck-u-opacity-085{opacity:0.5;}
+
+
+/* Advanced utility 086 */
+.ck-u-gap-086{gap:3px;}
+.ck-u-radius-086{border-radius:13px;}
+.ck-u-opacity-086{opacity:0.6;}
+
+
+/* Advanced utility 087 */
+.ck-u-gap-087{gap:4px;}
+.ck-u-radius-087{border-radius:14px;}
+.ck-u-opacity-087{opacity:0.7;}
+
+
+/* Advanced utility 088 */
+.ck-u-gap-088{gap:5px;}
+.ck-u-radius-088{border-radius:15px;}
+.ck-u-opacity-088{opacity:0.8;}
+
+
+/* Advanced utility 089 */
+.ck-u-gap-089{gap:6px;}
+.ck-u-radius-089{border-radius:16px;}
+.ck-u-opacity-089{opacity:0.9;}
+
+
+/* Advanced utility 090 */
+.ck-u-gap-090{gap:7px;}
+.ck-u-radius-090{border-radius:8px;}
+.ck-u-opacity-090{opacity:0.1;}
+
+
+/* Advanced utility 091 */
+.ck-u-gap-091{gap:8px;}
+.ck-u-radius-091{border-radius:9px;}
+.ck-u-opacity-091{opacity:0.1;}
+
+
+/* Advanced utility 092 */
+.ck-u-gap-092{gap:9px;}
+.ck-u-radius-092{border-radius:10px;}
+.ck-u-opacity-092{opacity:0.2;}
+
+
+/* Advanced utility 093 */
+.ck-u-gap-093{gap:10px;}
+.ck-u-radius-093{border-radius:11px;}
+.ck-u-opacity-093{opacity:0.3;}
+
+
+/* Advanced utility 094 */
+.ck-u-gap-094{gap:11px;}
+.ck-u-radius-094{border-radius:12px;}
+.ck-u-opacity-094{opacity:0.4;}
+
+
+/* Advanced utility 095 */
+.ck-u-gap-095{gap:12px;}
+.ck-u-radius-095{border-radius:13px;}
+.ck-u-opacity-095{opacity:0.5;}
+
+
+/* Advanced utility 096 */
+.ck-u-gap-096{gap:1px;}
+.ck-u-radius-096{border-radius:14px;}
+.ck-u-opacity-096{opacity:0.6;}
+
+
+/* Advanced utility 097 */
+.ck-u-gap-097{gap:2px;}
+.ck-u-radius-097{border-radius:15px;}
+.ck-u-opacity-097{opacity:0.7;}
+
+
+/* Advanced utility 098 */
+.ck-u-gap-098{gap:3px;}
+.ck-u-radius-098{border-radius:16px;}
+.ck-u-opacity-098{opacity:0.8;}
+
+
+/* Advanced utility 099 */
+.ck-u-gap-099{gap:4px;}
+.ck-u-radius-099{border-radius:8px;}
+.ck-u-opacity-099{opacity:0.9;}
+
+
+/* Advanced utility 100 */
+.ck-u-gap-100{gap:5px;}
+.ck-u-radius-100{border-radius:9px;}
+.ck-u-opacity-100{opacity:0.1;}
+
+@media (max-width:1350px){
+  .future-module-001{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-002{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-003{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-004{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-005{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-006{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-007{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-008{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-009{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-010{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-011{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-012{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-013{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-014{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-015{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-016{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-017{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-018{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-019{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-020{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-021{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-022{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-023{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-024{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-025{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-026{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-027{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-028{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-029{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-030{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-031{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-032{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-033{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-034{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-035{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-036{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-037{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-038{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-039{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-040{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-041{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-042{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-043{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-044{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-045{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-046{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-047{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-048{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-049{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-050{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-051{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-052{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-053{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1150px){
+  .future-module-054{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1100px){
+  .future-module-055{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1400px){
+  .future-module-056{--module-local-scale:1.00;}
+}
+
+
+@media (max-width:1350px){
+  .future-module-057{--module-local-scale:0.97;}
+}
+
+
+@media (max-width:1300px){
+  .future-module-058{--module-local-scale:0.94;}
+}
+
+
+@media (max-width:1250px){
+  .future-module-059{--module-local-scale:0.91;}
+}
+
+
+@media (max-width:1200px){
+  .future-module-060{--module-local-scale:1.00;}
+}
