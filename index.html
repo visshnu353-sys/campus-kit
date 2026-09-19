@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CampusKit — Free Student Tools</title>
+<meta name="description" content="Free calculators and productivity tools for college students.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#">Campus<span>Kit</span></a>
+    <div class="links">
+      <a href="#tools">Tools</a><a href="#resources">Resources</a><a href="#premium">Premium</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">FREE STUDENT TOOLKIT</p>
+    <h1>Study smarter.<br><span>Save time.</span></h1>
+    <p class="sub">Useful calculators and quick tools for college students — free, fast and mobile-friendly.</p>
+    <a class="btn" href="#tools">Explore tools ↓</a>
+  </div>
+  <div class="hero-card">
+    <div class="mini">TODAY'S QUICK TOOL</div>
+    <h3>CGPA Calculator</h3>
+    <p>Convert semester grades into a CGPA estimate in seconds.</p>
+    <a href="#cgpa">Try it →</a>
+  </div>
+</section>
+
+<div class="ad-slot">ADVERTISEMENT SPACE</div>
+
+<section id="tools" class="section">
+  <p class="eyebrow">POPULAR TOOLS</p>
+  <h2>Everything students actually use</h2>
+  <div class="grid">
+    <article class="card" id="cgpa">
+      <div class="icon">🎓</div><h3>CGPA Calculator</h3>
+      <p>Enter credits and grades to calculate your weighted CGPA.</p>
+      <div id="rows"></div>
+      <button class="secondary" onclick="addRow()">+ Add subject</button>
+      <button class="btn small" onclick="calcCGPA()">Calculate CGPA</button>
+      <div id="cgpaResult" class="result"></div>
+    </article>
+
+    <article class="card">
+      <div class="icon">⏱️</div><h3>Pomodoro Timer</h3>
+      <p>Focus for 25 minutes, then take a 5-minute break.</p>
+      <div id="timer">25:00</div>
+      <button class="btn small" onclick="startTimer()">Start</button>
+      <button class="secondary" onclick="resetTimer()">Reset</button>
+    </article>
+
+    <article class="card">
+      <div class="icon">💻</div><h3>Percentage Calculator</h3>
+      <p>Find what percentage one number is of another.</p>
+      <input id="part" type="number" placeholder="Your marks">
+      <input id="total" type="number" placeholder="Total marks">
+      <button class="btn small" onclick="percentage()">Calculate</button>
+      <div id="percentResult" class="result"></div>
+    </article>
+  </div>
+</section>
+
+<div class="ad-slot">ADVERTISEMENT SPACE</div>
+
+<section id="resources" class="section resources">
+  <p class="eyebrow">STUDENT RESOURCES</p>
+  <h2>Useful recommendations</h2>
+  <div class="resource-grid">
+    <a class="resource" href="#" onclick="return affiliate(event)">
+      <b>Best student laptops</b><span>Compare options →</span>
+    </a>
+    <a class="resource" href="#" onclick="return affiliate(event)">
+      <b>Programming courses</b><span>Explore courses →</span>
+    </a>
+    <a class="resource" href="#" onclick="return affiliate(event)">
+      <b>Student productivity apps</b><span>See recommendations →</span>
+    </a>
+  </div>
+  <p class="note">Replace these links with your affiliate links after joining an affiliate program.</p>
+</section>
+
+<section id="premium" class="premium">
+  <div>
+    <p class="eyebrow">PREMIUM</p>
+    <h2>Turn free users into customers.</h2>
+    <p>Offer downloadable study planners, interview prep packs, project templates or other original digital products.</p>
+  </div>
+  <a class="btn" href="mailto:you@example.com?subject=CampusKit%20Premium">Get Premium</a>
+</section>
+
+<section class="faq">
+<h2>How this website can make money</h2>
+<div><b>1. Display ads</b><p>Add Google AdSense or another ad network once the site has eligible traffic.</p></div>
+<div><b>2. Affiliate links</b><p>Recommend relevant products/services and earn commissions where the program allows it.</p></div>
+<div><b>3. Digital products</b><p>Sell original templates, guides, interview packs and study resources.</p></div>
+</section>
+</main>
+
+<footer>
+  <b>CampusKit</b><span>Built for students.</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
