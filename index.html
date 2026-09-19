@@ -210,6 +210,89 @@
         <p class="note">Replace these placeholders with your affiliate links when you are ready.</p>
       </section>
 
+
+      <section class="student-os" id="studentOS">
+        <div class="section-bar os-heading">
+          <div>
+            <span class="micro-label">04 / STUDENT OS</span>
+            <h2>Your personal <span>command deck.</span></h2>
+          </div>
+          <div class="os-live"><i></i> LOCAL WORKSPACE</div>
+        </div>
+
+        <div class="os-grid">
+          <article class="os-card os-focus-card">
+            <div class="os-card-top">
+              <div>
+                <span class="os-kicker">FOCUS</span>
+                <h3>Deep work</h3>
+              </div>
+              <span class="os-icon">◷</span>
+            </div>
+            <div class="os-focus-display" id="osFocusDisplay">25:00</div>
+            <div class="os-progress"><span id="osFocusProgress"></span></div>
+            <div class="os-controls">
+              <button class="os-primary" id="osStartFocus">Start session</button>
+              <button class="os-ghost" id="osResetFocus">Reset</button>
+            </div>
+          </article>
+
+          <article class="os-card">
+            <div class="os-card-top">
+              <div>
+                <span class="os-kicker">ACADEMICS</span>
+                <h3>Grade snapshot</h3>
+              </div>
+              <span class="os-icon purple">A+</span>
+            </div>
+            <div class="grade-row">
+              <div><strong id="osCgpa">—</strong><span>CGPA</span></div>
+              <div><strong id="osTarget">9.00</strong><span>target</span></div>
+            </div>
+            <div class="os-input-row">
+              <input id="osCgpaInput" type="number" min="0" max="10" step="0.01" placeholder="Enter CGPA">
+              <button id="osSaveCgpa">Save</button>
+            </div>
+            <a href="cgpa-calculator.html" class="os-link">Open full calculator ↗</a>
+          </article>
+
+          <article class="os-card">
+            <div class="os-card-top">
+              <div>
+                <span class="os-kicker">TODAY</span>
+                <h3>Mission progress</h3>
+              </div>
+              <span class="os-icon cyan">✓</span>
+            </div>
+            <div class="mission-number"><span id="missionDone">0</span><small>/ 3</small></div>
+            <div class="mission-track"><span id="missionBar"></span></div>
+            <div class="mission-list">
+              <label><input type="checkbox" class="mission-check"> Revise one topic</label>
+              <label><input type="checkbox" class="mission-check"> Complete one coding problem</label>
+              <label><input type="checkbox" class="mission-check"> Spend 25 min on a project</label>
+            </div>
+          </article>
+
+          <article class="os-card os-command-card">
+            <div class="os-card-top">
+              <div>
+                <span class="os-kicker">QUICK ACTIONS</span>
+                <h3>Launch something.</h3>
+              </div>
+              <span class="os-icon orange">⌘</span>
+            </div>
+            <div class="os-action-grid">
+              <a href="gpa-calculator.html"><span>◫</span> GPA</a>
+              <a href="percentage-calculator.html"><span>%</span> Marks</a>
+              <a href="pomodoro-timer.html"><span>◷</span> Focus</a>
+              <a href="study-planner.html"><span>✓</span> Planner</a>
+              <a href="placement-guide.html"><span>↗</span> Career</a>
+              <a href="student-project-ideas.html"><span>✦</span> Build</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="premium-v4" id="premium">
         <div class="premium-grid-lines"></div>
         <div class="premium-copy">
@@ -311,6 +394,99 @@
       themeToggle.textContent='☾';
     }
   </script>
+
+<script>
+/* CampusKit Student OS runtime */
+(() => {
+  const focusDisplay = document.getElementById('osFocusDisplay');
+  const focusProgress = document.getElementById('osFocusProgress');
+  const startFocus = document.getElementById('osStartFocus');
+  const resetFocus = document.getElementById('osResetFocus');
+  const cgpaInput = document.getElementById('osCgpaInput');
+  const saveCgpa = document.getElementById('osSaveCgpa');
+  const cgpaValue = document.getElementById('osCgpa');
+  const checks = [...document.querySelectorAll('.mission-check')];
+  const missionDone = document.getElementById('missionDone');
+  const missionBar = document.getElementById('missionBar');
+
+  let seconds = 25 * 60;
+  let focusRunning = false;
+  let focusInterval = null;
+  const totalFocus = 25 * 60;
+
+  function renderFocus(){
+    const mins = String(Math.floor(seconds / 60)).padStart(2,'0');
+    const secs = String(seconds % 60).padStart(2,'0');
+    if(focusDisplay) focusDisplay.textContent = `${mins}:${secs}`;
+    if(focusProgress){
+      focusProgress.style.width = `${((totalFocus - seconds) / totalFocus) * 100}%`;
+    }
+    if(startFocus) startFocus.textContent = focusRunning ? 'Pause session' : 'Start session';
+  }
+
+  function toggleFocus(){
+    if(focusRunning){
+      clearInterval(focusInterval);
+      focusRunning = false;
+    }else{
+      focusRunning = true;
+      focusInterval = setInterval(() => {
+        if(seconds > 0){
+          seconds--;
+          renderFocus();
+        }else{
+          clearInterval(focusInterval);
+          focusRunning = false;
+          try { new AudioContext(); } catch(e){}
+          renderFocus();
+        }
+      },1000);
+    }
+    renderFocus();
+  }
+
+  function resetFocusTimer(){
+    clearInterval(focusInterval);
+    seconds = totalFocus;
+    focusRunning = false;
+    renderFocus();
+  }
+
+  startFocus?.addEventListener('click', toggleFocus);
+  resetFocus?.addEventListener('click', resetFocusTimer);
+  renderFocus();
+
+  const storedCgpa = localStorage.getItem('campuskit-cgpa');
+  if(storedCgpa){
+    cgpaValue.textContent = Number(storedCgpa).toFixed(2);
+    if(cgpaInput) cgpaInput.value = storedCgpa;
+  }
+
+  saveCgpa?.addEventListener('click', () => {
+    const value = Number(cgpaInput.value);
+    if(!Number.isFinite(value) || value < 0 || value > 10) return;
+    localStorage.setItem('campuskit-cgpa', value.toFixed(2));
+    cgpaValue.textContent = value.toFixed(2);
+    saveCgpa.textContent = 'Saved';
+    setTimeout(() => saveCgpa.textContent = 'Save', 1100);
+  });
+
+  function renderMissions(){
+    const done = checks.filter(c => c.checked).length;
+    if(missionDone) missionDone.textContent = done;
+    if(missionBar) missionBar.style.width = `${(done / Math.max(checks.length,1))*100}%`;
+    localStorage.setItem('campuskit-missions', JSON.stringify(checks.map(c => c.checked)));
+  }
+
+  try{
+    const saved = JSON.parse(localStorage.getItem('campuskit-missions') || '[]');
+    checks.forEach((c,i) => { if(saved[i]) c.checked = true; });
+  }catch(e){}
+  checks.forEach(c => c.addEventListener('change', renderMissions));
+  renderMissions();
+})();
+</script>
+
   <script src="script.js"></script>
 
 <!-- CampusKit future component 001 -->
