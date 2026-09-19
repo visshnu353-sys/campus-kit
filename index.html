@@ -1,121 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="RahIRKLvKw6W6bBcOP0PL0rlcNKjaCYTLw4h_pnApUY" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CampusKit — Free Student Tools</title>
-<meta name="description" content="Free calculators and productivity tools for college students.">
-<link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta name="google-site-verification" content="RahIRKLvKw6W6bBcOP0PL0rlcNKjaCYTLW4h_pnApUY" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CampusKit — Free Student Tools</title>
+  <meta name="description" content="CampusKit gives college students free calculators, focus tools, study resources and productivity utilities in one place.">
+  <link rel="stylesheet" href="style.css">
 
-  gtag('config', 'G-7TMDTHJH98');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TMDTHJH98');
+  </script>
 </head>
+
 <body>
-<header>
-  <nav class="nav">
-    <a class="brand" href="#">Campus<span>Kit</span></a>
-    <div class="links">
-      <a href="#tools">Tools</a><a href="#resources">Resources</a><a href="cgpa-calculator.html">CGPA</a><a href="gpa-calculator.html">GPA</a><a href="percentage-calculator.html">Percentage</a><a href="pomodoro-timer.html">Pomodoro</a><a href="placement-guide.html">Placement</a><a href="student-project-ideas.html">Projects</a><a href="study-planner.html">Study Planner</a><a href="#premium">Premium</a>
+  <div class="site-glow glow-one"></div>
+  <div class="site-glow glow-two"></div>
+
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">C</span>
+        <span>Campus<span class="brand-accent">Kit</span></span>
+      </a>
+
+      <div class="links" id="navLinks">
+        <a href="#tools">Tools</a>
+        <a href="#resources">Resources</a>
+        <a href="placement-guide.html">Placement</a>
+        <a href="student-project-ideas.html">Projects</a>
+        <a href="study-planner.html">Study Planner</a>
+        <a href="#premium">Premium</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☼</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-v3">
+      <div class="hero-copy">
+        <div class="status-pill">
+          <span class="pulse"></span>
+          Free student toolkit · Built for college
+        </div>
+
+        <h1>
+          Your student life,
+          <span>simplified.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Calculate grades, plan your study time, prepare for placements and discover useful resources — all from one clean student dashboard.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary-btn" href="#tools">Explore tools <span>↘</span></a>
+          <a class="text-btn" href="#resources">Browse resources →</a>
+        </div>
+
+        <div class="trust-row">
+          <div><strong>Free</strong><span>core tools</span></div>
+          <div><strong>Fast</strong><span>instant results</span></div>
+          <div><strong>24/7</strong><span>student access</span></div>
+        </div>
+      </div>
+
+      <div class="dashboard-preview">
+        <div class="preview-top">
+          <div>
+            <span class="preview-label">STUDENT DASHBOARD</span>
+            <h3>Good to see you 👋</h3>
+          </div>
+          <span class="live-dot"><i></i> Live</span>
+        </div>
+
+        <div class="preview-score">
+          <div>
+            <span>Academic snapshot</span>
+            <strong>Ready to improve</strong>
+          </div>
+          <div class="score-ring"><span>∞</span></div>
+        </div>
+
+        <div class="mini-grid">
+          <a href="cgpa-calculator.html" class="mini-tool">
+            <span class="mini-icon purple">🎓</span>
+            <span><b>CGPA</b><small>Calculate</small></span>
+            <em>→</em>
+          </a>
+          <a href="pomodoro-timer.html" class="mini-tool">
+            <span class="mini-icon cyan">⏱</span>
+            <span><b>Focus</b><small>Pomodoro</small></span>
+            <em>→</em>
+          </a>
+          <a href="gpa-calculator.html" class="mini-tool">
+            <span class="mini-icon blue">📊</span>
+            <span><b>GPA</b><small>Estimate</small></span>
+            <em>→</em>
+          </a>
+          <a href="study-planner.html" class="mini-tool">
+            <span class="mini-icon orange">📚</span>
+            <span><b>Planner</b><small>Organize</small></span>
+            <em>→</em>
+          </a>
+        </div>
+
+        <div class="preview-progress">
+          <div><span>Student productivity</span><b>Start with one tool</b></div>
+          <div class="progress-track"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot">ADVERTISEMENT SPACE</div>
+
+    <section class="stats-strip" aria-label="CampusKit highlights">
+      <div><span class="stat-icon">⚡</span><div><strong>Instant</strong><small>calculator results</small></div></div>
+      <div><span class="stat-icon">🎯</span><div><strong>Focused</strong><small>student-first tools</small></div></div>
+      <div><span class="stat-icon">📱</span><div><strong>Responsive</strong><small>desktop & mobile</small></div></div>
+      <div><span class="stat-icon">🔒</span><div><strong>Simple</strong><small>no complicated setup</small></div></div>
+    </section>
+
+    <section id="tools" class="section tools-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TOOLKIT</p>
+          <h2>Everything you need, <span>one click away.</span></h2>
+        </div>
+
+        <div class="tool-search">
+          <span>⌕</span>
+          <input id="toolSearch" type="search" placeholder="Search tools..." aria-label="Search tools">
+        </div>
+      </div>
+
+      <div class="tool-nav">
+        <a class="filter-chip active" href="#tools">All tools</a>
+        <a class="filter-chip" href="cgpa-calculator.html">Academics</a>
+        <a class="filter-chip" href="pomodoro-timer.html">Productivity</a>
+        <a class="filter-chip" href="placement-guide.html">Career</a>
+      </div>
+
+      <div class="grid tool-grid">
+        <article class="card featured-tool" id="cgpa" data-tool="cgpa calculator academics grades">
+          <div class="card-top">
+            <div class="icon gradient-purple">🎓</div>
+            <span class="tag">POPULAR</span>
+          </div>
+          <h3>CGPA Calculator</h3>
+          <p>Enter credits and grades to calculate your weighted CGPA instantly.</p>
+          <div id="rows"></div>
+          <div class="card-actions">
+            <button class="secondary" onclick="addRow()">+ Add subject</button>
+            <button class="btn small" onclick="calcCGPA()">Calculate</button>
+          </div>
+          <div id="cgpaResult" class="result"></div>
+          <a class="card-link" href="cgpa-calculator.html">Open full calculator →</a>
+        </article>
+
+        <article class="card" data-tool="pomodoro timer productivity focus study">
+          <div class="card-top">
+            <div class="icon gradient-cyan">⏱️</div>
+            <span class="tag neutral">FOCUS</span>
+          </div>
+          <h3>Pomodoro Timer</h3>
+          <p>Work in focused sessions and build a consistent study rhythm.</p>
+          <div id="timer">25:00</div>
+          <div class="card-actions">
+            <button class="btn small" onclick="startTimer()">Start</button>
+            <button class="secondary" onclick="resetTimer()">Reset</button>
+          </div>
+          <a class="card-link" href="pomodoro-timer.html">Open focus timer →</a>
+        </article>
+
+        <article class="card" data-tool="percentage calculator academics marks">
+          <div class="card-top">
+            <div class="icon gradient-blue">%</div>
+            <span class="tag neutral">ACADEMICS</span>
+          </div>
+          <h3>Percentage Calculator</h3>
+          <p>Find what percentage one number is of another in seconds.</p>
+          <div class="input-row">
+            <input id="part" type="number" placeholder="Your marks">
+            <input id="total" type="number" placeholder="Total marks">
+          </div>
+          <button class="btn small" onclick="percentage()">Calculate percentage</button>
+          <div id="percentResult" class="result"></div>
+          <a class="card-link" href="percentage-calculator.html">Open full calculator →</a>
+        </article>
+
+        <a class="card link-card" href="gpa-calculator.html" data-tool="gpa calculator academics grades">
+          <div class="card-top"><div class="icon gradient-green">📊</div><span class="arrow">↗</span></div>
+          <h3>GPA Calculator</h3>
+          <p>Estimate your GPA with a simple student-friendly interface.</p>
+          <span class="card-link">Calculate GPA →</span>
+        </a>
+
+        <a class="card link-card" href="placement-guide.html" data-tool="placement career jobs interview">
+          <div class="card-top"><div class="icon gradient-orange">💼</div><span class="arrow">↗</span></div>
+          <h3>Placement Guide</h3>
+          <p>Explore preparation resources for coding, interviews and placements.</p>
+          <span class="card-link">Prepare smarter →</span>
+        </a>
+
+        <a class="card link-card" href="student-project-ideas.html" data-tool="projects coding hackathon portfolio">
+          <div class="card-top"><div class="icon gradient-pink">🚀</div><span class="arrow">↗</span></div>
+          <h3>Project Ideas</h3>
+          <p>Find practical project ideas to strengthen your student portfolio.</p>
+          <span class="card-link">Find an idea →</span>
+        </a>
+      </div>
+
+      <div id="noResults" class="no-results" hidden>
+        <strong>No tools found</strong>
+        <span>Try searching for CGPA, GPA, focus, projects or placement.</span>
+      </div>
+    </section>
+
+    <div class="ad-slot">ADVERTISEMENT SPACE</div>
+
+    <section id="resources" class="section resources">
+      <div class="section-heading simple">
+        <div>
+          <p class="eyebrow">STUDENT RESOURCES</p>
+          <h2>Useful things, <span>carefully picked.</span></h2>
+        </div>
+        <span class="section-note">More resources coming soon</span>
+      </div>
+
+      <div class="resource-grid">
+        <a class="resource" href="#" onclick="return affiliate(event)">
+          <div class="resource-icon">💻</div>
+          <div><b>Best student laptops</b><span>Compare options →</span></div>
+        </a>
+        <a class="resource" href="#" onclick="return affiliate(event)">
+          <div class="resource-icon">🧑‍💻</div>
+          <div><b>Programming courses</b><span>Explore courses →</span></div>
+        </a>
+        <a class="resource" href="#" onclick="return affiliate(event)">
+          <div class="resource-icon">⚡</div>
+          <div><b>Productivity apps</b><span>See recommendations →</span></div>
+        </a>
+      </div>
+      <p class="note">Replace these links with your affiliate links after joining an affiliate program.</p>
+    </section>
+
+    <section id="premium" class="premium">
+      <div class="premium-orb"></div>
+      <div class="premium-content">
+        <p class="eyebrow">COMING NEXT</p>
+        <h2>Build your entire student workflow in one place.</h2>
+        <p>CampusKit can grow into a complete student productivity platform with premium planners, interview packs, project templates and original digital products.</p>
+        <div class="premium-pills">
+          <span>Study planners</span><span>Interview packs</span><span>Project templates</span>
+        </div>
+      </div>
+      <a class="btn premium-btn" href="mailto:you@example.com?subject=CampusKit%20Premium">Get Premium →</a>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading simple">
+        <div>
+          <p class="eyebrow">ABOUT CAMPUSKIT</p>
+          <h2>Made for the <span>student journey.</span></h2>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card"><span>01</span><div><b>Free core tools</b><p>Use essential calculators and productivity tools without complicated setup.</p></div></div>
+        <div class="faq-card"><span>02</span><div><b>Built to expand</b><p>New academic, career and productivity tools can be added as CampusKit grows.</p></div></div>
+        <div class="faq-card"><span>03</span><div><b>Student-first design</b><p>Simple interfaces, fast results and useful resources are the focus.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><b>CampusKit</b><span>Built for students.</span></div>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </nav>
-</header>
+  </footer>
 
-<main>
-<section class="hero">
-  <div>
-    <p class="eyebrow">FREE STUDENT TOOLKIT</p>
-    <h1>Study smarter.<br><span>Save time.</span></h1>
-    <p class="sub">Useful calculators and quick tools for college students — free, fast and mobile-friendly.</p>
-    <a class="btn" href="#tools">Explore tools ↓</a>
-  </div>
-  <div class="hero-card">
-    <div class="mini">TODAY'S QUICK TOOL</div>
-    <h3>CGPA Calculator</h3>
-    <p>Convert semester grades into a CGPA estimate in seconds.</p>
-    <a href="#cgpa">Try it →</a>
-  </div>
-</section>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const toolSearch = document.getElementById('toolSearch');
+    const toolCards = [...document.querySelectorAll('[data-tool]')];
+    const noResults = document.getElementById('noResults');
 
-<div class="ad-slot">ADVERTISEMENT SPACE</div>
+    if(localStorage.getItem('campuskit-theme') === 'dark'){
+      document.body.classList.add('dark');
+      themeToggle.textContent = '☾';
+    }
 
-<section id="tools" class="section">
-  <p class="eyebrow">POPULAR TOOLS</p>
-  <h2>Everything students actually use</h2>
-  <div class="grid">
-    <article class="card" id="cgpa">
-      <div class="icon">🎓</div><h3>CGPA Calculator</h3>
-      <p>Enter credits and grades to calculate your weighted CGPA.</p>
-      <div id="rows"></div>
-      <button class="secondary" onclick="addRow()">+ Add subject</button>
-      <button class="btn small" onclick="calcCGPA()">Calculate CGPA</button>
-      <div id="cgpaResult" class="result"></div>
-    </article>
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('campuskit-theme', dark ? 'dark' : 'light');
+      themeToggle.textContent = dark ? '☾' : '☼';
+    });
 
-    <article class="card">
-      <div class="icon">⏱️</div><h3>Pomodoro Timer</h3>
-      <p>Focus for 25 minutes, then take a 5-minute break.</p>
-      <div id="timer">25:00</div>
-      <button class="btn small" onclick="startTimer()">Start</button>
-      <button class="secondary" onclick="resetTimer()">Reset</button>
-    </article>
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      menuToggle.textContent = navLinks.classList.contains('open') ? '×' : '☰';
+    });
 
-    <article class="card">
-      <div class="icon">💻</div><h3>Percentage Calculator</h3>
-      <p>Find what percentage one number is of another.</p>
-      <input id="part" type="number" placeholder="Your marks">
-      <input id="total" type="number" placeholder="Total marks">
-      <button class="btn small" onclick="percentage()">Calculate</button>
-      <div id="percentResult" class="result"></div>
-    </article>
-  </div>
-</section>
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.textContent = '☰';
+      });
+    });
 
-<div class="ad-slot">ADVERTISEMENT SPACE</div>
+    toolSearch.addEventListener('input', e => {
+      const query = e.target.value.toLowerCase().trim();
+      let visible = 0;
 
-<section id="resources" class="section resources">
-  <p class="eyebrow">STUDENT RESOURCES</p>
-  <h2>Useful recommendations</h2>
-  <div class="resource-grid">
-    <a class="resource" href="#" onclick="return affiliate(event)">
-      <b>Best student laptops</b><span>Compare options →</span>
-    </a>
-    <a class="resource" href="#" onclick="return affiliate(event)">
-      <b>Programming courses</b><span>Explore courses →</span>
-    </a>
-    <a class="resource" href="#" onclick="return affiliate(event)">
-      <b>Student productivity apps</b><span>See recommendations →</span>
-    </a>
-  </div>
-  <p class="note">Replace these links with your affiliate links after joining an affiliate program.</p>
-</section>
+      toolCards.forEach(card => {
+        const match = !query || card.dataset.tool.toLowerCase().includes(query);
+        card.style.display = match ? '' : 'none';
+        if(match) visible++;
+      });
 
-<section id="premium" class="premium">
-  <div>
-    <p class="eyebrow">PREMIUM</p>
-    <h2>Turn free users into customers.</h2>
-    <p>Offer downloadable study planners, interview prep packs, project templates or other original digital products.</p>
-  </div>
-  <a class="btn" href="mailto:you@example.com?subject=CampusKit%20Premium">Get Premium</a>
-</section>
+      noResults.hidden = visible !== 0;
+    });
+  </script>
 
-<section class="faq">
-<h2>How this website can make money</h2>
-<div><b>1. Display ads</b><p>Add Google AdSense or another ad network once the site has eligible traffic.</p></div>
-<div><b>2. Affiliate links</b><p>Recommend relevant products/services and earn commissions where the program allows it.</p></div>
-<div><b>3. Digital products</b><p>Sell original templates, guides, interview packs and study resources.</p></div>
-</section>
-</main>
-
-<footer>
-  <b>CampusKit</b><span>Built for students.</span>
-</footer>
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
