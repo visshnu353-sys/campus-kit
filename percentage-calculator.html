@@ -6,30 +6,39 @@
 <title>Percentage Calculator | CampusKit</title>
 <meta name="description" content="Free percentage calculator for student marks and exam scores.">
 <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
+<link rel="stylesheet" href="tools-premium.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7TMDTHJH98');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7TMDTHJH98');
 </script>
 </head>
-<body>
+<body class="campuskit-tool-page percentage calculator">
 <header class="nav">
 <a class="logo" href="index.html">Campus<span>Kit</span></a>
 <nav class="links">
 <a href="index.html">Home</a>
 <a href="cgpa-calculator.html">CGPA</a>
+<a href="gpa-calculator.html">GPA</a>
 <a href="percentage-calculator.html">Percentage</a>
 <a href="pomodoro-timer.html">Pomodoro</a>
 <a href="placement-guide.html">Placements</a>
+<a href="student-project-ideas.html">Projects</a>
+<a href="study-planner.html">Study Planner</a>
 </nav>
 </header>
-<main><section class="hero"><div class="kicker">ACADEMICS</div><h1>Percentage Calculator</h1><p>Calculate your marks percentage instantly.</p></section>
+<main>
+<section class="hero">
+<div class="kicker">ACADEMICS / CALCULATOR</div>
+<h1>Percentage Calculator</h1>
+<p>Calculate your marks percentage instantly.</p>
+</section>
 <section class="tool"><input id="a" type=number placeholder="Marks obtained"><input id="b" type=number placeholder="Total marks"><button onclick="go()">Calculate Percentage</button><div id="o" class="result"></div></section>
-<section class="content"><h2>Percentage formula</h2><p>Percentage = (Marks Obtained ÷ Total Marks) × 100.</p></section></main>
+<section class="content"><h2>Percentage formula</h2><p>Percentage = (Marks Obtained ÷ Total Marks) × 100.</p></section>
+</main>
 <script>function go(){let a=+document.getElementById("a").value,b=+document.getElementById("b").value;document.getElementById("o").textContent=b>0?((a/b)*100).toFixed(2)+"%":"Enter valid marks"}</script>
 <footer>CampusKit — Free student tools and resources.</footer>
-</body></html>
+</body>
+</html>
