@@ -6,30 +6,39 @@
 <title>Pomodoro Timer | CampusKit</title>
 <meta name="description" content="Free 25-minute Pomodoro timer for students and focused study sessions.">
 <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
+<link rel="stylesheet" href="tools-premium.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7TMDTHJH98');
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7TMDTHJH98');
 </script>
 </head>
-<body>
+<body class="campuskit-tool-page pomodoro timer">
 <header class="nav">
 <a class="logo" href="index.html">Campus<span>Kit</span></a>
 <nav class="links">
 <a href="index.html">Home</a>
 <a href="cgpa-calculator.html">CGPA</a>
+<a href="gpa-calculator.html">GPA</a>
 <a href="percentage-calculator.html">Percentage</a>
 <a href="pomodoro-timer.html">Pomodoro</a>
 <a href="placement-guide.html">Placements</a>
+<a href="student-project-ideas.html">Projects</a>
+<a href="study-planner.html">Study Planner</a>
 </nav>
 </header>
-<main><section class="hero"><div class="kicker">PRODUCTIVITY</div><h1>Pomodoro Timer</h1><p>Use 25-minute focus sessions to make study time more structured.</p></section>
-<section class="tool"><div id="clock" style="font-size:60px;font-weight:900;text-align:center">25:00</div><div style="text-align:center"><button onclick="start()">Start</button><button onclick="reset()">Reset</button></div></section>
-<section class="content"><h2>How it works</h2><ol><li>Choose one task.</li><li>Focus for 25 minutes.</li><li>Take a short break.</li><li>Repeat.</li></ol></section></main>
+<main>
+<section class="hero">
+<div class="kicker">PRODUCTIVITY / FOCUS</div>
+<h1>Pomodoro Timer</h1>
+<p>Use 25-minute focus sessions to make study time more structured.</p>
+</section>
+<section class="tool"><div id="clock">25:00</div><div style="text-align:center"><button onclick="start()">Start</button><button onclick="reset()">Reset</button></div></section>
+<section class="content"><h2>How it works</h2><ol><li>Choose one task.</li><li>Focus for 25 minutes.</li><li>Take a short break.</li><li>Repeat.</li></ol></section>
+</main>
 <script>let s=1500,i;function show(){document.getElementById("clock").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}function start(){clearInterval(i);i=setInterval(()=>{if(s<=0){clearInterval(i);alert("Focus session complete!");return}s--;show()},1000)}function reset(){clearInterval(i);s=1500;show()}</script>
 <footer>CampusKit — Free student tools and resources.</footer>
-</body></html>
+</body>
+</html>
