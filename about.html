@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about CampusKit — a student-focused toolkit for academics, productivity, placements, projects and everyday college life.">
+  <meta name="keywords" content="CampusKit, student tools, college tools, CGPA calculator, GPA calculator, study planner, placement tools">
+  <meta name="author" content="CampusKit">
+  <meta name="google-site-verification" content="RahIRKLvKw6W6bBcOP0PIOrlCNKjaCYTLW4h_pnAPUY">
+  <title>About CampusKit — Student Command Center</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMDTHJH98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TMDTHJH98');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tools-premium.css">
+
+  <style>
+    .about-page{min-height:100vh;padding-bottom:70px}
+    .about-shell{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    .about-nav{position:sticky;top:14px;z-index:50;margin:18px auto 0;padding:13px 18px;border:1px solid rgba(255,255,255,.11);border-radius:20px;background:rgba(15,15,24,.72);backdrop-filter:blur(20px);display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+    .about-logo{font-size:22px;font-weight:800;text-decoration:none;color:#fff;letter-spacing:-.7px}
+    .about-logo span{color:#9b7cff}
+    .about-navlinks{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+    .about-navlinks a{color:rgba(255,255,255,.72);text-decoration:none;padding:9px 12px;border-radius:11px;font-size:13px}
+    .about-navlinks a:hover{color:#fff;background:rgba(255,255,255,.07)}
+    .about-hero{padding:92px 0 55px;text-align:center}
+    .about-kicker{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;border:1px solid rgba(155,124,255,.28);background:rgba(155,124,255,.09);color:#cfc2ff;font-size:12px;font-weight:700;letter-spacing:.7px;text-transform:uppercase}
+    .about-hero h1{font-size:clamp(48px,8vw,88px);line-height:.96;letter-spacing:-4px;margin:22px auto 20px;max-width:920px}
+    .about-gradient{background:linear-gradient(100deg,#fff 20%,#bca7ff 55%,#7b61ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .about-hero p{max-width:720px;margin:0 auto;color:rgba(255,255,255,.66);font-size:18px;line-height:1.7}
+    .about-actions{display:flex;justify-content:center;gap:12px;margin-top:30px;flex-wrap:wrap}
+    .about-btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:14px;text-decoration:none;font-weight:750;font-size:14px}
+    .about-btn.primary{color:#fff;background:linear-gradient(135deg,#7c5cff,#a477ff);box-shadow:0 12px 30px rgba(124,92,255,.25)}
+    .about-btn.secondary{color:#fff;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.055)}
+    .about-section{margin-top:32px}
+    .about-section-head{margin-bottom:18px}
+    .about-section-head .eyebrow{color:#9d83ff;text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:800}
+    .about-section-head h2{font-size:34px;letter-spacing:-1.5px;margin:7px 0}
+    .about-section-head p{color:rgba(255,255,255,.58);line-height:1.7;max-width:720px}
+    .about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .about-card{padding:24px;border-radius:22px;border:1px solid rgba(255,255,255,.09);background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));box-shadow:0 16px 45px rgba(0,0,0,.14)}
+    .about-card .icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(139,108,255,.14);font-size:20px;margin-bottom:18px}
+    .about-card h3{margin:0 0 9px;font-size:18px}
+    .about-card p{margin:0;color:rgba(255,255,255,.58);line-height:1.7;font-size:14px}
+    .about-story{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+    .about-panel{padding:30px;border-radius:24px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.045)}
+    .about-panel h3{font-size:24px;margin:0 0 14px}
+    .about-panel p{color:rgba(255,255,255,.62);line-height:1.8;margin:0 0 13px}
+    .about-list{display:grid;gap:10px;margin:18px 0 0;padding:0;list-style:none}
+    .about-list li{display:flex;gap:10px;color:rgba(255,255,255,.72);line-height:1.5}
+    .about-list li::before{content:"✓";color:#aa91ff;font-weight:900}
+    .tool-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+    .tool-pill{padding:10px 13px;border-radius:12px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.75);font-size:13px}
+    .about-cta{margin-top:18px;text-align:center;padding:48px 24px;border-radius:28px;border:1px solid rgba(145,113,255,.18);background:radial-gradient(circle at 50% 0,rgba(124,92,255,.2),transparent 55%),rgba(255,255,255,.035)}
+    .about-cta h2{font-size:36px;letter-spacing:-1.5px;margin:0 0 10px}
+    .about-cta p{max-width:600px;margin:0 auto;color:rgba(255,255,255,.58);line-height:1.7}
+    .about-footer{margin-top:45px;padding-top:25px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:rgba(255,255,255,.42);font-size:12px}
+    .about-footer a{color:rgba(255,255,255,.62);text-decoration:none;margin-left:14px}
+    @media(max-width:850px){
+      .about-grid{grid-template-columns:1fr}
+      .about-story{grid-template-columns:1fr}
+      .about-navlinks a:nth-child(n+4){display:none}
+    }
+    @media(max-width:600px){
+      .about-nav{position:relative;top:0}
+      .about-navlinks{display:none}
+      .about-hero{padding:65px 0 35px}
+      .about-hero h1{letter-spacing:-2.5px}
+      .about-hero p{font-size:16px}
+      .about-section-head h2{font-size:29px}
+      .about-cta h2{font-size:29px}
+    }
+  </style>
+</head>
+
+<body>
+<main class="about-page">
+  <div class="about-shell">
+
+    <header class="about-nav">
+      <a class="about-logo" href="index.html">Campus<span>Kit</span></a>
+      <nav class="about-navlinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="all-tools.html">All Tools</a>
+        <a href="study-planner.html">Study Planner</a>
+        <a href="placement-guide.html">Placements</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="about-hero">
+      <div class="about-kicker">Student Command Center</div>
+      <h1>Built for students who want to <span class="about-gradient">get more done.</span></h1>
+      <p>
+        CampusKit brings practical academic, productivity, career and student-life tools
+        into one focused workspace — so you spend less time searching for tools and more
+        time working toward your goals.
+      </p>
+      <div class="about-actions">
+        <a class="about-btn primary" href="all-tools.html">Explore All Tools →</a>
+        <a class="about-btn secondary" href="index.html">Back to Dashboard</a>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-section-head">
+        <div class="eyebrow">Why CampusKit</div>
+        <h2>One place for the everyday student workflow.</h2>
+        <p>
+          College life involves dozens of small tasks: checking attendance, calculating
+          marks, planning study time, preparing for placements, tracking expenses and
+          building projects. CampusKit is designed to put those workflows together.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <div class="icon">🎓</div>
+          <h3>Academic Tools</h3>
+          <p>Calculate CGPA, GPA, percentage, attendance, internal marks and grade targets with focused student-friendly interfaces.</p>
+        </article>
+        <article class="about-card">
+          <div class="icon">⚡</div>
+          <h3>Productivity</h3>
+          <p>Use Pomodoro, study planning, exam countdowns and daily missions to turn intentions into manageable actions.</p>
+        </article>
+        <article class="about-card">
+          <div class="icon">💼</div>
+          <h3>Career & Projects</h3>
+          <p>Prepare for placements, create a resume, discover project ideas and organize your next step beyond the classroom.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section about-story">
+      <article class="about-panel">
+        <h3>The idea behind CampusKit</h3>
+        <p>
+          CampusKit was created around a simple idea: student tools should be easy to
+          discover, quick to use and useful enough to return to every week.
+        </p>
+        <p>
+          Instead of sending students across unrelated websites for basic calculations,
+          planning and preparation, CampusKit aims to provide a single student-focused
+          workspace that grows with their academic journey.
+        </p>
+        <ul class="about-list">
+          <li>Simple interfaces designed around common student workflows</li>
+          <li>Practical tools that work directly in the browser</li>
+          <li>Useful resources for academics, productivity and careers</li>
+          <li>A continuously expanding collection of student utilities</li>
+        </ul>
+      </article>
+
+      <article class="about-panel">
+        <h3>What you can find here</h3>
+        <div class="tool-cloud">
+          <span class="tool-pill">CGPA Calculator</span>
+          <span class="tool-pill">GPA Calculator</span>
+          <span class="tool-pill">Attendance</span>
+          <span class="tool-pill">Internal Marks</span>
+          <span class="tool-pill">Pomodoro</span>
+          <span class="tool-pill">Study Planner</span>
+          <span class="tool-pill">Exam Countdown</span>
+          <span class="tool-pill">Resume Builder</span>
+          <span class="tool-pill">Placement Guide</span>
+          <span class="tool-pill">Project Ideas</span>
+          <span class="tool-pill">Expense Tracker</span>
+          <span class="tool-pill">Daily Missions</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="about-section">
+      <div class="about-section-head">
+        <div class="eyebrow">Our approach</div>
+        <h2>Useful first. Clear always.</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <div class="icon">🧭</div>
+          <h3>Student-first</h3>
+          <p>Features are organized around real college workflows rather than complicated menus or unnecessary steps.</p>
+        </article>
+        <article class="about-card">
+          <div class="icon">🔒</div>
+          <h3>Respectful by design</h3>
+          <p>Tools should explain what they calculate and give students control over their own information and workflow.</p>
+        </article>
+        <article class="about-card">
+          <div class="icon">🚀</div>
+          <h3>Always evolving</h3>
+          <p>CampusKit is being expanded with new utilities, resources and improvements as student needs grow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h2>Your student workspace starts here.</h2>
+      <p>Open the complete tool library and choose what you need for today.</p>
+      <div class="about-actions">
+        <a class="about-btn primary" href="all-tools.html">Open All Tools →</a>
+      </div>
+    </section>
+
+    <footer class="about-footer">
+      <div>© 2026 CampusKit. Built for students.</div>
+      <div>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+
+  </div>
+</main>
+</body>
+</html>
