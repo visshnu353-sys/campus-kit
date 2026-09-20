@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Main pages -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/</loc>
   </url>
@@ -14,7 +13,6 @@
     <loc>https://visshnu353-sys.github.io/campus-kit/all-tools.html</loc>
   </url>
 
-  <!-- Academic tools -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/cgpa-calculator.html</loc>
   </url>
@@ -43,7 +41,6 @@
     <loc>https://visshnu353-sys.github.io/campus-kit/grade-target-planner.html</loc>
   </url>
 
-  <!-- Productivity tools -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/pomodoro-timer.html</loc>
   </url>
@@ -60,7 +57,6 @@
     <loc>https://visshnu353-sys.github.io/campus-kit/daily-mission-tracker.html</loc>
   </url>
 
-  <!-- Career -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/placement-guide.html</loc>
   </url>
@@ -73,12 +69,10 @@
     <loc>https://visshnu353-sys.github.io/campus-kit/student-project-ideas.html</loc>
   </url>
 
-  <!-- Student life -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/student-expense-tracker.html</loc>
   </url>
 
-  <!-- Student guides -->
   <url>
     <loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-cgpa.html</loc>
   </url>
