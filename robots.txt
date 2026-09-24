@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://visshnu353-sys.github.io/campus-kit/sitemap.xml
+
+Sitemap: https://visshnu353-sys.github.io/campus-kit/sitemap-google.xml
