@@ -1,87 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/all-tools.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/cgpa-calculator.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/gpa-calculator.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/percentage-calculator.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/cgpa-percentage-converter.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/attendance-calculator.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/grade-calculator.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/study-planner.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/exam-countdown.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/daily-planner.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/placement-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/resume-builder.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/student-project-ideas.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/student-expense-tracker.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-cgpa.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-attendance.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/cgpa-vs-gpa.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-internal-marks.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://visshnu353-sys.github.io/campus-kit/campus-placement-preparation.html</loc>
-    <priority>0.8</priority>
-  </url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/</loc><priority>1.0</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/about.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/all-tools.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/cgpa-calculator.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/gpa-calculator.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/percentage-calculator.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/cgpa-percentage-converter.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/attendance-calculator.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/grade-calculator.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/study-planner.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/exam-countdown.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/daily-planner.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/placement-guide.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/resume-builder.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/student-project-ideas.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/student-expense-tracker.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-cgpa.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-attendance.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/cgpa-vs-gpa.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/how-to-calculate-internal-marks.html</loc><priority>0.8</priority></url>
+<url><loc>https://visshnu353-sys.github.io/campus-kit/campus-placement-preparation.html</loc><priority>0.8</priority></url>
 </urlset>
